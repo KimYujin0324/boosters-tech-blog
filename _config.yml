@@ -10,7 +10,7 @@ paginate: 3
 disqus: 'demowebsite'
 locale: en_us
 lang: en_us
-feed_items: 10
+feed_items: 2
 feed_update_period: daily
 feed_update_frequency: 1
 markdown: kramdown
