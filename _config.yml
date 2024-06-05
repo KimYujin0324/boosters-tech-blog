@@ -1,16 +1,16 @@
-title: "Affiliates"
-email: wowthemesnet@gmail.com
+title: "Boosters Tech"
+email: tech.operation@boosters.kr
 timezone: UTC
 baseurl: "/boosters-tech-blog"
 permalink: "/:title/"
-logo: 'assets/images/logo.png'
+logo: 'assets/images/custom/tech_a_bk.png'
 favicon: 'assets/images/favicon.ico'
 author: Sal
-paginate: 2
-disqus: 'demowebsite'
-locale: en_us
-lang: en_us
-feed_items: 2
+paginate: 30
+disqus: 'boosterslabs'
+locale: ko_kr
+lang: ko_kr
+feed_items: 10
 feed_update_period: daily
 feed_update_frequency: 1
 markdown: kramdown
@@ -20,7 +20,7 @@ kramdown:
 sass:
   sass_dir: _sass
   style: :compressed
-ganalytics: UA-113961478-1
+# ganalytics: UA-113961478-1
 
 # Authors
 authors:
@@ -43,9 +43,9 @@ authors:
 
 # Social
 social:
-  instagram: https://www.instagram.com/bootstrapstarter/
-  facebook: https://www.facebook.com/bootstrapstartercom-346329609045284
-  twitter: https://twitter.com/bstartercom
+  # instagram: https://www.instagram.com/bootstrapstarter/
+  # facebook: https://www.facebook.com/bootstrapstartercom-346329609045284
+  # twitter: https://twitter.com/bstartercom
 
 # Plugins
 plugins:
