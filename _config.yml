@@ -23,23 +23,23 @@ sass:
 # ganalytics: UA-113961478-1
 
 # Authors
-# authors:
-#   sal:
-#     name: Sal
-#     display_name: Sal
-#     avatar: 'assets/images/sal.png'
-#     email: wowthemesnet@gmail.com
-#     web: https://www.wowthemes.net/category/jekyll-themes/
-#     twitter: https://twitter.com/wowthemesnet
-#     description: "Author of Affiliates, a template available for WordPress, HTML, Ghost and Jekyll. You are currently previewing Jekyll template demo."
-#   john:
-#     name: John
-#     display_name: John
-#     avatar: 'assets/images/john.png'
-#     email: wowthemesnet@gmail.com
-#     web: https://www.wowthemes.net/category/jekyll-themes/
-#     twitter: https://twitter.com/wowthemesnet
-#     description: "This is the author box. Write a short description of the author here. You are currently previewing Affiliates theme demo, a Jekyll template compatible with Github pages."
+authors:
+  sal:
+    name: Sal
+    display_name: Sal
+    avatar: 'assets/images/sal.png'
+    email: wowthemesnet@gmail.com
+    web: https://www.wowthemes.net/category/jekyll-themes/
+    twitter: https://twitter.com/wowthemesnet
+    description: "Author of Affiliates, a template available for WordPress, HTML, Ghost and Jekyll. You are currently previewing Jekyll template demo."
+  john:
+    name: John
+    display_name: John
+    avatar: 'assets/images/john.png'
+    email: wowthemesnet@gmail.com
+    web: https://www.wowthemes.net/category/jekyll-themes/
+    twitter: https://twitter.com/wowthemesnet
+    description: "This is the author box. Write a short description of the author here. You are currently previewing Affiliates theme demo, a Jekyll template compatible with Github pages."
 
 # Social
 social:
