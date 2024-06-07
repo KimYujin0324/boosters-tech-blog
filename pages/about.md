@@ -1,14 +1,17 @@
 ---
 layout: page
-title: About
+title: About us
 permalink: "/about/"
 image: assets/images/screenshot.png
 ---
 
-This website is a demonstration to see **Affiliates Jekyll theme** in action.
+* 부스터스 Tech 팀은 부스터스가 운영하는 다양한 브랜드의 판매-물류-정산 등의 업무 과정에서 발생하는 다양한 데이터를 수집 및 정제하여 크루들이 쉽고 빠른 의사결졍을 할 수 있도록 도움을 줄 수 있는 **데이터 플랫폼을 개발**합니다.
 
-The theme is compatible with Github pages. This demo is created with Github Pages and hosted with Github.
+* 부스터스 크루들의 반복적인 업무를 기술적으로 자동화 할수 있는 영역을 자동화 하여 **업무상 편의를 제공**합니다.
 
-Everything is ready for your quick setup: Blog, Categories, About, Privacy Policy, Terms of Use, Contact form, Mailchimp
+* 사내에 발생하는 업무프로세스를 **자동화 시스템**으로 개선합니다.
 
-[부스터스 홈페이지](https://boosters.kr/)
+* 자유를 기반한 책임감으로 업무를 수행하며 **Tech팀만의 개발문화**를 만들어 나갑니다.
+
+
+[부스터스가 궁금해?](https://boosters.kr/)
