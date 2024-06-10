@@ -4,7 +4,7 @@ timezone: UTC
 baseurl: "/boosters-tech-blog"
 permalink: "/:title/"
 logo: 'assets/images/custom/tech_a_bk.png'
-favicon: 'assets/images/favicon.ico'
+favicon: 'assets/images/custom/favicon.ico'
 author: Sal
 paginate: 30
 disqus: 'demowebsite'
