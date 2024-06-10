@@ -7,3 +7,7 @@ body {}
 
 /** 드래그 **/
 ::selection {  color: #fff;  background-color: #FF4713;}
+
+.btn-bsts {
+    background-color: #FF4713;
+}
