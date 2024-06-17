@@ -6,6 +6,7 @@ permalink: "/:title/"
 logo: 'assets/images/custom/tech_a_bk.png'
 favicon: 'assets/images/custom/favicon.ico'
 author: tech
+paginate_path: "/page:num/"
 paginate: 10
 disqus: 'demowebsite'
 locale: ko_kr
