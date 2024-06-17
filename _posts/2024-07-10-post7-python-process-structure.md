@@ -3,7 +3,7 @@ layout: post
 title:  "파이썬 프로젝트 구조화 작업"
 author: twkim
 categories: [ Python, Process, Structure ]
-image: assets/images/4.jpg
+image: assets/images/7.jpg
 ---
 There are lots of powerful things you can do with the Markdown editor
 

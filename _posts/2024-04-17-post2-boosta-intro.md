@@ -3,7 +3,7 @@ layout: post
 title:  "`부스타`의 이해"
 author: dilee
 categories: [ 부스타, 시스템, 자동화, 데이터 ]
-image: assets/images/5.jpg
+image: assets/images/2.jpg
 ---
 Education must also train one for quick, resolute and effective thinking. To think incisively and to think for one's self is very difficult.
 

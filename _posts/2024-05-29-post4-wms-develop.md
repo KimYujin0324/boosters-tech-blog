@@ -3,7 +3,7 @@ layout: post
 title:  "주문이 출고되기까지의 과정"
 author: sekim
 categories: [ 주문, 출고, WMS, 데이터 ]
-image: assets/images/6.jpg
+image: assets/images/4.jpg
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated. Something.
 
