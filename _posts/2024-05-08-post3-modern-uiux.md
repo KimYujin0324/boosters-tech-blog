@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "We all wait for summer"
-categories: [ Jekyll, tutorial ]
+title:  "보다 현대적인 UI/UX를 적용하기"
+author: yjkim
+categories: [ Fron-end, UI/UX, 디자인, 경험 ]
 image: assets/images/1.jpg
 ---
 This is changed. As I engage in the so-called "bull sessions" around and about the school, I too often find that most college men have a misconception of the purpose of education. Most of the "brethren" think that <a href="#">education should equip</a> them with the proper instruments of exploitation so that they can forever trample over the masses. Still others think that education should furnish them with noble ends rather than means to an end.
