@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Powerful things you can do with the Markdown editor"
-author: sal
-categories: [ Jekyll, tutorial ]
-image: assets/images/4.jpg
+title:  "Tech팀의 트랜드캐칭 세미나 참석"
+author: tech
+categories: [ 팀워크, 세미나, AI, ML, RETAIL ]
+image: assets/images/6.jpg
 ---
 There are lots of powerful things you can do with the Markdown editor
 

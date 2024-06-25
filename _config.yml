@@ -5,8 +5,9 @@ baseurl: "/boosters-tech-blog"
 permalink: "/:title/"
 logo: 'assets/images/custom/tech_a_bk.png'
 favicon: 'assets/images/custom/favicon.ico'
-author: Sal
-paginate: 30
+author: tech
+paginate_path: "/page:num/"
+paginate: 10
 disqus: 'demowebsite'
 locale: ko_kr
 lang: ko_kr
@@ -24,22 +25,39 @@ sass:
 
 # Authors
 authors:
-  sal:
-    name: Sal
-    display_name: Sal
+  tech:
+    name: Tech Team
+    display_name: Tech Team
     avatar: 'assets/images/sal.png'
-    email: wowthemesnet@gmail.com
-    web: https://www.wowthemes.net/category/jekyll-themes/
-    twitter: https://twitter.com/wowthemesnet
-    description: "Author of Affiliates, a template available for WordPress, HTML, Ghost and Jekyll. You are currently previewing Jekyll template demo."
-  john:
-    name: John
-    display_name: John
-    avatar: 'assets/images/john.png'
-    email: wowthemesnet@gmail.com
-    web: https://www.wowthemes.net/category/jekyll-themes/
-    twitter: https://twitter.com/wowthemesnet
-    description: "This is the author box. Write a short description of the author here. You are currently previewing Affiliates theme demo, a Jekyll template compatible with Github pages."
+    email: operation.tech@boosters.kr
+    description: ""
+  dilee:
+    name: Lee Dong il
+    display_name: Dongil.lee
+    avatar: 'assets/images/sal.png'
+    email: di.lee@boosters.kr
+    description: ""
+  yjkim:
+    name: Kim Yu jin
+    display_name: Yujin.kim
+    avatar: 'assets/images/sal.png'
+    email: yujin.kim@boosters.kr
+    description: ""
+  sekim:
+    name: Kim Seung Eon
+    display_name: Seungeon.kim
+    avatar: 'assets/images/sal.png'
+    email: se.kim@boosters.kr
+    description: ""
+  twkim:
+    name: Kim Tae Woo
+    display_name: Taewoo.kim
+    avatar: 'assets/images/sal.png'
+    email: tw.kim@boosters.kr
+    description: ""
+
+    # web: https://www.wowthemes.net/category/jekyll-themes/
+    # twitter: https://twitter.com/wowthemesnet
 
 # Social
 social:
