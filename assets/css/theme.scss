@@ -11,6 +11,55 @@ $blue:    #3d61fd !default;
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap');
 
+@font-face {
+  font-family: 'Pretendard';
+  src: url('/assets/fonts/Pretendard-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pretendard';
+  src: url('/assets/fonts/Pretendard-ExtraBold.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pretendard';
+  src: url('/assets/fonts/Pretendard-ExtraLight.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pretendard';
+  src: url('/assets/fonts/Pretendard-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pretendard';
+  src: url('/assets/fonts/Pretendard-Medium.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pretendard';
+  src: url('/assets/fonts/Pretendard-Regular.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pretendard';
+  src: url('/assets/fonts/Pretendard-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pretendard';
+  src: url('/assets/fonts/Pretendard-Thin.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+}
+
 /* add additional CSS rules below */
 html {
     scroll-behavior: smooth;
@@ -20,15 +69,15 @@ body {
     background:#fff;
     font-size:17px;
     transition: all 200ms linear;
-    font-family: "PT Sans",sans-serif;
+    font-family: "Pretendard",sans-serif;
     line-height:1.7;
     color: #333;
     overflow-x:hidden;
-    padding-top:116px;
+    padding-top:70px;
 
 }
 .serif-font {
-    font-family:PT Serif;
+    font-family: "Pretendard",sans-serif;
 }
 @media (max-width: 1366px) {
     .container-xl, .container-lg, .container-md, .container-sm, .container {
@@ -88,7 +137,7 @@ small, .small {
 .start-header {
 	opacity: 1;
 	transform: translateY(0);
-	padding: 20px 0;
+	padding: 5px 0;
 	-webkit-transition : all 0.3s ease-out;
 	transition : all 0.3s ease-out;
 
@@ -549,7 +598,7 @@ background-color: #fff;
 
 .article-post .h1, .article-post .h2, .article-post .h3, .article-post .h4, .article-post .h5, .article-post .h6, .article-post h1, .article-post h2, .article-post h3, .article-post h4, .article-post h5, .article-post h6 {
     font-weight: 600;
-    font-family: PT Sans;
+    font-family: "Pretendard",sans-serif;
     margin-top: 3rem;
 }
 
