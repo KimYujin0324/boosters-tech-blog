@@ -7,7 +7,7 @@ background: '/img/bg-index.jpg'
 <!-- Home Intro
 ================================================== -->
 {% if page.url == "/" %}
-<div class="rounded my-5 hero">
+<div class="my-5 hero">
   <div class="row text-center">
     <div class="col-sm-12">
       <h1 class="font-weight-bold mb-4 serif-font">Boosters Tech</h1>
@@ -40,7 +40,7 @@ background: '/img/bg-index.jpg'
     <div class="row">
       {% for post in site.posts %}
       {% unless post.featured == true %}
-      <div class="col-md-12 my-3">
+      <div class="col-md-12 py-3" style="border-bottom: 1px solid ;">
         {% include postbox.html %}
       </div>
       {% endunless %}
