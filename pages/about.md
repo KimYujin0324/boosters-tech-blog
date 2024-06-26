@@ -41,4 +41,4 @@ image: assets/images/screenshot.png
 &nbsp;
 &nbsp;
 
-[우리 팀이 일하는 부스터스가 궁금하신가요?](https://boosters.kr/)
+[저희 팀이 일하고 있는 부스터스가 궁금하신가요?](https://boosters.kr/)
