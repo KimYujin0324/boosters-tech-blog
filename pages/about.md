@@ -1,8 +1,8 @@
 ---
 layout: page
-title: 
+title: About us
 permalink: "/about/"
-image: 
+image: assets/images/screenshot.png
 ---
 
 &nbsp;
