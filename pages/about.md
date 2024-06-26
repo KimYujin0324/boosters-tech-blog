@@ -7,7 +7,7 @@ image: assets/images/screenshot.png
 
 &nbsp;
 
-## 부스터스 TECH 팀이 하는 일
+## 우리 팀이 하는 일
 
 * 부스터스에서 운영하는 수개의 브랜드의 다양한 **데이터를 수집 및 정제**합니다.
 
@@ -41,4 +41,4 @@ image: assets/images/screenshot.png
 &nbsp;
 &nbsp;
 
-[부스터스가 궁금해?](https://boosters.kr/)
+[우리 팀이 일하는 부스터스가 궁금하신가요?](https://boosters.kr/)
