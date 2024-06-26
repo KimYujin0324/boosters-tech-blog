@@ -88,7 +88,7 @@ body {
 }
 main {min-height:500px;}
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6, .navbar-light .navbar-brand, .text-dark, .dropdown-item {
-    color: #000;
+    color: #1D1D1B;
 }
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     font-weight:600;
@@ -371,12 +371,12 @@ span.post-name a,span.post-read-more a:hover {
 }
 
 blockquote {
-	border-left:4px solid #222;
+	border-left:4px solid #1D1D1B;
 	padding:0 0 0 20px;
 	font-style:italic;
-	color:rgba(0,0,0,.5);
-    margin-left:30px;
-    font-size: .9em;
+	color:#616161;
+    font-size: .75em;
+    font-weight: 700;
 }
 .featured-image {
     display: block;
@@ -597,7 +597,8 @@ background-color: #fff;
 .sidebar-right .sidebar {max-width:inherit;}
 
 .article-post .h1, .article-post .h2, .article-post .h3, .article-post .h4, .article-post .h5, .article-post .h6, .article-post h1, .article-post h2, .article-post h3, .article-post h4, .article-post h5, .article-post h6 {
-    font-weight: 600;
+    font-size: 0.9em;
+    font-weight: 800;
     font-family: "Pretendard",sans-serif;
     margin-top: 3rem;
 }
