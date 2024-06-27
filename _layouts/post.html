@@ -59,6 +59,7 @@ post_class: post-template
 			
             
             <!-- Prev/Next -->
+      <section class="container">
             <div class="row PageNavigation prevnextlinks d-flex justify-content-between container" style="margin-top: 5rem;">
               {% if page.previous.url %}
                 <div class="col-md-6 rightborder pl-0">
@@ -87,11 +88,11 @@ post_class: post-template
 					</div>
 				</div>				
                 {% endif %}
-            
+      </section>    
             
             <!-- Begin Comments
             ================================================== -->
-            <section>
+            <section class="container">
             <div id="comments">                          
                 {% include disqus.html %} 
             </div>
