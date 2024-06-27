@@ -7,7 +7,7 @@ image: assets/images/screenshot.png
 
 &nbsp;
 
-## 우리 팀이 하는 일
+## 조직 소개
 
 * 부스터스에서 운영하는 수개의 브랜드의 다양한 **데이터를 수집 및 정제**합니다.
 

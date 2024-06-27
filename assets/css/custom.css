@@ -11,3 +11,6 @@ body {}
 .btn-bsts {
     background-color: #1D1D1B;
 }
+.bsts-card-title {
+  margin-bottom: 0.35rem;
+}
