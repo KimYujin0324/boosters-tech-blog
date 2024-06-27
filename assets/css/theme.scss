@@ -90,8 +90,23 @@ main {min-height:500px;}
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6, .navbar-light .navbar-brand, .text-dark, .dropdown-item {
     color: #1D1D1B;
 }
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-    font-weight:600;
+h1, .h1 {
+    font-weight:900;
+}
+h2, .h2 {
+  font-weight:800;
+}
+h3, .h3 {
+  font-weight:700;
+}
+h4, .h4 {
+  font-weight:700;
+}
+h5, .h5 {
+  font-weight:600;
+}
+h6, .h6 {
+  font-weight:600;
 }
 h4, .h4, h5, .h5 {
     line-height:1.4;
@@ -185,7 +200,7 @@ small, .small {
 ================================================== */
 .hero {
     background: antiquewhite;
-    padding: 3rem 3rem;
+    padding: 3rem 3rem 2rem;
     border-radius: 10px;
 }
 
@@ -364,6 +379,7 @@ span.post-name a,span.post-read-more a:hover {
     a:hover {
         box-shadow:inset 0 -30px 0 #FF4713, 0 2px 0 #FF4713;
         text-decoration:none;
+        color: #fff;
     }
     img, iframe {
         border-radius: 0.25rem !important;
@@ -421,16 +437,19 @@ ul.tags li {
 	font-size:0.9rem;
 }
 ul.tags li a {
-    color: #333;
+    color: #FF4713;
     padding: 3px 10px;
     border-radius: 3px;
     font-weight: 500;
-    background:#eee;
+    background:#fff;
     text-transform: capitalize;
     box-shadow: 0 6px 10px 0 rgba(169, 169, 169, 0.1);
+    border-radius: 15px;
+    border: 1px solid #FF4713;
 }
 ul.tags li a:hover {
-	background:rgba(0,0,0,.07);
+	background:#FF4713;
+  color: #fff;
 	text-decoration:none;
 }
 .margtop3rem {
