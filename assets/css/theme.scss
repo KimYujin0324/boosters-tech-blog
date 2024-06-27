@@ -90,8 +90,23 @@ main {min-height:500px;}
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6, .navbar-light .navbar-brand, .text-dark, .dropdown-item {
     color: #1D1D1B;
 }
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-    font-weight:600;
+h1, .h1 {
+    font-weight:900;
+}
+h2, .h2 {
+  font-weight:900;
+}
+h3, .h3 {
+  font-weight:800;
+}
+h4, .h4 {
+  font-weight:800;
+}
+h5, .h5 {
+  font-weight:700;
+}
+h6, .h6 {
+  font-weight:600;
 }
 h4, .h4, h5, .h5 {
     line-height:1.4;
