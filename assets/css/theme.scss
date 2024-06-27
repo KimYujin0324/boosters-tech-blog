@@ -487,10 +487,15 @@ ul.tags li a:hover {
 	text-transform:uppercase;
 }
 .post-top-meta .btn.follow {
-	margin-left:5px;
+	margin-left:10px;
 	margin-top:-4px;
+  color: #FF4713;
+  border: 1px solid #FF4713;
 }
-
+.btn.follow:hover {
+  color: #FFF;
+  background-color: #FF4713;
+}
 .form-control::-webkit-input-placeholder {
 	color: rgba(0,0,0,.5);
 }
