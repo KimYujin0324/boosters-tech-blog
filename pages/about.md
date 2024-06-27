@@ -19,7 +19,9 @@ image: assets/images/screenshot.png
 
 * 자유를 기반한 책임감으로 업무를 수행하며 **Tech 팀만의 개발문화**를 만들어 나갑니다.
 
+<br>
 &nbsp;
+<br>
 
 ## 직무 소개
 #### 시스템 엔지니어
@@ -37,9 +39,11 @@ image: assets/images/screenshot.png
 #### 데이터 사이언티스트
 > 데이터 드리븐 사고를 위한 데이터 정제 및 데이터 분석을 합니다. 데이터 학습을 통해 가까운 미래에 대한 데이터를 예측합니다. 데이터 분석 언어와 BI 툴에 대한 이해를 필요로 하고, 데이터적 사고를 중요시합니다.
 
+<br>
+<br>
 &nbsp;
 &nbsp;
-&nbsp;
-&nbsp;
+<br>
+<br>
 
 [저희 팀이 일하고 있는 부스터스가 궁금하신가요?](https://boosters.kr/)
