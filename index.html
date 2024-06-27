@@ -40,7 +40,7 @@ background: '/img/bg-index.jpg'
     <div class="row">
       {% for post in site.posts %}
       {% unless post.featured == true %}
-      <div class="col-md-12 py-5" style="border-bottom: 1px solid #BDBDBD;">
+      <div class="col-md-12 py-4" style="border-bottom: 1px solid #BDBDBD;">
         {% include postbox.html %}
       </div>
       {% endunless %}
