@@ -35,9 +35,9 @@ background: '/img/bg-index.jpg'
 
 <!-- Posts List with Sidebar (except featured)
 ================================================== -->
-<section class="row">
+<section class="container">
   <div class="col-sm-12">
-    <div class="row">
+    <div>
       {% for post in site.posts %}
       {% unless post.featured == true %}
       <div class="col-md-12 py-4" style="border-bottom: 1px solid #BDBDBD;">
