@@ -30,3 +30,8 @@ body {}
   height: 2px;
   background-color: #FF4713; /* 바텀 라인의 색상 */
 }
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+  color: #495057;
+  background-color: #fff;
+  border-color: 0px solid #fff;
+}
