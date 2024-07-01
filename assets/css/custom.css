@@ -33,5 +33,5 @@ body {}
 .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
   color: #495057;
   background-color: #fff;
-  border-color: 0px solid #fff;
+  border-color: #dee2e600 #dee2e600 #fff00000;
 }
