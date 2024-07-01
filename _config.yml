@@ -14,6 +14,9 @@ lang: ko_kr
 feed_items: 10
 feed_update_period: daily
 feed_update_frequency: 1
+collections:
+  posts:
+    output: true
 markdown: kramdown
 kramdown:
   syntax_highlighter_opts:
@@ -48,13 +51,13 @@ authors:
     display_name: Seungeon.kim
     avatar: 'assets/images/sal.png'
     email: se.kim@boosters.kr
-    description: ""
+    description: "부스터스 Tech팀에서 백엔드를 맡고 있습니다."
   twkim:
     name: Kim Tae Woo
     display_name: Taewoo.kim
     avatar: 'assets/images/sal.png'
     email: tw.kim@boosters.kr
-    description: ""
+    description: "부스터스 Tech팀에서 백엔드를 맡고 있습니다."
 
     # web: https://www.wowthemes.net/category/jekyll-themes/
     # twitter: https://twitter.com/wowthemesnet
