@@ -30,7 +30,8 @@ body {}
 }
 .nav-tabs .nav-link {
   font-weight: 600;
-  color: #fff;
+  color: #495057;
+  background-color: #ffff00;
 }
 
 .btn-bsts {
