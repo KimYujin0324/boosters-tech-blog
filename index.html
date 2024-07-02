@@ -48,11 +48,11 @@ background: '/img/bg-index.jpg'
     </li>
   </ul>
 
-  <div class="tab-pane fade col-sm-12">
+  <div class="tab-pane fade col-sm-12" id="culture" role="tabpanel" aria-labelledby="culture-tab">
     <div>
       {% for post in site.posts %}
       {% unless post.featured == true %}
-      {% if post.category == "tech" %}
+      {% if post.category == "culture" %}
       <div class="col-md-12 py-4" style="border-bottom: 1px solid #BDBDBD;">
         {% include postbox.html %}
       </div>
