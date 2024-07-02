@@ -60,12 +60,14 @@ background: '/img/bg-index.jpg'
           {% unless post.featured == true %}
           <div class="col-md-12 py-4" style="border-bottom: 1px solid #BDBDBD;">
             {% include postbox.html %}
-            <div class="col-md-2" style="display: contents;">
-				  		<img class="author-thumb" alt="{{ author.display_name }}">
+            <!-- <div class="col-md-2" style="display: contents;">
+				  		<img class="author-thumb" src="{{site.baseurl}}/{{author.avatar}}" alt="{{ author.display_name }}">
 				  	</div>
 				  	<div class="col-md-10 pt-1">
-				  		<a target="_blank" class="link-dark">{{ author.display_name }}</a>
-				  	</div>
+				  		<a target="_blank" class="link-dark" href="{{ author.web }}">{{ author.display_name }}</a><a target="_blank" href="{{ author.twitter }}" class="btn follow">Follow</a>
+              <br>
+				  		<span class="author-description">{{ author.description }}</span>						
+				  	</div> -->
           </div>
           {% endunless %}
           {% endfor %}
