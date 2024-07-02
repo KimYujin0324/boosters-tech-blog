@@ -52,4 +52,3 @@ image: assets/images/screenshot.png
 
 <br>
 <br>
-<br>
