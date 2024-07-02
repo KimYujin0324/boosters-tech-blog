@@ -446,7 +446,9 @@ ul.tags {
 	margin: 0 0 1.5rem 0;
 }
 ul.tags li {
-	color: #FF4713;
+	display:inline-block;
+	font-size:0.9rem;
+    color: #FF4713;
     padding: 3px 10px;
     border-radius: 3px;
     font-weight: 500;
