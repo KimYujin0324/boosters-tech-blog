@@ -93,11 +93,21 @@ body {
         max-width:50%;
         padding:0 25px;
     }
+    .container-lg {
+        width:75%;
+        max-width:75%;
+        padding:0 25px;
+    }
 }
 @media (min-width: 1200px) and (max-width: 1400px) {
     .container {
         width:50%;
         max-width:50%;
+        padding:0 25px;
+    }
+    .container-lg {
+        width:75%;
+        max-width:75%;
         padding:0 25px;
     }
 }
@@ -107,9 +117,19 @@ body {
         max-width:70%;
         padding:0 25px;
     }
+    .container-lg {
+        width:80%;
+        max-width:80%;
+        padding:0 25px;
+    }
 }
 @media (min-width: 768px) and (max-width: 992px) {
     .container {
+        width:90%;
+        max-width:90%;
+        padding:0 25px;
+    }
+    .container-lg {
         width:90%;
         max-width:90%;
         padding:0 25px;
@@ -121,9 +141,19 @@ body {
         max-width:95%;
         padding:0 25px;
     }
+    .container-lg {
+        width:95%;
+        max-width:95%;
+        padding:0 25px;
+    }
 }
 @media (max-width: 576px) {
     .container {
+        width:100%;
+        max-width:100%;
+        padding:0 25px;
+    }
+    .container-lg {
         width:100%;
         max-width:100%;
         padding:0 25px;
