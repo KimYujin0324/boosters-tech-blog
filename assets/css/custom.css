@@ -23,8 +23,9 @@ body {}
 }
 .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
   color: #495057;
-  background-color: dee2e600;
+  background-color: #dee2e600;
   border-color: #dee2e600 #dee2e600 #dee2e600;
+  font-weight: 700;
 }
 
 .btn-bsts {
