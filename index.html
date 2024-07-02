@@ -36,27 +36,6 @@ background: '/img/bg-index.jpg'
 <!-- Posts List with Sidebar (except featured)
 ================================================== -->
 <section class="container">
-  <div class="col-sm-12">
-    <div>
-      {% for post in site.posts %}
-      {% unless post.featured == true %}
-      <div class="col-md-12 py-4" style="border-bottom: 1px solid #BDBDBD;">
-        {% include postbox.html %}
-      </div>
-      {% endunless %}
-      {% endfor %}
-    </div>
-    <!-- Pagination -->
-    <div class="bottompagination">
-      <span class="navigation" role="navigation">
-          {% include pagination.html %}
-      </span>
-    </div>
-  </div>
-</section>
-
-
-<div class="container">
   <ul class="nav nav-tabs" id="myTab" role="tablist">
     <li class="nav-item">
       <a class="nav-link active" id="all-tab" data-bs-toggle="tab" data-bs-target="#all" role="tab" aria-controls="all" aria-selected="true">전체</a>
@@ -69,37 +48,60 @@ background: '/img/bg-index.jpg'
     </li>
   </ul>
 
-  <div class="tab-content" id="myTabContent">
-    <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
-      <section class="row">
-        {% for post in site.posts %}
-          <div class="col-md-4 mb-5">
-            {% include postbox.html %}
-          </div>
-        {% endfor %}
-      </section>
-    </div>
-    <div class="tab-pane fade" id="tech" role="tabpanel" aria-labelledby="tech-tab">
-      <section class="row">
-        {% for post in site.posts %}
+  <div class="col-sm-12">
+    <!-- <div>
+      {% for post in site.posts %}
+      {% unless post.featured == true %}
+      <div class="col-md-12 py-4" style="border-bottom: 1px solid #BDBDBD;">
+        {% include postbox.html %}
+      </div>
+      {% endunless %}
+      {% endfor %}
+    </div> -->
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
+        <section class="row">
+          {% for post in site.posts %}
+          {% unless post.featured == true %}
+            <div class="col-md-12 py-4" style="border-bottom: 1px solid #BDBDBD;">
+              {% include postbox.html %}
+            </div>
+          {% endunless %}
+          {% endfor %}
+        </section>
+      </div>
+      <div class="tab-pane fade" id="tech" role="tabpanel" aria-labelledby="tech-tab">
+        <section class="row">
+          {% for post in site.posts %}
+          {% unless post.featured == true %}
           {% if post.category == "tech" %}
-            <div class="col-md-4 mb-5">
+            <div class="col-md-12 py-4" style="border-bottom: 1px solid #BDBDBD;">
               {% include postbox.html %}
             </div>
           {% endif %}
-        {% endfor %}
-      </section>
-    </div>
-    <div class="tab-pane fade" id="culture" role="tabpanel" aria-labelledby="culture-tab">
-      <section class="row">
-        {% for post in site.posts %}
+          {% endunless %}
+          {% endfor %}
+        </section>
+      </div>
+      <div class="tab-pane fade" id="culture" role="tabpanel" aria-labelledby="culture-tab">
+        <section class="row">
+          {% for post in site.posts %}
+          {% unless post.featured == true %}
           {% if post.category == "culture" %}
-            <div class="col-md-4 mb-5">
+            <div class="col-md-12 py-4" style="border-bottom: 1px solid #BDBDBD;">
               {% include postbox.html %}
             </div>
           {% endif %}
-        {% endfor %}
-      </section>
+          {% endunless %}
+          {% endfor %}
+        </section>
+      </div>
+    </div>
+    <!-- Pagination -->
+    <div class="bottompagination">
+      <span class="navigation" role="navigation">
+          {% include pagination.html %}
+      </span>
     </div>
   </div>
-</div>
+</section>
