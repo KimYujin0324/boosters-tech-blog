@@ -79,13 +79,57 @@ body {
 .serif-font {
     font-family: "Pretendard",sans-serif;
 }
-@media (max-width: 1366px) {
-    .container-xl, .container-lg, .container-md, .container-sm, .container {
-        width:85%;
-        max-width:85%;
+
+// @media (max-width: 1366px) {
+//     .container {
+//         width:85%;
+//         max-width:85%;
+//         padding:0 25px;
+//     }
+// }
+@media (min-width: 1400px) {
+    .container {
+        width:100%;
+        max-width:100%;
         padding:0 25px;
     }
 }
+@media (min-width: 1200px) {
+    .container {
+        width:70%;
+        max-width:70%;
+        padding:0 25px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        width:90%;
+        max-width:90%;
+        padding:0 25px;
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        width:95%;
+        max-width:95%;
+        padding:0 25px;
+    }
+}
+@media (min-width: 576px) {
+    .container {
+        width:95%;
+        max-width:95%;
+        padding:0 25px;
+    }
+}
+@media (max-width: 576px) {
+    .container {
+        width:100%;
+        max-width:100%;
+        padding:0 25px;
+    }
+}
+
 main {min-height:500px;}
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6, .navbar-light .navbar-brand, .text-dark, .dropdown-item {
     color: #1D1D1B;
