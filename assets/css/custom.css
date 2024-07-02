@@ -31,13 +31,13 @@ Just customize your theme here.
   font-weight: 600;
   color: #495057;
   background-color: #ffffff00;
-  font-size: 20px;
 }
 
 .btn-bsts {
   background-color: #1D1D1B;
 }
 .bsts-card-title {
+  font-size: 1.35rem;
   margin-bottom: 1.25rem;
 }
 .bsts-sub-title {
