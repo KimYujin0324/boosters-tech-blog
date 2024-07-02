@@ -21,55 +21,6 @@ background: '/img/bg-index.jpg'
 </div>
 {% endif %}
 
-<div class="container mt-5">
-  <ul class="nav nav-tabs" id="myTab" role="tablist">
-    <li class="nav-item">
-      <a class="nav-link active" id="all-tab" data-toggle="tab" href="#all" role="tab" aria-controls="all" aria-selected="true">전체</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" id="tech-tab" data-toggle="tab" href="#tech" role="tab" aria-controls="tech" aria-selected="false">Tech</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" id="culture-tab" data-toggle="tab" href="#culture" role="tab" aria-controls="culture" aria-selected="false">Culture</a>
-    </li>
-  </ul>
-  <div class="tab-content" id="myTabContent">
-    <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
-      <section class="row">
-        {% for post in site.posts %}
-          {% if post.featured == true %}
-            <div class="col-md-4 mb-5">
-              {% include postbox.html %}
-            </div>
-          {% endif %}
-        {% endfor %}
-      </section>
-    </div>
-    <div class="tab-pane fade" id="tech" role="tabpanel" aria-labelledby="tech-tab">
-      <section class="row">
-        {% for post in site.posts %}
-          {% if post.category == "tech" and post.featured == true %}
-            <div class="col-md-4 mb-5">
-              {% include postbox.html %}
-            </div>
-          {% endif %}
-        {% endfor %}
-      </section>
-    </div>
-    <div class="tab-pane fade" id="culture" role="tabpanel" aria-labelledby="culture-tab">
-      <section class="row">
-        {% for post in site.posts %}
-          {% if post.category == "culture" and post.featured == true %}
-            <div class="col-md-4 mb-5">
-              {% include postbox.html %}
-            </div>
-          {% endif %}
-        {% endfor %}
-      </section>
-    </div>
-  </div>
-</div>
-
 <!-- Featured
 ================================================== -->
 <!-- <section class="row">
@@ -85,81 +36,42 @@ background: '/img/bg-index.jpg'
 <!-- Posts List with Sidebar (except featured)
 ================================================== -->
 <section class="container">
-  <div class="col-sm-12">
 
-    <div class="col-9">
+  <div class="col-9">
 
-      <div class="mt-3 mb-4">
-        <ul class="nav nav-tabs" id="myTab" role="tablist">
-          <li class="nav-item" role="presentation">
-            <button class="nav-link active" id="myfav-tab" data-bs-toggle="tab"
-              data-bs-target="#myfav" type="button" role="tab" aria-controls="myfav"
-              aria-selected="true"><i class="bi bi-suit-heart"></i> My Fav</button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link" id="orangevillages-tab" data-bs-toggle="tab"
-              data-bs-target="#orangevillages" type="button" role="tab"
-              aria-controls="orangevillages" aria-selected="false"><i class="bi bi-houses"></i> Orange Villages</button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link" id="notifications-tab" data-bs-toggle="tab"
-              data-bs-target="#notifications" type="button" role="tab"
-              aria-controls="notifications" aria-selected="false"><i class="bi bi-bell"></i> Notifications</button>
-          </li>
-        </ul>
+    <div class="mt-3 mb-4">
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="all-tab" data-bs-toggle="tab" data-bs-target="#all" type="button" role="tab" aria-controls="all" aria-selected="true">all</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="tech-tab" data-bs-toggle="tab" data-bs-target="#tech" type="button" role="tab" aria-controls="tech" aria-selected="false">tech</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="culture-tab" data-bs-toggle="tab" data-bs-target="#culture" type="button" role="tab" aria-controls="culture" aria-selected="false">culture</button>
+        </li>
+      </ul>
+    </div>
+    
+    <div class="tab-content card rounded shadow p-4" id="tabContent">
+      <!-- tab1 -->
+      <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
+        tab1
       </div>
-      
-      <div class="tab-content card rounded shadow p-4" id="myTabContent" style="height: 71.65vh;">
-        <!-- tab1 -->
-        <div class="tab-pane fade show active" id="myfav" role="tabpanel"
-          aria-labelledby="myfav-tab">
-          - 페이지 즐겨찾기 <br>
-          - Bignumber customizing
-        </div>
-
-        <!-- tab2 -->
-        <div class="tab-pane fade" id="orangevillages" role="tabpanel"
-          aria-labelledby="orangevillages-tab">
-          <!-- <div class="row">
-            <nav aria-label="Page navigation">
-              <ul class="pagination bsts-pagination" style="float:right; margin-bottom: 5px;">
-                <el-pagination
-                  :page-sizes="[50, 100, 200, 500]"
-                  @size-change="setPageSize"
-                  layout="sizes"
-                  style="padding: 5px 0;">
-                </el-pagination>
-              </ul>
-               <ul class="pagination bsts-pagination bsts-col-center" style="float:right; margin: 0 16px 10px 0;">
-                <li class="page-item"><el-button type="text" style="font-size: medium; border:0px;" v-on:click="clickSearch('prev')"><i class="bi bi-chevron-left"></i></el-button></li>
-                <span class="bsts-total-count" style="line-height: 36px; color: #606265; margin-top:2px;">{{ table1_count }} / {{ table1_total_count }}</span>
-                <li class="page-item"><el-button type="text" style="font-size: medium; border:0px;" v-on:click="clickSearch('next')"><i class="bi bi-chevron-right"></i></el-button></li>
-              </ul>
-            </nav>
-          </div> -->
-
-          <el-table ref="multipleTable" class="table" id="dataTable1" width="100%" white-space="nowarp" max-height="1000" cellspacing="0" :data="users" >
-            <el-table-column prop="user_name" sortable width="400">
-              <template slot="header" slot-scope="scope">
-                <span><i class="bi bi-stickies"></i> 이름</span>
-              </template>
-              <template slot-scope="scope">
-                <span v-on:click="copyToClipboard(scope.row.user_name)" style="cursor:grabbing;">{{ scope.row.user_name }}</span>
-              </template>
-            </el-table-column>
-          </el-table>
-        </div>
-
-        <!-- tab3 -->
-        <div class="tab-pane fade" id="notifications" role="tabpanel"
-          aria-labelledby="notifications-tab">
-          - 알림 (게시판 알림) <br>
-          - 최근 7일간 가장 많이 접속한 페이지
-        </div>
+      <!-- tab2 -->
+      <div class="tab-pane fade" id="tech" role="tabpanel" aria-labelledby="tech-tab">
+        tab2
+      </div>
+      <!-- tab3 -->
+      <div class="tab-pane fade" id="culture" role="tabpanel" aria-labelledby="culture-tab">
+        tab3
       </div>
     </div>
+  </div>
 
 
+
+  <div class="col-sm-12">
     <div>
       {% for post in site.posts %}
       {% unless post.featured == true %}
