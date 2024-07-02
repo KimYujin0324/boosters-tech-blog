@@ -15,52 +15,49 @@ post_class: post-template
         {% assign author = site.authors[page.author] %}
         
 		<div class="col-sm-12">
-            <!-- Post Featured Image -->
+      <!-- Post Featured Image -->
 			<!-- {% if page.image %}<img class="featured-image img-fluid" style="border-radius: 15px;" src="{{ site.baseurl }}/{{ page.image }}" alt="{{ page.title }}">{% endif %} -->
 			<!-- End Featured Image -->
 			<div class="mainheading mb-5 py-5">             
           <div class="container">      
-                <!-- Post Categories -->
-                <div class="after-post-tags">
-                  <ul class="tags">
-                      {% assign sortedTags = page.tags | sort %}
-                      {% for tag in sortedTags %}
-                      <li>
-                          {{ tag }}
-                      </li>
-                      {% endfor %}
-                  </ul>
-                </div>
-                <!-- End Categories -->
-                
-                <!-- Post Title -->
-				        <h1 class="posttitle">{{ page.title }}</h1> 
+              <!-- Post Categories -->
+              <div class="after-post-tags">
+                <ul class="tags">
+                    {% assign sortedTags = page.tags | sort %}
+                    {% for tag in sortedTags %}
+                    <li>
+                        {{ tag }}
+                    </li>
+                    {% endfor %}
+                </ul>
+              </div>
+              <!-- End Categories -->
+              <!-- Post Title -->
+				      <h1 class="posttitle">{{ page.title }}</h1> 
           </div>
 			</div>
-
 			
 
 			<!-- Post Content -->
 			<div class="article-post serif-font container">
-				{{content}}
-                <div class="clearfix"></div>
+				  {{content}}
+          <div class="clearfix"></div>
 			</div>
 
-            <!-- Post Date -->
-            <p class="container">
-            <small>
-                <span class="post-date"><time class="post-date" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date_to_string }}</time></span>           
-                {% if page.last_modified_at %}
-                (Updated: <time datetime="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">{{ page.last_modified_at | date: "%b %-d, %Y" }}</time>)
-                {% endif %}
-                </small>
-            </p>
+      <!-- Post Date -->
+      <p class="container">
+          <small>
+            <span class="post-date"><time class="post-date" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date_to_string }}</time></span>           
+            {% if page.last_modified_at %}
+            (Updated: <time datetime="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">{{ page.last_modified_at | date: "%b %-d, %Y" }}</time>)
+            {% endif %}
+          </small>
+      </p>
             
 			
-            
-            <!-- Prev/Next -->
+      <!-- Prev/Next -->
       <section class="container">
-            <div class="row PageNavigation prevnextlinks d-flex justify-content-between container" style="margin-top: 5rem;">
+          <div class="row PageNavigation prevnextlinks d-flex justify-content-between" style="margin-top: 5rem;">
               {% if page.previous.url %}
                 <div class="col-md-6 rightborder pl-0">
                     <a class="thepostlink" href="{{page.previous.url | absolute_url}}">&laquo; {{page.previous.title}}</a>
@@ -71,42 +68,38 @@ post_class: post-template
                     <a class="thepostlink" href="{{page.next.url | absolute_url}}">{{page.next.title}} &raquo;</a>
                 </div>
               {% endif %}
-            </div>
-            <!-- End Prev/Next -->
-            
-            
-             <!-- Author Box -->
-                {% if page.author %}				
-				<div class="row post-top-meta container">
-					<div class="col-md-2" style="display: contents;">
-						<img class="author-thumb" src="{{site.baseurl}}/{{author.avatar}}" alt="{{ author.display_name }}">
-					</div>
-					<div class="col-md-10 pt-1">
-						<a target="_blank" class="link-dark" href="{{ author.web }}">{{ author.display_name }}</a><a target="_blank" href="{{ author.twitter }}" class="btn follow">Follow</a>
-            <br>
-						<span class="author-description">{{ author.description }}</span>						
-					</div>
-				</div>				
-                {% endif %}
+          </div>
+          <!-- End Prev/Next -->
+          <!-- Author Box -->
+              {% if page.author %}				
+				  <div class="row post-top-meta">
+				  	<div class="col-md-2" style="display: contents;">
+				  		<img class="author-thumb" src="{{site.baseurl}}/{{author.avatar}}" alt="{{ author.display_name }}">
+				  	</div>
+				  	<div class="col-md-10 pt-1">
+				  		<a target="_blank" class="link-dark" href="{{ author.web }}">{{ author.display_name }}</a><a target="_blank" href="{{ author.twitter }}" class="btn follow">Follow</a>
+              <br>
+				  		<span class="author-description">{{ author.description }}</span>						
+				  	</div>
+				  </div>				
+            {% endif %}
       </section>    
             
-            <!-- Begin Comments
-            ================================================== -->
-            <section class="container">
-            <div id="comments">                          
-                {% include disqus.html %} 
-            </div>
-            </section>
-            <!--End Comments
-            ================================================== -->
-            
+      <!-- Begin Comments
+      ================================================== -->
+      <section class="container">
+          <div id="comments">                          
+              {% include disqus.html %} 
+          </div>
+      </section>
+      <!--End Comments
+      ================================================== -->
             
 
 		</div>
 		<!-- End Post -->
     
     
-
 	</div>
 
 <!-- End Article
