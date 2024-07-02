@@ -2,7 +2,8 @@
 layout: post
 title:  "2024 BOOSTERS TECH 팀 빌딩과정"
 author: dilee
-categories: [ Tech, Team Building, 채용, 성장 ]
+categories: [culture]
+tags: [ Tech, Team Building, 채용, 성장 ]
 image: assets/images/1.jpg
 
 ---
