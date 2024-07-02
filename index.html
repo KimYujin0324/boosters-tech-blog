@@ -64,6 +64,11 @@ background: '/img/bg-index.jpg'
           {% endunless %}
           {% endfor %}
         </div>
+        <div class="author-profile">
+          <img src="{{ post.author_profile_pic_url }}" alt="프로필 사진" class="profile-pic">
+          <span class="author-name">{{ post.author }}</span>
+        </div>
+        
         <!-- Pagination -->
         <div class="bottompagination">
           <span class="navigation" role="navigation">
