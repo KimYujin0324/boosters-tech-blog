@@ -68,7 +68,7 @@ background: '/img/bg-index.jpg'
 
   <div class="tab-pane fade col-sm-12" id="tech" role="tabpanel" aria-labelledby="tech-tab">
     <div>
-      {% for post in site.posts %}
+      <!-- {% for post in site.posts %}
       {% unless post.featured == true %}
       {% if post.category == "tech" %}
       <div class="col-md-12 py-4" style="border-bottom: 1px solid #BDBDBD;">
@@ -76,7 +76,16 @@ background: '/img/bg-index.jpg'
       </div>
       {% endif %}
       {% endunless %}
-      {% endfor %}
+      {% endfor %} -->
+      {% for post in site.posts %}
+      {% if "tech" == post.categories %}
+          {% unless post.featured %}
+              <div class="col-md-12 py-4" style="border-bottom: 1px solid #BDBDBD;">
+                  {% include postbox.html %}
+              </div>
+          {% endunless %}
+      {% endif %}
+  {% endfor %}
     </div>
     <!-- Pagination -->
     <div class="bottompagination">
