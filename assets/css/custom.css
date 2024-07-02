@@ -23,14 +23,14 @@ body {}
   color: #1D1D1B;
 }
 .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
-  color: #495057;
+  color: #1D1D1B;
   background-color: #dee2e600;
   border-color: #dee2e600 #dee2e600 #dee2e600;
   font-weight: 600;
 }
 .nav-tabs .nav-link {
   font-weight: 600;
-  color: #1D1D1B;
+  color: #495057;
 }
 
 .btn-bsts {
