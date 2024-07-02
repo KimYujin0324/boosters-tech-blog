@@ -32,9 +32,6 @@ body {}
 }
 .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
   color: #495057;
-  background-color: none;
+  background-color: dee2e600;
   border-color: #dee2e600 #dee2e600 #dee2e600;
 }
-/* .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
-  border-color: #dee2e600 #dee2e600 #dee2e6;
-} */
