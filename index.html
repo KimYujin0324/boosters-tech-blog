@@ -38,18 +38,16 @@ background: '/img/bg-index.jpg'
     <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
       <section class="row">
         {% for post in site.posts %}
-          {% if post.featured == true %}
-            <div class="col-md-4 mb-5">
-              {% include postbox.html %}
-            </div>
-          {% endif %}
+          <div class="col-md-4 mb-5">
+            {% include postbox.html %}
+          </div>
         {% endfor %}
       </section>
     </div>
     <div class="tab-pane fade" id="tech" role="tabpanel" aria-labelledby="tech-tab">
       <section class="row">
         {% for post in site.posts %}
-          {% if post.category == "tech" and post.featured == true %}
+          {% if post.category == "tech" %}
             <div class="col-md-4 mb-5">
               {% include postbox.html %}
             </div>
@@ -60,7 +58,7 @@ background: '/img/bg-index.jpg'
     <div class="tab-pane fade" id="culture" role="tabpanel" aria-labelledby="culture-tab">
       <section class="row">
         {% for post in site.posts %}
-          {% if post.category == "culture" and post.featured == true %}
+          {% if post.category == "culture" %}
             <div class="col-md-4 mb-5">
               {% include postbox.html %}
             </div>
@@ -70,7 +68,6 @@ background: '/img/bg-index.jpg'
     </div>
   </div>
 </div>
-
 
 <!-- Featured
 ================================================== -->
