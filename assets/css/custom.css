@@ -47,6 +47,7 @@ Just customize your theme here.
   color: #6c757d;
 }
 .bsts-post-avatar {
+  display: flex;
   width: 3vw;
   border: 1px solid #6c757d;
   border-radius: 50%;
