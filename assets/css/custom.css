@@ -44,5 +44,10 @@ Just customize your theme here.
   overflow-wrap: break-word;
 }
 .bsts-post-name {
+  color: #6c757d;
+}
+.bsts-post-avatar {
   width: 3vw;
+  border: 1px solid #6c757d;
+  border-radius: 50%;
 }
