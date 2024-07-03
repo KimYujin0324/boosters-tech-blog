@@ -31,7 +31,7 @@ authors:
   tech:
     name: Tech Team
     display_name: Tech Team
-    avatar: 'assets/images/sal.png'
+    avatar: ''
     email: operation.tech@boosters.kr
     description: ""
   dilee:
@@ -49,13 +49,13 @@ authors:
   sekim:
     name: Kim Seung Eon
     display_name: Seungeon.kim
-    avatar: 'assets/images/sal.png'
+    avatar: ''
     email: se.kim@boosters.kr
     description: "부스터스 Tech팀에서 백엔드를 맡고 있습니다."
   twkim:
     name: Kim Tae Woo
     display_name: Taewoo.kim
-    avatar: 'assets/images/sal.png'
+    avatar: ''
     email: tw.kim@boosters.kr
     description: "부스터스 Tech팀에서 백엔드를 맡고 있습니다."
 
