@@ -7,7 +7,9 @@
         <div class="metafooter">
             <div class="wrapfooter small d-flex align-items-center">
                 <span class="author-meta">
-                    <span class="post-name">{% if post.author %}{{ author.display_name }}{% else %}{{ site.author }}{% endif %}{{ author.avatar }}</span>             
+                    <span class="post-name">{% if post.author %}{{ author.display_name }}{% else %}{{ site.author }}{% endif %}</span>
+                    <span class="post-avatar">{% if post.author %}<img src="{{ post.author.avatar | relative_url }}" alt="{{ post.author.name }}'s avatar">
+                                              {% else %}<img src="{{ site.author.avatar | relative_url }}" alt="{{ site.author.name }}'s avatar">{% endif %}</span>          
                 <!-- on <span class="post-date">{{ post.date | date_to_string }}</span> -->
                 </span>               
                 <div class="clearfix"></div>
