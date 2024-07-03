@@ -9,21 +9,16 @@
         <div class="col-12 col-md-2 metafooter">
             <div class="wrapfooter small d-flex align-items-center">
                 <div class="author-meta">
-                    <div class="post-name bsts-post-name">
-                        {% if post.author %}
-                            {{ post.author.display_name }}
-                        {% else %}
-                            {{ site.author.name }}
-                        {% endif %}
-                    </div>
-                    <div class="bsts-post-avatar">
-                        {% if post.author %}
-                            <img src="{{ post.author.avatar | relative_url }}" alt="{{ post.author.name }}'s avatar" style="border-radius: 50%;">
-                        {% else %}
-                            <img src="{{ site.author.avatar | relative_url }}" alt="{{ site.author.name }}'s avatar" style="border-radius: 50%;">
-                        {% endif %}
-                    </div>
-                    <!-- on <span class="post-date">{{ post.date | date_to_string }}</span> -->
+                    <span class="author-meta">
+                        <span class="post-name bsts-post-name">
+                            {% if post.author %}{{ author.display_name }}{% else %}{{ site.author }}{% endif %}
+                        </span>
+                        <span class="bsts-post-avatar">
+                            {% if post.author %}<img src="{{ author.avatar | relative_url }}" alt="{{ author.name }}'s avatar" style="border-radius: 50%;">
+                            {% else %}<img src="{{ site.author.avatar | relative_url }}" alt="{{ site.author.name }}'s avatar" style="border-radius: 50%;">{% endif %}
+                        </span>          
+                        <!-- on <span class="post-date">{{ post.date | date_to_string }}</span> -->
+                    </span>  
                 </div>   
                 <div class="clearfix"></div>
             </div>
