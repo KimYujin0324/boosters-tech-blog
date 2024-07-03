@@ -514,19 +514,13 @@ button:focus {
 ul.tags {
 	list-style:none;
 	padding-left:0;
-	margin: 0 0 1.5rem 0;
+	margin: 0 0 0.5rem 0;
 }
 ul.tags li {
 	display:inline-block;
-	font-size:0.9rem;
-    color: #fff;
-    padding: 3px 10px;
-    border-radius: 3px;
-    background:#FF4713;
-    text-transform: capitalize;
-    box-shadow: 0 6px 10px 0 rgba(169, 169, 169, 0.1);
-    border-radius: 15px;
-    border: 1px solid #fff;
+	font-size:1rem;
+    color: #FF4713;
+    padding: 0px 10px 5px 0px;
 }
 ul.tags li a {
     color: #FF4713;
