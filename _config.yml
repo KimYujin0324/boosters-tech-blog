@@ -51,13 +51,13 @@ authors:
     display_name: Seungeon.kim
     avatar: 'assets/images/미모티콘-승언.jpg'
     email: se.kim@boosters.kr
-    description: "부스터스 Tech팀에서 백엔드를 맡고 있습니다."
+    description: "부스터스 Tech팀에서 백엔드와 스몰토크를 담당하고 있습니다."
   twkim:
     name: Kim Tae Woo
     display_name: Taewoo.kim
     avatar: 'assets/images/미모티콘-태우.jpg'
     email: tw.kim@boosters.kr
-    description: "부스터스 Tech팀에서 백엔드를 맡고 있습니다."
+    description: "부스터스 Tech팀에서 백엔드와 상식왕을 맡고 있습니다."
 
     # web: https://www.wowthemes.net/category/jekyll-themes/
     # twitter: https://twitter.com/wowthemesnet
