@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "2024 BOOSTERS TECH 팀 빌딩과정"
-subtitle: "팀 빌딩 초기에 고민하고 생각했던 부분이 잘 맞춰져 나가고 있는지 지속적으로 점검하기 위해 기술하였습니다"
+subtitle: "팀 빌딩 초기에 고민하고 생각했던 부분이 잘 맞춰져 나가고 있는지 지속적으로 점검하기 위해 기술하였습니다."
 author: dilee
 category: culture
 tags: [ Tech, Team Building, 채용, 성장 ]
