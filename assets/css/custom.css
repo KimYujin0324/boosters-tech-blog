@@ -43,4 +43,6 @@ Just customize your theme here.
   font-size: 16px;
   overflow-wrap: break-word;
 }
-
+.bsts-post-name {
+  width: 3vw;
+}
