@@ -33,7 +33,11 @@ post_class: post-template
               </div>
               <!-- End Categories -->
               <!-- Post Title -->
-				      <h1 class="posttitle">{{ page.title }}</h1> 
+				      <h1 class="posttitle">{{ page.title }}</h1>
+              <span class="post-date"><time class="post-date" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date_to_string }}</time></span>           
+                {% if page.last_modified_at %}
+                (Updated: <time datetime="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">{{ page.last_modified_at | date: "%b %-d, %Y" }}</time>)
+                {% endif %}
           </div>
 			</div>
 			
@@ -45,14 +49,14 @@ post_class: post-template
 			</div>
 
       <!-- Post Date -->
-      <p class="container">
+      <!-- <p class="container">
           <small>
             <span class="post-date"><time class="post-date" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date_to_string }}</time></span>           
             {% if page.last_modified_at %}
             (Updated: <time datetime="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">{{ page.last_modified_at | date: "%b %-d, %Y" }}</time>)
             {% endif %}
           </small>
-      </p>
+      </p> -->
             
 			
       <!-- Prev/Next -->
