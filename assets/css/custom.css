@@ -33,6 +33,9 @@ Just customize your theme here.
   background-color: #ffffff00;
 }
 
+.bsts-hero-text{
+  color: #FFF;
+}
 .btn-bsts {
   background-color: #1D1D1B;
 }
