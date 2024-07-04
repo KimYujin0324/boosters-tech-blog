@@ -523,12 +523,11 @@ ul.tags {
 	margin: 0 0 1rem 0;
 }
 ul.tags li {
+    display:inline-block;
 	color: #FFF;
     padding: 3px 10px;
     font-weight: 500;
     background:#FF4713;
-    text-transform: capitalize;
-    box-shadow: 0 6px 10px 0 rgba(169, 169, 169, 0.1);
     border-radius: 20px;
 }
 ul.tags li a {
