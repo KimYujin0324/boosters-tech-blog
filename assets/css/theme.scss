@@ -271,9 +271,8 @@ small, .small {
 /* Pages
 ================================================== */
 .hero {
-    background: antiquewhite;
-    padding: 5rem 3rem 3.75rem;
-    border-radius: 10px;
+    background: #1D1D1B;
+    padding: 3rem;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -433,7 +432,7 @@ span.post-name a,span.post-read-more a:hover {
   background-color: #1D1D1B;
 }
 .mainheading h1.posttitle {
-	font-weight:700;
+	font-weight:600;
 	margin-bottom:1rem;
     color: #FFF;
 }
