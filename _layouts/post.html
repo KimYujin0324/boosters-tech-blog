@@ -26,7 +26,7 @@ post_class: post-template
                     {% assign sortedTags = page.tags | sort %}
                     {% for tag in sortedTags %}
                     <li>
-                      #{{ tag }}
+                      {{ tag }}
                     </li>
                     {% endfor %}
                 </ul>

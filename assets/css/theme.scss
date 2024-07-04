@@ -428,13 +428,14 @@ span.post-name a,span.post-read-more a:hover {
 	margin-right:3px;
 }
 .mainheading {
-  border-top: 1px solid #BDBDBD;
-  border-bottom: 1px solid #BDBDBD;
-  background-color: #F5F5F5;
+//   border-top: 1px solid #BDBDBD;
+//   border-bottom: 1px solid #BDBDBD;
+  background-color: #1D1D1B;
 }
 .mainheading h1.posttitle {
 	font-weight:700;
-	margin-bottom:2rem;
+	margin-bottom:1rem;
+    color: #FFF;
 }
 .link-dark {
 	color:rgba(0,0,0,.8);
@@ -519,13 +520,16 @@ button:focus {
 ul.tags {
 	list-style:none;
 	padding-left:0;
-	margin: 0 0 0.5rem 0;
+	margin: 0 0 1rem 0;
 }
 ul.tags li {
-	display:inline-block;
-	font-size:1rem;
-    color: #FF4713;
-    padding: 0px 10px 5px 0px;
+	color: #FFF;
+    padding: 3px 10px;
+    font-weight: 500;
+    background:#FF4713;
+    text-transform: capitalize;
+    box-shadow: 0 6px 10px 0 rgba(169, 169, 169, 0.1);
+    border-radius: 20px;
 }
 ul.tags li a {
     color: #FF4713;
