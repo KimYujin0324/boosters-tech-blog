@@ -62,12 +62,6 @@ Just customize your theme here.
 .bsts-post-name {
   color: #6c757d;
 }
-.bsts-post-avatar {
-  display: flex;
-  width: 3vw;
-  border: 1px solid #6c757d;
-  border-radius: 50%;
-}
 .bsts-post-avatar img {
   width: 3vw;
   height: 3vw;
