@@ -68,21 +68,15 @@ Just customize your theme here.
   border: 1px solid #6c757d;
   border-radius: 50%;
 }
+.bsts-post-avatar img {
+  width: 3vw;
+  height: 3vw;
+  border-radius: 50%;
+  border: 1px solid #6c757d;
+}
 
 
 .author-meta {
   display: flex;
   align-items: center;
-}
-.bsts-post-avatar {
-  margin-right: 10px; /* 이름과 사진 사이의 간격 조정 */
-}
-.bsts-post-avatar img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-}
-.post-name {
-  font-size: 14px;
-  color: #333;
 }
