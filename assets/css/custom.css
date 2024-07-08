@@ -3,6 +3,11 @@ Don't want to use sass and simply modify the stylesheet in the old css fashion?
 Just customize your theme here.
 ================================================== */
 
+/** padding **/
+.py-45 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
 
 /** 드래그 **/
 ::selection {  color: #fff;  background-color: #FF4713;}

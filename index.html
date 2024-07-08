@@ -58,7 +58,7 @@ background: '/img/bg-index.jpg'
         <div>
           {% for post in site.posts %}
           {% unless post.featured == true %}
-          <div class="col-md-12 px-3 py-5" style="border-bottom: 1px solid #BDBDBD50;">
+          <div class="col-md-12 px-3 py-45" style="border-bottom: 1px solid #BDBDBD50;">
             {% include postbox.html %}
             <!-- <div class="col-md-2" style="display: contents;">
 				  		<img class="author-thumb" src="{{site.baseurl}}/{{author.avatar}}" alt="{{ author.display_name }}">
@@ -86,7 +86,7 @@ background: '/img/bg-index.jpg'
           {% for post in site.posts %}
           {% if post.category == "tech" %}
           {% unless post.featured == true %}
-          <div class="col-md-12 px-3 py-5" style="border-bottom: 1px solid #BDBDBD50;">
+          <div class="col-md-12 px-3 py-45" style="border-bottom: 1px solid #BDBDBD50;">
             {% include postbox.html %}
           </div>
           {% endunless %}
@@ -106,7 +106,7 @@ background: '/img/bg-index.jpg'
           {% for post in site.posts %}
           {% if post.category == "culture" %}
           {% unless post.featured == true %}
-          <div class="col-md-12 px-3 py-5" style="border-bottom: 1px solid #BDBDBD50;">
+          <div class="col-md-12 px-3 py-45" style="border-bottom: 1px solid #BDBDBD50;">
             {% include postbox.html %}
           </div>
           {% endunless %}
