@@ -462,7 +462,8 @@ span.post-name a,span.post-read-more a:hover {
         color: #fff;
     }
     img, iframe {
-        border-radius: 0.25rem !important;
+        border-radius: 15px !important;
+        text-align: center;
     }
 }
 code,kbd,pre,samp {
