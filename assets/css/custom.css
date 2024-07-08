@@ -8,6 +8,10 @@ Just customize your theme here.
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
 }
+.py-10 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
 
 /** cursor **/
 .bsts-cursor-pointer {
