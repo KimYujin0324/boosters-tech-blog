@@ -55,3 +55,19 @@ Just customize your theme here.
   border: 1px solid #6c757d;
   border-radius: 50%;
 }
+
+.nav-tabs {
+  display: flex;
+  justify-content: center; /* 가운데 정렬 */
+  width: 100%;
+}
+
+.nav-item {
+  flex: 1; /* 각 아이템을 동일한 너비로 설정 */
+  text-align: center;
+}
+
+.nav-link {
+  display: block;
+  width: 100%;
+}
