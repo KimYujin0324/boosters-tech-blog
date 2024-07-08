@@ -12,7 +12,7 @@
                     <span class="post-name bsts-post-name">
                         {% if post.author %}{{ author.display_name }}{% else %}{{ site.author }}{% endif %}
                     </span>
-                    <span class="bsts-post-avatar">
+                    <span class="bsts-post-avatar pl-3">
                         {% if post.author %}
                             <img src="{{ author.avatar | relative_url }}" alt="{{ author.name }}'s avatar">
                         {% else %}
