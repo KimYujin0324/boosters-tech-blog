@@ -3,6 +3,11 @@
 <div class="card">
     <div class="card-block row">
         <div class="col-12 col-md-9">
+            <div class="tags-container">
+                {% for tag in post.tags %}
+                    <span class="tag">{{ tag }}</span>
+                {% endfor %}
+            </div>
             <h4 class="bsts-card-title serif-font"><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h4>
             <p class="card-text text-muted bsts-sub-title">{{ post.subtitle }}</p>
         </div>
