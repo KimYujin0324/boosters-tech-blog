@@ -23,6 +23,7 @@ Just customize your theme here.
   height: 2px;
   background-color: #FF4713;
   color: #1D1D1B;
+  border-radius: 30px;
 }
 .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
   color: #1D1D1B;
