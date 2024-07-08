@@ -61,6 +61,5 @@ Tech팀이 생기면서 사내에서는 더 많은 자동화와 데이터 연동
 
 `부스터스 TECH 화이팅`
 
-<br>
 
 ![동료이미지](/assets/images/2024-07/dnjsvltm.jpg)
