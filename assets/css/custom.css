@@ -8,6 +8,9 @@ Just customize your theme here.
 ::selection {  color: #fff;  background-color: #FF4713;}
 
 /** 탭 메뉴 **/
+.nav-link {
+  padding: 1rem;
+}
 .nav-tabs .nav-link {
   position: relative;
 }
@@ -31,6 +34,7 @@ Just customize your theme here.
   font-weight: 600;
   color: #495057;
   background-color: #ffffff00;
+  font-size: 1.25rem;
 }
 .bsts-nav-tabs {
   display: flex;
