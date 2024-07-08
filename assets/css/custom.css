@@ -79,9 +79,12 @@ Just customize your theme here.
   border-radius: 50%;
   border: 1px solid #BDBDBD50;
 }
-
-
-.author-meta {
-  display: flex;
-  align-items: center;
+.bsts-tag {
+  display:inline-block;
+	color: #FFF;
+  padding: 3px 10px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  background:#FF4713;
+  border-radius: 20px;
 }
