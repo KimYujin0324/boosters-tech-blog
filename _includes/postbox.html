@@ -6,22 +6,18 @@
             <h4 class="bsts-card-title serif-font"><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h4>
             <p class="card-text text-muted bsts-sub-title">{{ post.subtitle }}</p>
         </div>
-        <div class="col-12 col-md-3 metafooter" style="display: flex; justify-content: flex-end;">
-            <div class="wrapfooter small d-flex align-items-center">
-                <span class="author-meta">
-                    <span class="post-name bsts-post-name">
-                        {% if post.author %}{{ author.display_name }}{% else %}{{ site.author }}{% endif %}
-                    </span>
-                    <span class="bsts-post-avatar pl-3">
-                        {% if post.author %}
-                            <img src="{{ author.avatar | relative_url }}" alt="{{ author.name }}'s avatar">
-                        {% else %}
-                            <img src="{{ site.author.avatar | relative_url }}" alt="{{ site.author.name }}'s avatar">
-                        {% endif %}
-                    </span>
-                </span>  
-                <div class="clearfix"></div>
-            </div>
+        <div class="col-12 col-md-3 metafooter" style="display: flex; justify-content: flex-end; align-items: flex-end;">
+            <span class="post-name bsts-post-name">
+                {% if post.author %}{{ author.display_name }}{% else %}{{ site.author }}{% endif %}
+            </span>
+            <span class="bsts-post-avatar pl-3">
+                {% if post.author %}
+                    <img src="{{ author.avatar | relative_url }}" alt="{{ author.name }}'s avatar">
+                {% else %}
+                    <img src="{{ site.author.avatar | relative_url }}" alt="{{ site.author.name }}'s avatar">
+                {% endif %}
+            </span>
+            <div class="clearfix"></div>
         </div>
     </div>
 </div>
