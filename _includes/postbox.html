@@ -6,8 +6,8 @@
             <h4 class="bsts-card-title serif-font"><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h4>
             <p class="card-text text-muted bsts-sub-title">{{ post.subtitle }}</p>
         </div>
-        <div class="col-12 col-md-3 metafooter" style="display: flex; justify-content: flex-end; align-items: flex-end;">
-            <span class="post-name bsts-post-name">
+        <div class="col-12 col-md-3 metafooter" style="display: flex; justify-content: flex-end; align-items: center;">
+            <span class="post-name bsts-post-name pt-2">
                 {% if post.author %}{{ author.display_name }}{% else %}{{ site.author }}{% endif %}
             </span>
             <span class="bsts-post-avatar pl-3">
