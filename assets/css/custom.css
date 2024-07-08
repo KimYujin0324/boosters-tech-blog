@@ -65,7 +65,8 @@ Just customize your theme here.
   overflow-wrap: break-word;
 }
 .bsts-post-name {
-  color: #6c757d;
+  color: #1D1D1B;
+  font-weight: 300;
 }
 .bsts-post-avatar img {
   width: 2.5vw;
