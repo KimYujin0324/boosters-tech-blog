@@ -32,6 +32,19 @@ Just customize your theme here.
   color: #495057;
   background-color: #ffffff00;
 }
+.bsts-nav-tabs {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.bsts-nav-item {
+  flex: 1;
+  text-align: center;
+}
+.bsts-nav-link {
+  display: block;
+  width: 100%;
+}
 
 .bsts-hero-text{
   color: #FFF;
@@ -56,16 +69,20 @@ Just customize your theme here.
   border-radius: 50%;
 }
 
-.bsts-nav-tabs {
+
+.author-meta {
   display: flex;
-  justify-content: center;
-  width: 100%;
+  align-items: center;
 }
-.bsts-nav-item {
-  flex: 1;
-  text-align: center;
+.bsts-post-avatar {
+  margin-right: 10px; /* 이름과 사진 사이의 간격 조정 */
 }
-.bsts-nav-link {
-  display: block;
-  width: 100%;
+.bsts-post-avatar img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.post-name {
+  font-size: 14px;
+  color: #333;
 }
