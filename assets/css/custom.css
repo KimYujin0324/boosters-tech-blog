@@ -56,18 +56,16 @@ Just customize your theme here.
   border-radius: 50%;
 }
 
-.nav-tabs {
+.bsts-nav-tabs {
   display: flex;
-  justify-content: center; /* 가운데 정렬 */
+  justify-content: center;
   width: 100%;
 }
-
-.nav-item {
-  flex: 1; /* 각 아이템을 동일한 너비로 설정 */
+.bsts-nav-item {
+  flex: 1;
   text-align: center;
 }
-
-.nav-link {
+.bsts-nav-link {
   display: block;
   width: 100%;
 }
