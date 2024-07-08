@@ -9,6 +9,11 @@ Just customize your theme here.
   padding-bottom: 2.5rem;
 }
 
+/** cursor **/
+.bsts-cursor-pointer {
+  cursor: pointer;
+}
+
 /** 드래그 **/
 ::selection {  color: #fff;  background-color: #FF4713;}
 
