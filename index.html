@@ -54,78 +54,72 @@ background: '/img/bg-index.jpg'
     
     <!-- 태그 리스트 -->
     <div class="mt-4">
-        {% include tag_list.html %}
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a href="#" class="nav-link active" data-tag="all">All</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link" data-tag="tech">Tech</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link" data-tag="culture">Culture</a>
+        </li>
+      </ul>
     </div>
     
+    
     <div class="tab-content" id="tabContent">
-      <!-- tab1 -->
-      <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
+      <!-- All Posts -->
+      <div class="tab-pane fade show active" id="all" role="tabpanel">
         <div>
           {% for post in site.posts %}
-          {% unless post.featured == true %}
-          <div class="col-md-12 px-3 py-45" style="border-bottom: 1px solid #BDBDBD50;">
-            {% include postbox.html %}
-            <!-- <div class="col-md-2" style="display: contents;">
-				  		<img class="author-thumb" src="{{site.baseurl}}/{{author.avatar}}" alt="{{ author.display_name }}">
-				  	</div>
-				  	<div class="col-md-10 pt-1">
-				  		<a target="_blank" class="link-dark" href="{{ author.web }}">{{ author.display_name }}</a><a target="_blank" href="{{ author.twitter }}" class="btn follow">Follow</a>
-              <br>
-				  		<span class="author-description">{{ author.description }}</span>						
-				  	</div> -->
-          </div>
-          {% endunless %}
+            {% unless post.featured %}
+              {% include postbox.html %}
+            {% endunless %}
           {% endfor %}
-        </div>
-        
-        <!-- Pagination -->
-        <div class="bottompagination">
-          <span class="navigation" role="navigation">
-              {% include pagination.html %}
-          </span>
         </div>
       </div>
-      <!-- tab2 -->
-      <div class="tab-pane fade" id="tech" role="tabpanel" aria-labelledby="tech-tab">
+    
+      <!-- Tech Posts -->
+      <div class="tab-pane fade" id="tech" role="tabpanel">
         <div>
           {% for post in site.posts %}
-          {% if post.category == "tech" %}
-          {% unless post.featured == true %}
-          <div class="col-md-12 px-3 py-45" style="border-bottom: 1px solid #BDBDBD50;">
-            {% include postbox.html %}
-          </div>
-          {% endunless %}
-          {% endif %}
+            {% if post.category == "tech" %}
+              {% unless post.featured %}
+                {% include postbox.html %}
+              {% endunless %}
+            {% endif %}
           {% endfor %}
-        </div>
-        <!-- Pagination -->
-        <div class="bottompagination">
-          <span class="navigation" role="navigation">
-              {% include pagination.html %}
-          </span>
         </div>
       </div>
-      <!-- tab3 -->
-      <div class="tab-pane fade" id="culture" role="tabpanel" aria-labelledby="culture-tab">
+    
+      <!-- Culture Posts -->
+      <div class="tab-pane fade" id="culture" role="tabpanel">
         <div>
           {% for post in site.posts %}
-          {% if post.category == "culture" %}
-          {% unless post.featured == true %}
-          <div class="col-md-12 px-3 py-45" style="border-bottom: 1px solid #BDBDBD50;">
-            {% include postbox.html %}
-          </div>
-          {% endunless %}
-          {% endif %}
+            {% if post.category == "culture" %}
+              {% unless post.featured %}
+                {% include postbox.html %}
+              {% endunless %}
+            {% endif %}
           {% endfor %}
-        </div>
-
-        <!-- Pagination -->
-        <div class="bottompagination">
-          <span class="navigation" role="navigation">
-              {% include pagination.html %}
-          </span>
         </div>
       </div>
     </div>
+    
   </div>
 </section>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+$(document).ready(function() {
+  $('.nav-link').on('click', function(e) {
+    e.preventDefault();
+    var tag = $(this).data('tag');
+    $('.tab-pane').removeClass('show active');
+    $('#' + tag).addClass('show active');
+  });
+});
+</script>
+
