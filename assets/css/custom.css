@@ -103,7 +103,8 @@ Just customize your theme here.
 .bsts-tag-list {
   background-color: #f0f0f0;
   padding: 5px 10px;
-  border-radius: 5px;
+  border-radius: 20px;
+  font-size: 0.9rem;
 }
 .bsts-tag-list a {
   text-decoration: none;
