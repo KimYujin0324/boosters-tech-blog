@@ -107,19 +107,20 @@ Just customize your theme here.
   text-decoration: none;
   color: #333;
 }
-
 .bsts-tag-list a.selected {
   background-color: #FF4713;
   color: white;
-  border-radius: 5px;
+  border-radius: 20px;
   padding: 5px 10px;
   text-decoration: none;
 }
-
 .bsts-tag-list a {
   cursor: pointer;
   margin-right: 5px;
   padding: 5px 10px;
   border: 1px solid #BDBDBD50;
-  border-radius: 5px;
+  border-radius: 20px;
+}
+.bsts-tag-list a:hover {
+  border: 1px solid #FF4713;
 }
