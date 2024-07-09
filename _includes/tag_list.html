@@ -1,8 +1,7 @@
-<h2>Tags</h2>
-<ul>
+<div class="bsts-tag-container">
   {% for tag in site.tags %}
-    <li>
+    <div class="bsts-tag-list">
       <a href="/tag/{{ tag[0] | slugify }}">{{ tag[0] }}</a>
-    </li>
+    </div>
   {% endfor %}
-</ul>
+</div>
