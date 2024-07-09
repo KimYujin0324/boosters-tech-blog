@@ -135,17 +135,6 @@ background: '/img/bg-index.jpg'
 <script>
 // jQuery를 이용한 예시
 $(document).ready(function() {
-  $('.nav-tabs .nav-link').click(function(e) {
-    e.preventDefault();
-    
-    $('.nav-tabs .nav-link').removeClass('active');
-    $('.tab-pane').removeClass('show active');
-    
-    $(this).addClass('active');
-    var tabId = $(this).attr('data-bs-target');
-    $(tabId).addClass('show active');
-  });
-  
   $('#tagList a').click(function(e) {
     e.preventDefault();
     
