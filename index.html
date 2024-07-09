@@ -34,14 +34,15 @@ background: '/img/bg-index.jpg'
     </div>
     
     <!-- 태그 리스트 -->
-    <div class="bsts-tag-container">
-      {% for tag in site.tags %}
-        <div class="bsts-tag-list">
-          <a href="#" class="tag" data-tag="{{ tag[0] | url_encode }}">{{ tag[0] }}</a>
-        </div>
-      {% endfor %}
+    <div class="mt-4">
+      <div class="bsts-tag-container">
+        {% for tag in site.tags %}
+          <div class="bsts-tag-list">
+            <a href="#" class="tag" data-tag="{{ tag[0] | slugify_en }}">{{ tag[0] }}</a>
+          </div>
+        {% endfor %}
+      </div>
     </div>
-    
     
     <div class="tab-content" id="tabContent">
       {% assign categories = "all,tech,culture" | split: "," %}
