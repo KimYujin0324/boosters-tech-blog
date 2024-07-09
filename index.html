@@ -34,29 +34,37 @@ background: '/img/bg-index.jpg'
     </div>
     
     <!-- 태그 리스트 -->
-    <div class="post mt-4" data-tags="{{ post.tags | join: ' ' }}">
-        {% include tag_list.html %}
+    <div class="mt-4">
+        <div class="bsts-tag-container">
+          {% for tag in site.tags %}
+            <div class="bsts-tag-list">
+              <a href="#" class="tag" data-tag="{{ tag[0] | slugify }}">{{ tag[0] }}</a>
+            </div>
+          {% endfor %}
+        </div>
     </div>
     
     <div class="tab-content" id="tabContent">
       {% assign categories = "all,tech,culture" | split: "," %}
       {% for category in categories %}
         <div class="tab-pane fade {% if forloop.first %}show active{% endif %}" id="{{ category }}" role="tabpanel" aria-labelledby="{{ category }}-tab">
-          <div>
+          <div class="post-list">
             {% if category == "all" %}
               {% for post in site.posts %}
-                <div class="col-md-12 px-3 py-45" style="border-bottom: 1px solid #BDBDBD50;">
-                  {% include postbox.html %}
+                <div class="post" data-tags="{{ post.tags | join: ' ' }}">
+                  <div class="col-md-12 px-3 py-45" style="border-bottom: 1px solid #BDBDBD50;">
+                    {% include postbox.html %}
+                  </div>
                 </div>
               {% endfor %}
             {% else %}
               {% for post in site.posts %}
                 {% if post.category == category %}
-                  {% unless post.featured == true %}
+                  <div class="post" data-tags="{{ post.tags | join: ' ' }}">
                     <div class="col-md-12 px-3 py-45" style="border-bottom: 1px solid #BDBDBD50;">
                       {% include postbox.html %}
                     </div>
-                  {% endunless %}
+                  </div>
                 {% endif %}
               {% endfor %}
             {% endif %}
@@ -72,9 +80,19 @@ background: '/img/bg-index.jpg'
     </div>
   </div>
 </section>
+
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
 $(document).ready(function() {
+  // 탭 클릭 이벤트 처리
+  $('.nav-link').on('click', function(e) {
+    e.preventDefault();
+    var targetTab = $(this).attr('data-bs-target');
+    $('.tab-pane').removeClass('show active');
+    $(targetTab).addClass('show active');
+  });
+  
+  // 태그 필터링 처리
   $('.tag').on('click', function(e) {
     e.preventDefault();
     var selectedTag = $(this).data('tag');
