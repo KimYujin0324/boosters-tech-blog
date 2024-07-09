@@ -140,8 +140,6 @@ $(document).ready(function() {
     
     var selectedTag = $(this).data('tag');
     
-    $('.tab-pane .col-md-12').hide();
-    
     $('.tab-pane').each(function() {
       var tabId = $(this).attr('id');
       if (tabId !== 'all' && tabId !== 'tabContent') { // 'all'과 'tabContent'를 제외하고 필터링
