@@ -16,39 +16,51 @@ background: '/img/bg-index.jpg'
 </div>
 {% endif %}
 
-<!-- Posts List with Sidebar -->
+<!-- Posts List with Sidebar (except featured) -->
 <section class="container container-wide">
   <div class="col-12 py-3">
-    <ul class="nav nav-tabs bsts-nav-tabs" id="myTab" role="tablist">
-      <li class="nav-item bsts-nav-item" role="presentation">
-        <button class="nav-link bsts-nav-link active bsts-cursor-pointer" id="all-tab" data-bs-toggle="tab" data-bs-target="#all" type="button" role="tab" aria-controls="all" aria-selected="true">All</button>
-      </li>
-      <li class="nav-item bsts-nav-item" role="presentation">
-        <button class="nav-link bsts-nav-link bsts-cursor-pointer" id="tech-tab" data-bs-toggle="tab" data-bs-target="#tech" type="button" role="tab" aria-controls="tech" aria-selected="false">Tech</button>
-      </li>
-      <li class="nav-item bsts-nav-item" role="presentation">
-        <button class="nav-link bsts-nav-link bsts-cursor-pointer" id="culture-tab" data-bs-toggle="tab" data-bs-target="#culture" type="button" role="tab" aria-controls="culture" aria-selected="false">Culture</button>
-      </li>
-    </ul>
+    <div>
+      <ul class="nav nav-tabs bsts-nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item bsts-nav-item" role="presentation">
+            <button class="nav-link bsts-nav-link active bsts-cursor-pointer" id="all-tab" data-bs-toggle="tab" data-bs-target="#all" type="button" role="tab" aria-controls="all" aria-selected="true">All</button>
+        </li>
+        <li class="nav-item bsts-nav-item" role="presentation">
+            <button class="nav-link bsts-nav-link bsts-cursor-pointer" id="tech-tab" data-bs-toggle="tab" data-bs-target="#tech" type="button" role="tab" aria-controls="tech" aria-selected="false">Tech</button>
+        </li>
+        <li class="nav-item bsts-nav-item" role="presentation">
+            <button class="nav-link bsts-nav-link bsts-cursor-pointer" id="culture-tab" data-bs-toggle="tab" data-bs-target="#culture" type="button" role="tab" aria-controls="culture" aria-selected="false">Culture</button>
+        </li>
+      </ul>
+    </div>
     
-    태그 리스트
+    <!-- 태그 리스트 -->
     <div class="mt-4">
-      {% include tag_list.html %}
+        {% include tag_list.html %}
     </div>
     
     <div class="tab-content" id="tabContent">
-      <!-- All Posts -->
-      <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
-        {% include posts_tab.html posts=site.posts filter="" %}
-      </div>
-      <!-- Tech Posts -->
-      <div class="tab-pane fade" id="tech" role="tabpanel" aria-labelledby="tech-tab">
-        {% include posts_tab.html posts=site.posts filter="tech" %}
-      </div>
-      <!-- Culture Posts -->
-      <div class="tab-pane fade" id="culture" role="tabpanel" aria-labelledby="culture-tab">
-        {% include posts_tab.html posts=site.posts filter="culture" %}
-      </div>
+      {% for tab in site.data.tabs %}
+        <div class="tab-pane fade{% if tab.id == 'all' %} show active{% endif %}" id="{{ tab.id }}" role="tabpanel" aria-labelledby="{{ tab.id }}-tab">
+          <div>
+            {% for post in site.posts %}
+              {% if tab.id == 'all' or post.category == tab.id %}
+                {% unless post.featured %}
+                  <div class="col-md-12 px-3 py-45" style="border-bottom: 1px solid #BDBDBD50;">
+                    {% include postbox.html %}
+                  </div>
+                {% endunless %}
+              {% endif %}
+            {% endfor %}
+          </div>
+          
+          <!-- Pagination -->
+          <div class="bottompagination">
+            <span class="navigation" role="navigation">
+                {% include pagination.html %}
+            </span>
+          </div>
+        </div>
+      {% endfor %}
     </div>
   </div>
 </section>
