@@ -158,7 +158,7 @@ document.addEventListener('DOMContentLoaded', function() {
             filterItems();
         });
     });
-
+console.log(tags);
     function filterItems() {
         const selectedTags = Array.from(document.querySelectorAll('.tag.selected')).map(tag => tag.dataset.tag);
 
