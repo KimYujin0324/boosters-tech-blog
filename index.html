@@ -53,9 +53,22 @@ background: '/img/bg-index.jpg'
     </div>
     
     <!-- 태그 리스트 -->
-    <div class="mt-4">
-        {% include tag_list.html %}
+    <div class="bsts-tag-container">
+      {% for tag in site.tags %}
+        <div class="bsts-tag-list">
+          <a href="#" class="tag" data-tag="{{ tag[0] | slugify }}">{{ tag[0] }}</a>
+        </div>
+      {% endfor %}
     </div>
+    <div class="content">
+      {% for post in site.posts %}
+        <div class="item" data-tags="{{ post.tags | join: ' ' }}">
+          <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+          <p>{{ post.excerpt }}</p>
+        </div>
+      {% endfor %}
+    </div>
+    <script src="/assets/js/filter.js"></script>
     
     <div class="tab-content" id="tabContent">
       <!-- tab1 -->
@@ -133,25 +146,31 @@ background: '/img/bg-index.jpg'
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 <script>
-// jQuery를 이용한 예시
-$(document).ready(function() {
-  $('#tagList a').click(function(e) {
-    e.preventDefault();
-    
-    var selectedTag = $(this).data('tag');
-    
-    $('.tab-pane').each(function() {
-      var tabId = $(this).attr('id');
-      if (tabId !== 'all' && tabId !== 'tabContent') { // 'all'과 'tabContent'를 제외하고 필터링
-        $(this).find('.col-md-12').each(function() {
-          var tags = $(this).find('.tags').text().trim().split(',');
-          if (tags.includes(selectedTag)) {
-            $(this).show();
-          }
+// filter.js
+document.addEventListener('DOMContentLoaded', function() {
+    const tags = document.querySelectorAll('.tag');
+    const items = document.querySelectorAll('.item');
+
+    tags.forEach(tag => {
+        tag.addEventListener('click', function(event) {
+            event.preventDefault();
+            tag.classList.toggle('selected');
+            filterItems();
         });
-      }
     });
-  });
+
+    function filterItems() {
+        const selectedTags = Array.from(document.querySelectorAll('.tag.selected')).map(tag => tag.dataset.tag);
+
+        items.forEach(item => {
+            const itemTags = item.dataset.tags.split(' ');
+            if (selectedTags.every(tag => itemTags.includes(tag))) {
+                item.style.display = '';
+            } else {
+                item.style.display = 'none';
+            }
+        });
+    }
 });
 
 
