@@ -110,37 +110,3 @@ Just customize your theme here.
   text-decoration: none;
   color: #333;
 }
-
-
-
-/* styles.css */
-.bsts-tag-container {
-  margin: 20px 0;
-}
-
-.bsts-tag-list {
-  display: inline-block;
-  margin: 5px;
-}
-
-.tag {
-  padding: 10px;
-  border: 1px solid #ccc;
-  cursor: pointer;
-  text-decoration: none;
-  color: inherit;
-}
-
-.tag.selected {
-  background-color: #007BFF;
-  color: white;
-}
-
-.content {
-  margin: 20px 0;
-}
-
-.item {
-  margin: 10px 0;
-}
-
