@@ -135,30 +135,24 @@ background: '/img/bg-index.jpg'
 <script>
 // jQuery를 이용한 예시
 $(document).ready(function() {
-  // 탭 클릭 시
   $('.nav-tabs .nav-link').click(function(e) {
     e.preventDefault();
     
-    // 현재 활성화된 탭 비활성화
     $('.nav-tabs .nav-link').removeClass('active');
     $('.tab-pane').removeClass('show active');
     
-    // 클릭된 탭 활성화
     $(this).addClass('active');
     var tabId = $(this).attr('data-bs-target');
     $(tabId).addClass('show active');
   });
   
-  // 태그 클릭 시
   $('#tagList a').click(function(e) {
     e.preventDefault();
     
     var selectedTag = $(this).data('tag');
     
-    // 모든 게시물 숨기기
     $('.tab-pane .col-md-12').hide();
     
-    // 선택된 태그에 해당하는 게시물 보여주기
     $('.tab-pane').each(function() {
       var tabId = $(this).attr('id');
       if (tabId !== 'all' && tabId !== 'tabContent') { // 'all'과 'tabContent'를 제외하고 필터링
