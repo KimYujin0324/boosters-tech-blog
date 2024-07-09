@@ -43,15 +43,23 @@ background: '/img/bg-index.jpg'
       {% for category in categories %}
         <div class="tab-pane fade {% if forloop.first %}show active{% endif %}" id="{{ category }}" role="tabpanel" aria-labelledby="{{ category }}-tab">
           <div>
-            {% for post in site.posts %}
-              {% if post.category == category %}
-                {% unless post.featured == true %}
-                  <div class="col-md-12 px-3 py-45" style="border-bottom: 1px solid #BDBDBD50;">
-                    {% include postbox.html %}
-                  </div>
-                {% endunless %}
-              {% endif %}
-            {% endfor %}
+            {% if category == "all" %}
+              {% for post in site.posts %}
+                <div class="col-md-12 px-3 py-45" style="border-bottom: 1px solid #BDBDBD50;">
+                  {% include postbox.html %}
+                </div>
+              {% endfor %}
+            {% else %}
+              {% for post in site.posts %}
+                {% if post.category == category %}
+                  {% unless post.featured == true %}
+                    <div class="col-md-12 px-3 py-45" style="border-bottom: 1px solid #BDBDBD50;">
+                      {% include postbox.html %}
+                    </div>
+                  {% endunless %}
+                {% endif %}
+              {% endfor %}
+            {% endif %}
           </div>
           <!-- Pagination -->
           <div class="bottompagination">
