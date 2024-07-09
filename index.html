@@ -21,9 +21,22 @@ background: '/img/bg-index.jpg'
 </div>
 {% endif %}
 
+<!-- Featured
+================================================== -->
+<!-- <section class="row">
+  {% for post in site.posts %}
+      {% if post.featured == true %}
+          <div class="col-md-4 mb-5">
+          {% include postbox.html %}
+          </div>
+      {% endif %}
+  {% endfor %}
+</section> -->
+
 <!-- Posts List with Sidebar (except featured)
 ================================================== -->
 <section class="container container-wide">
+
   <div class="col-12 py-3">
     <div>
       <ul class="nav nav-tabs bsts-nav-tabs" id="myTab" role="tablist">
@@ -48,7 +61,21 @@ background: '/img/bg-index.jpg'
       <!-- tab1 -->
       <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
         <div>
-          {% include posts_tab.html posts=site.posts %}
+          {% for post in site.posts %}
+          {% unless post.featured == true %}
+          <div class="col-md-12 px-3 py-45" style="border-bottom: 1px solid #BDBDBD50;">
+            {% include postbox.html %}
+            <!-- <div class="col-md-2" style="display: contents;">
+				  		<img class="author-thumb" src="{{site.baseurl}}/{{author.avatar}}" alt="{{ author.display_name }}">
+				  	</div>
+				  	<div class="col-md-10 pt-1">
+				  		<a target="_blank" class="link-dark" href="{{ author.web }}">{{ author.display_name }}</a><a target="_blank" href="{{ author.twitter }}" class="btn follow">Follow</a>
+              <br>
+				  		<span class="author-description">{{ author.description }}</span>						
+				  	</div> -->
+          </div>
+          {% endunless %}
+          {% endfor %}
         </div>
         
         <!-- Pagination -->
@@ -61,8 +88,15 @@ background: '/img/bg-index.jpg'
       <!-- tab2 -->
       <div class="tab-pane fade" id="tech" role="tabpanel" aria-labelledby="tech-tab">
         <div>
-          {% assign tech_posts = site.posts | where: "category", "tech" %}
-          {% include posts_tab.html posts=tech_posts %}
+          {% for post in site.posts %}
+          {% if post.category == "tech" %}
+          {% unless post.featured == true %}
+          <div class="col-md-12 px-3 py-45" style="border-bottom: 1px solid #BDBDBD50;">
+            {% include postbox.html %}
+          </div>
+          {% endunless %}
+          {% endif %}
+          {% endfor %}
         </div>
         <!-- Pagination -->
         <div class="bottompagination">
@@ -74,8 +108,15 @@ background: '/img/bg-index.jpg'
       <!-- tab3 -->
       <div class="tab-pane fade" id="culture" role="tabpanel" aria-labelledby="culture-tab">
         <div>
-          {% assign culture_posts = site.posts | where: "category", "culture" %}
-          {% include posts_tab.html posts=culture_posts %}
+          {% for post in site.posts %}
+          {% if post.category == "culture" %}
+          {% unless post.featured == true %}
+          <div class="col-md-12 px-3 py-45" style="border-bottom: 1px solid #BDBDBD50;">
+            {% include postbox.html %}
+          </div>
+          {% endunless %}
+          {% endif %}
+          {% endfor %}
         </div>
 
         <!-- Pagination -->
