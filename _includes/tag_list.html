@@ -6,10 +6,10 @@
   {% endfor %}
 </div> -->
 <!-- tag_list.html -->
-<ul class="nav nav-pills mb-3" id="tagList" role="tablist">
+<div class="bsts-tag-container">
   {% for tag in site.tags %}
-    <li class="nav-item">
-      <a class="nav-link bsts-cursor-pointer" href="#" data-tag="{{ tag[0] }}">{{ tag[0] }}</a>
-    </li>
+    <div class="bsts-tag-list">
+      <a href="#" class="tag" data-tag="{{ tag[0] | slugify }}">{{ tag[0] }}</a>
+    </div>
   {% endfor %}
-</ul>
+</div>
