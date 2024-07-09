@@ -122,5 +122,6 @@ Just customize your theme here.
   border-radius: 20px;
 }
 .bsts-tag-list a:hover {
+  color: #FF4713;
   border: 1px solid #FF4713;
 }
