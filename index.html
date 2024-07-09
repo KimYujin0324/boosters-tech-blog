@@ -36,25 +36,28 @@ background: '/img/bg-index.jpg'
 <!-- Posts List with Sidebar (except featured)
 ================================================== -->
 <section class="container container-wide">
-
   <div class="col-12 py-3">
     <div>
       <ul class="nav nav-tabs bsts-nav-tabs" id="myTab" role="tablist">
         <li class="nav-item bsts-nav-item" role="presentation">
-            <button class="nav-link bsts-nav-link active bsts-cursor-pointer" id="all-tab" data-bs-toggle="tab" data-bs-target="#all" type="button" role="tab" aria-controls="all" aria-selected="true">All</button>
+          <button class="nav-link bsts-nav-link active bsts-cursor-pointer" id="all-tab" data-bs-toggle="tab" data-bs-target="#all" type="button" role="tab" aria-controls="all" aria-selected="true">All</button>
         </li>
         <li class="nav-item bsts-nav-item" role="presentation">
-            <button class="nav-link bsts-nav-link bsts-cursor-pointer" id="tech-tab" data-bs-toggle="tab" data-bs-target="#tech" type="button" role="tab" aria-controls="tech" aria-selected="false">Tech</button>
+          <button class="nav-link bsts-nav-link bsts-cursor-pointer" id="tech-tab" data-bs-toggle="tab" data-bs-target="#tech" type="button" role="tab" aria-controls="tech" aria-selected="false">Tech</button>
         </li>
         <li class="nav-item bsts-nav-item" role="presentation">
-            <button class="nav-link bsts-nav-link bsts-cursor-pointer" id="culture-tab" data-bs-toggle="tab" data-bs-target="#culture" type="button" role="tab" aria-controls="culture" aria-selected="false">Culture</button>
+          <button class="nav-link bsts-nav-link bsts-cursor-pointer" id="culture-tab" data-bs-toggle="tab" data-bs-target="#culture" type="button" role="tab" aria-controls="culture" aria-selected="false">Culture</button>
         </li>
       </ul>
     </div>
-    
+
     <!-- 태그 리스트 -->
-    <div class="mt-4">
-        {% include tag_list.html %}
+    <div class="bsts-tag-container">
+      {% for tag in site.tags %}
+        <div class="bsts-tag-list">
+          <a href="#" class="tag" data-tag="{{ tag[0] }}">{{ tag[0] }}</a>
+        </div>
+      {% endfor %}
     </div>
 
     <!-- 필터링된 포스트 내용 -->
@@ -68,34 +71,26 @@ background: '/img/bg-index.jpg'
     </div>
 
     <div class="tab-content" id="tabContent">
-      <!-- tab1 -->
+      <!-- All 탭 -->
       <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
         <div>
           {% for post in site.posts %}
           {% unless post.featured == true %}
           <div class="col-md-12 px-3 py-45" style="border-bottom: 1px solid #BDBDBD50;">
             {% include postbox.html %}
-            <!-- <div class="col-md-2" style="display: contents;">
-				  		<img class="author-thumb" src="{{site.baseurl}}/{{author.avatar}}" alt="{{ author.display_name }}">
-				  	</div>
-				  	<div class="col-md-10 pt-1">
-				  		<a target="_blank" class="link-dark" href="{{ author.web }}">{{ author.display_name }}</a><a target="_blank" href="{{ author.twitter }}" class="btn follow">Follow</a>
-              <br>
-				  		<span class="author-description">{{ author.description }}</span>						
-				  	</div> -->
           </div>
           {% endunless %}
           {% endfor %}
         </div>
-        
+
         <!-- Pagination -->
         <div class="bottompagination">
           <span class="navigation" role="navigation">
-              {% include pagination.html %}
+            {% include pagination.html %}
           </span>
         </div>
       </div>
-      <!-- tab2 -->
+      <!-- Tech 탭 -->
       <div class="tab-pane fade" id="tech" role="tabpanel" aria-labelledby="tech-tab">
         <div>
           {% for post in site.posts %}
@@ -111,11 +106,11 @@ background: '/img/bg-index.jpg'
         <!-- Pagination -->
         <div class="bottompagination">
           <span class="navigation" role="navigation">
-              {% include pagination.html %}
+            {% include pagination.html %}
           </span>
         </div>
       </div>
-      <!-- tab3 -->
+      <!-- Culture 탭 -->
       <div class="tab-pane fade" id="culture" role="tabpanel" aria-labelledby="culture-tab">
         <div>
           {% for post in site.posts %}
@@ -132,13 +127,14 @@ background: '/img/bg-index.jpg'
         <!-- Pagination -->
         <div class="bottompagination">
           <span class="navigation" role="navigation">
-              {% include pagination.html %}
+            {% include pagination.html %}
           </span>
         </div>
       </div>
     </div>
   </div>
 </section>
+
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 <script>
@@ -155,23 +151,23 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-console.log(tags);
-
     function filterItems() {
         const selectedTags = Array.from(document.querySelectorAll('.tag.selected')).map(tag => tag.dataset.tag);
+        console.log('Selected Tags:', selectedTags);
 
         items.forEach(item => {
             const itemTags = item.dataset.tags.split(' ');
-            if (selectedTags.every(tag => itemTags.includes(tag))) {
+            console.log('Item Tags:', itemTags);
+
+            if (selectedTags.length === 0 || selectedTags.every(tag => itemTags.includes(tag))) {
                 item.style.display = '';
             } else {
                 item.style.display = 'none';
             }
         });
-console.log(selectedTags);
-
     }
 });
+
 
 
 
