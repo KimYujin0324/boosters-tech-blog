@@ -4,8 +4,7 @@ layout: default
 background: '/img/bg-index.jpg'
 ---
 
-<!-- Home Intro
-================================================== -->
+<!-- Home Intro -->
 {% if page.url == "/" %}
 <div class="mt-1 mb-3 hero">
   <div class="row text-center">
@@ -14,117 +13,42 @@ background: '/img/bg-index.jpg'
       <p class="bsts-hero-text lead">커머스를 자동화하는 전무후무한 시스템을 개발하는 <br><span style='color:#FFF; font-weight:bold;'>부스터스 테크팀</span>의 이야기를 전달합니다.</p>
       <!-- <a href="{{site.baseurl}}/about" class="btn btn-bsts text-white px-5 btn-lg">About us</a> -->
     </div>
-    <!-- <div class="col-md-6 text-right pl-0 pl-lg-4">
-      <img class="intro" height="500" src="{{site.baseurl}}/assets/images/intro.svg">
-    </div> -->
   </div>
 </div>
 {% endif %}
 
-<!-- Featured
-================================================== -->
-<!-- <section class="row">
-  {% for post in site.posts %}
-      {% if post.featured == true %}
-          <div class="col-md-4 mb-5">
-          {% include postbox.html %}
-          </div>
-      {% endif %}
-  {% endfor %}
-</section> -->
-
-<!-- Posts List with Sidebar (except featured)
-================================================== -->
+<!-- Posts List with Sidebar -->
 <section class="container container-wide">
-
   <div class="col-12 py-3">
-    <div>
-      <ul class="nav nav-tabs bsts-nav-tabs" id="myTab" role="tablist">
-        <li class="nav-item bsts-nav-item" role="presentation">
-            <button class="nav-link bsts-nav-link active bsts-cursor-pointer" id="all-tab" data-bs-toggle="tab" data-bs-target="#all" type="button" role="tab" aria-controls="all" aria-selected="true">All</button>
-        </li>
-        <li class="nav-item bsts-nav-item" role="presentation">
-            <button class="nav-link bsts-nav-link bsts-cursor-pointer" id="tech-tab" data-bs-toggle="tab" data-bs-target="#tech" type="button" role="tab" aria-controls="tech" aria-selected="false">Tech</button>
-        </li>
-        <li class="nav-item bsts-nav-item" role="presentation">
-            <button class="nav-link bsts-nav-link bsts-cursor-pointer" id="culture-tab" data-bs-toggle="tab" data-bs-target="#culture" type="button" role="tab" aria-controls="culture" aria-selected="false">Culture</button>
-        </li>
-      </ul>
-    </div>
+    <ul class="nav nav-tabs bsts-nav-tabs" id="myTab" role="tablist">
+      <li class="nav-item bsts-nav-item" role="presentation">
+        <button class="nav-link bsts-nav-link active bsts-cursor-pointer" id="all-tab" data-bs-toggle="tab" data-bs-target="#all" type="button" role="tab" aria-controls="all" aria-selected="true">All</button>
+      </li>
+      <li class="nav-item bsts-nav-item" role="presentation">
+        <button class="nav-link bsts-nav-link bsts-cursor-pointer" id="tech-tab" data-bs-toggle="tab" data-bs-target="#tech" type="button" role="tab" aria-controls="tech" aria-selected="false">Tech</button>
+      </li>
+      <li class="nav-item bsts-nav-item" role="presentation">
+        <button class="nav-link bsts-nav-link bsts-cursor-pointer" id="culture-tab" data-bs-toggle="tab" data-bs-target="#culture" type="button" role="tab" aria-controls="culture" aria-selected="false">Culture</button>
+      </li>
+    </ul>
     
-    <!-- 태그 리스트 -->
+    태그 리스트
     <div class="mt-4">
-        {% include tag_list.html %}
+      {% include tag_list.html %}
     </div>
     
     <div class="tab-content" id="tabContent">
-      <!-- tab1 -->
+      <!-- All Posts -->
       <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
-        <div>
-          {% for post in site.posts %}
-          {% unless post.featured == true %}
-          <div class="col-md-12 px-3 py-45" style="border-bottom: 1px solid #BDBDBD50;">
-            {% include postbox.html %}
-            <!-- <div class="col-md-2" style="display: contents;">
-				  		<img class="author-thumb" src="{{site.baseurl}}/{{author.avatar}}" alt="{{ author.display_name }}">
-				  	</div>
-				  	<div class="col-md-10 pt-1">
-				  		<a target="_blank" class="link-dark" href="{{ author.web }}">{{ author.display_name }}</a><a target="_blank" href="{{ author.twitter }}" class="btn follow">Follow</a>
-              <br>
-				  		<span class="author-description">{{ author.description }}</span>						
-				  	</div> -->
-          </div>
-          {% endunless %}
-          {% endfor %}
-        </div>
-        
-        <!-- Pagination -->
-        <div class="bottompagination">
-          <span class="navigation" role="navigation">
-              {% include pagination.html %}
-          </span>
-        </div>
+        {% include posts_tab.html posts=site.posts filter="" %}
       </div>
-      <!-- tab2 -->
+      <!-- Tech Posts -->
       <div class="tab-pane fade" id="tech" role="tabpanel" aria-labelledby="tech-tab">
-        <div>
-          {% for post in site.posts %}
-          {% if post.category == "tech" %}
-          {% unless post.featured == true %}
-          <div class="col-md-12 px-3 py-45" style="border-bottom: 1px solid #BDBDBD50;">
-            {% include postbox.html %}
-          </div>
-          {% endunless %}
-          {% endif %}
-          {% endfor %}
-        </div>
-        <!-- Pagination -->
-        <div class="bottompagination">
-          <span class="navigation" role="navigation">
-              {% include pagination.html %}
-          </span>
-        </div>
+        {% include posts_tab.html posts=site.posts filter="tech" %}
       </div>
-      <!-- tab3 -->
+      <!-- Culture Posts -->
       <div class="tab-pane fade" id="culture" role="tabpanel" aria-labelledby="culture-tab">
-        <div>
-          {% for post in site.posts %}
-          {% if post.category == "culture" %}
-          {% unless post.featured == true %}
-          <div class="col-md-12 px-3 py-45" style="border-bottom: 1px solid #BDBDBD50;">
-            {% include postbox.html %}
-          </div>
-          {% endunless %}
-          {% endif %}
-          {% endfor %}
-        </div>
-
-        <!-- Pagination -->
-        <div class="bottompagination">
-          <span class="navigation" role="navigation">
-              {% include pagination.html %}
-          </span>
-        </div>
+        {% include posts_tab.html posts=site.posts filter="culture" %}
       </div>
     </div>
   </div>
