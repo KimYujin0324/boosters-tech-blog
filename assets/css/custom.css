@@ -110,6 +110,7 @@ Just customize your theme here.
 .bsts-tag-list a.selected {
   background-color: #FF4713;
   color: white;
+  border: 1px solid #ff4713;
   border-radius: 20px;
   padding: 5px 10px;
   text-decoration: none;
