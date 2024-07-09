@@ -38,6 +38,10 @@ background: '/img/bg-index.jpg'
 <section class="container container-wide">
 
   <div class="col-12 py-3">
+    
+    <!-- 태그 리스트 -->
+    {% include tag_list.html %}
+
     <div>
       <ul class="nav nav-tabs bsts-nav-tabs" id="myTab" role="tablist">
         <li class="nav-item bsts-nav-item" role="presentation">
@@ -114,9 +118,6 @@ background: '/img/bg-index.jpg'
           {% endfor %}
         </div>
 
-        <!-- 태그 리스트 -->
-        {% include tag_list.html %}
-        
         <!-- Pagination -->
         <div class="bottompagination">
           <span class="navigation" role="navigation">
