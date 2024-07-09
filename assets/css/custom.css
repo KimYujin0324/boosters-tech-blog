@@ -115,7 +115,7 @@ Just customize your theme here.
 
 /* styles.css */
 .bsts-tag-container {
-  margin: 20px;
+  margin: 20px 0;
 }
 
 .bsts-tag-list {
@@ -137,9 +137,10 @@ Just customize your theme here.
 }
 
 .content {
-  margin: 20px;
+  margin: 20px 0;
 }
 
 .item {
   margin: 10px 0;
 }
+
