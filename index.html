@@ -34,7 +34,7 @@ background: '/img/bg-index.jpg'
     </div>
     
     <!-- 태그 리스트 -->
-    <div class="mt-4">
+    <div class="post mt-4" data-tags="{{ post.tags | join: ' ' }}">
         {% include tag_list.html %}
     </div>
     
@@ -72,3 +72,18 @@ background: '/img/bg-index.jpg'
     </div>
   </div>
 </section>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function() {
+  $('.tag').on('click', function(e) {
+    e.preventDefault();
+    var selectedTag = $(this).data('tag');
+    
+    // 모든 포스트 숨기기
+    $('.post').hide();
+    
+    // 선택한 태그에 해당하는 포스트만 보이기
+    $('.post[data-tags*="' + selectedTag + '"]').show();
+  });
+});
+</script>
