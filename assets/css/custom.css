@@ -101,9 +101,6 @@ Just customize your theme here.
   gap: 10px;
 }
 .bsts-tag-list {
-  background-color: #f0f0f0;
-  padding: 5px 10px;
-  border-radius: 20px;
   font-size: 0.9rem;
 }
 .bsts-tag-list a {
@@ -112,7 +109,7 @@ Just customize your theme here.
 }
 
 .bsts-tag-list a.selected {
-  background-color: #007bff;
+  background-color: #FF4713;
   color: white;
   border-radius: 5px;
   padding: 5px 10px;
@@ -123,6 +120,6 @@ Just customize your theme here.
   cursor: pointer;
   margin-right: 5px;
   padding: 5px 10px;
-  border: 1px solid #ddd;
+  border: 1px solid #BDBDBD50;
   border-radius: 5px;
 }
