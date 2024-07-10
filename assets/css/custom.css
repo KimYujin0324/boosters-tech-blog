@@ -21,6 +21,11 @@ Just customize your theme here.
 /** 드래그 **/
 ::selection {  color: #fff;  background-color: #FF4713;}
 
+/** top menu **/
+.bsts-top-menu {
+  font-family: "HelveticaNeueLTStd-BdEx",sans-serif;
+}
+
 /** 탭 메뉴 **/
 .nav-link {
   padding: 1rem;
@@ -136,7 +141,6 @@ Just customize your theme here.
   padding: 5px 10px;
   text-decoration: none;
 }
-/* 버튼에 마우스를 올렸을 때 (눌리지 않은 상태) */
 .button:hover:not(.active) {
   background-color: #FF4713;
   color: white;
@@ -145,7 +149,6 @@ Just customize your theme here.
   padding: 5px 10px;
   text-decoration: none;
 }
-/* 버튼에 마우스를 올렸을 때 (눌린 상태) */
 .button:hover.active {
   color: #FF4713;
   background-color: #FFF;

@@ -6,9 +6,11 @@ topmenu:
 
 - title: About us
   url: "about/"
+  class: bsts-top-menu
 
 - title: Company
-url: "https://boosters.kr/"
+  url: "https://boosters.kr/"
+  class: bsts-top-menu
 
 # - title: Contact
 #   url: "contact/"
