@@ -52,9 +52,6 @@ SCM 담당자인 Y씨는 **품목별 결품예정일을 예상**하기 위해 �
 <p style="text-align: center;">
   <img src="/assets/images/2024-07/boosta_version1.PNG" alt="부스타 version1 의 입구">
 </p>
-<p style="text-align: center;">
-  <img src="/assets/images/2024-07/boosta_version1_menu.PNG" alt="부스타 version1 의 메뉴">
-</p>
 &nbsp;&nbsp;
 
 
