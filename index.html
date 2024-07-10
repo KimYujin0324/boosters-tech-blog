@@ -85,8 +85,8 @@ background: '/img/bg-index.jpg'
 </section>
 
 <script>
-  // 2초 후에 랜딩 페이지를 숨기고 메인 콘텐츠를 표시
+  // 2초 후에 랜딩 페이지를 숨기기
   setTimeout(function() {
-      document.querySelector('body').innerHTML = document.querySelector('#main-content').innerHTML;
+      document.getElementById('landing-page').style.display = 'none';
   }, 2000);
 </script>
