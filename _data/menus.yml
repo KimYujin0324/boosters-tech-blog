@@ -2,13 +2,16 @@
 topmenu:
 
 # - title: Home
+# external: false
 #   url: ""
 
 - title: About us
+  external: false
   url: "about/"
   class: bsts-top-menu
 
 - title: Company
+  external: true
   url: "https://boosters.kr/"
   class: bsts-top-menu
 
