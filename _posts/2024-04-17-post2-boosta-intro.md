@@ -65,10 +65,10 @@ SCM 담당자인 Y씨는 **품목별 결품예정일을 예상**하기 위해 �
 
 
 &nbsp;
-<p style="text-align: center;">
+<p style="text-align: left;">
   <img src="/assets/images/2024-07/boosta_feedback.PNG" alt="부스타 version1 의 피드백">
 </p>
-<p style="text-align: center;">
+<p style="text-align: left;">
   <img src="/assets/images/2024-07/boosta_feedback2.PNG" alt="부스타 version1 의 피드백">
 </p>
 &nbsp;
