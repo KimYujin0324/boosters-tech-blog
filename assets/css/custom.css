@@ -136,6 +136,21 @@ Just customize your theme here.
   padding: 5px 10px;
   text-decoration: none;
 }
+/* 버튼에 마우스를 올렸을 때 (눌리지 않은 상태) */
+.button:hover:not(.active) {
+  background-color: #FF4713;
+  color: white;
+  border: 1px solid #ff4713;
+  border-radius: 20px;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+/* 버튼에 마우스를 올렸을 때 (눌린 상태) */
+.button:hover.active {
+  color: #FF4713;
+  background-color: #FFF;
+  border: 1px solid #FF4713;
+}
 
 /** 랜딩 페이지 **/
 .bsts-landing-page {
