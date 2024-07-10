@@ -25,7 +25,6 @@ Just customize your theme here.
 .bsts-top-menu {
   font-family: "HelveticaNeueLTStd-BdEx",sans-serif;
   letter-spacing: 0.3pt;
-  line-height: 1;
   transition: all 0.3s ease;
   white-space: nowrap;
 }
