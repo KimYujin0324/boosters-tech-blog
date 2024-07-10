@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "`부스타`의 시작 ep.1"
+title:  "`부스타` epsode.1 시작"
 subtitle: "부스터스 Tech팀이 개발하고 운영중인 시스템에 대한 소개입니다."
 author: dilee
 category: tech
