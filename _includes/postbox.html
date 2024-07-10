@@ -2,7 +2,7 @@
 {% assign author = site.authors[post.author] %}
 <div class="card">
     <div class="card-block row">
-        <div class="col-9">
+        <div class="col-12 col-sm-9">
             <div class="tags-container">
                 {% for tag in post.tags %}
                     <span class="bsts-tag">#{{ tag }}</span>
@@ -11,7 +11,7 @@
             <h4 class="bsts-card-title serif-font"><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h4>
             <p class="card-text text-muted bsts-sub-title">{{ post.subtitle }}</p>
         </div>
-        <div class="col-3 metafooter" style="display: flex; justify-content: flex-end; align-items: center;">
+        <div class="col-12 col-sm-3 metafooter" style="display: flex; justify-content: flex-end; align-items: center;">
             <span class="post-name bsts-post-name pt-2">
                 {% if post.author %}{{ author.display_name }}{% else %}{{ site.author }}{% endif %}
             </span>
