@@ -126,7 +126,7 @@ Just customize your theme here.
   color: #FF4713;
   border: 1px solid #FF4713;
 }
-.bsts-tag-list a:focus {
+.bsts-tag-list a:active {
   background-color: #FF4713;
   color: white;
   border: 1px solid #ff4713;
@@ -134,3 +134,27 @@ Just customize your theme here.
   padding: 5px 10px;
   text-decoration: none;
 }
+
+/* .btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn:focus {
+  outline: none;
+  background-color: #0056b3;
+}
+
+.btn:active {
+  background-color: #004085;
+}
+
+.btn.focus-active {
+  background-color: #6c757d;
+  color: white;
+} */
