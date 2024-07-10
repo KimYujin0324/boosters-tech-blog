@@ -84,31 +84,29 @@ background: '/img/bg-index.jpg'
 </section>
 
 <script>
-  // 2초 후에 랜딩 페이지를 숨기기
-  // setTimeout(function() {
-  //     document.getElementById('landing-page').style.display = 'none';
-  // }, 4000);
-  
   document.addEventListener('DOMContentLoaded', function() {
     const firstMessage = document.getElementById('bsts-landing-first');
     const secondMessage = document.getElementById('bsts-landing-second');
+    const thirdMessage = document.getElementById('bsts-landing-third');
     const landingPage = document.getElementById('landing-page');
     const mainContent = document.getElementById('main-content');
 
-    // 첫 번째 문구를 표시
     firstMessage.style.display = 'block';
 
     setTimeout(function() {
-      // 첫 번째 문구를 숨기고 두 번째 문구를 표시
       firstMessage.style.display = 'none';
       secondMessage.style.display = 'block';
 
       setTimeout(function() {
-        // 두 번째 문구를 숨기고 메인 콘텐츠를 표시
         secondMessage.style.display = 'none';
-        landingPage.style.display = 'none';
-        mainContent.style.display = 'block';
-      }, 2000);
+        thirdMessage.style.display = 'block';
+
+        setTimeout(function() {
+          thirdMessage.style.display = 'none';
+          landingPage.style.display = 'none';
+          mainContent.style.display = 'block';
+        }, 1000);
+      }, 1000);
     }, 2000);
   });
 </script>
