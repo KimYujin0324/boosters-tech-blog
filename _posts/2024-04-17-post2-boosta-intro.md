@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "`부스타` epsode.1 시작"
+title:  "'부스타' epsode.1 시작"
 subtitle: "부스터스 Tech팀이 개발하고 운영중인 시스템에 대한 소개입니다."
 author: dilee
 category: tech
@@ -76,4 +76,4 @@ SCM 담당자인 Y씨는 **품목별 결품예정일을 예상**하기 위해 �
 
 &nbsp;&nbsp;&nbsp;
 
-==2편 '부스타'의 활용 ep.2 에서 계속..==
+==2편 '부스타' epsode.2 활용 에서 계속..==
