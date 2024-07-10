@@ -91,8 +91,8 @@ Just customize your theme here.
   font-weight: 300;
 }
 .bsts-post-avatar img {
-  width: 2.5vw;
-  height: 2.5vw;
+  min-width: 50px;
+  height: 50px;
   border-radius: 50%;
   border: 1px solid #BDBDBD50;
 }
