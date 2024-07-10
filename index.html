@@ -4,6 +4,9 @@ layout: default
 background: '/img/bg-index.jpg'
 ---
 
+<!-- 랜딩 페이지 포함 -->
+{% include landing.html %}
+
 <!-- Home Intro -->
 {% if page.url == "/" %}
 <div class="mt-1 mb-3 hero">
@@ -80,3 +83,10 @@ background: '/img/bg-index.jpg'
     </div>
   </div>
 </section>
+
+<script>
+  // 2초 후에 랜딩 페이지를 숨기고 메인 콘텐츠를 표시
+  setTimeout(function() {
+      document.querySelector('body').innerHTML = document.querySelector('#main-content').innerHTML;
+  }, 2000);
+</script>
