@@ -21,6 +21,11 @@ Just customize your theme here.
 /** 드래그 **/
 ::selection {  color: #fff;  background-color: #FF4713;}
 
+/** logo **/
+.bsts-logo-img {
+  width: 230px;
+}
+
 /** top menu **/
 .bsts-top-menu {
   font-family: "HelveticaNeueLTStd-BdEx",sans-serif;
