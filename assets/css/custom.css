@@ -101,7 +101,7 @@ Just customize your theme here.
   gap: 10px;
 }
 .bsts-tag-list {
-  font-size: 1rem;
+  font-size: 0.95rem;
 }
 .bsts-tag-list a {
   text-decoration: none;
