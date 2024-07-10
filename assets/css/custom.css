@@ -126,3 +126,11 @@ Just customize your theme here.
   color: #FF4713;
   border: 1px solid #FF4713;
 }
+.bsts-tag-list a:focus {
+  background-color: #FF4713;
+  color: white;
+  border: 1px solid #ff4713;
+  border-radius: 20px;
+  padding: 5px 10px;
+  text-decoration: none;
+}
