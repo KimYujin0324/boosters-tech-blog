@@ -84,45 +84,49 @@ background: '/img/bg-index.jpg'
 </section>
 
 <script>
-  window.onload = function() {
-    const firstMessage = document.getElementById('bsts-landing-first');
-    const secondMessage = document.getElementById('bsts-landing-second');
-    const thirdMessage = document.getElementById('bsts-landing-third');
-    const landingPage = document.getElementById('landing-page');
-    const mainContent = document.getElementById('main-content');
+  if (window.location.pathname == '/') {
+      window.onload = function() {
+        const firstMessage = document.getElementById('bsts-landing-first');
+        const secondMessage = document.getElementById('bsts-landing-second');
+        const thirdMessage = document.getElementById('bsts-landing-third');
+        const landingPage = document.getElementById('landing-page');
+        const mainContent = document.getElementById('main-content');
 
-    // 첫 번째 문구를 표시
-    firstMessage.classList.add('fade-in');
-    firstMessage.style.opacity = 1;
-
-    setTimeout(function() {
-      // 첫 번째 문구를 숨기고 두 번째 문구를 표시
-      firstMessage.classList.add('fade-out');
-      setTimeout(() => {
-        firstMessage.style.opacity = 0;
-        secondMessage.classList.add('fade-in');
-        secondMessage.style.opacity = 1;
-      }, 1000);
-
-      setTimeout(function() {
-        // 두 번째 문구를 숨기고 세 번째 문구를 표시
-        secondMessage.classList.add('fade-out');
-        setTimeout(() => {
-          secondMessage.style.opacity = 0;
-          thirdMessage.classList.add('fade-in');
-          thirdMessage.style.opacity = 1;
-        }, 1000);
+        // 첫 번째 문구를 표시
+        firstMessage.classList.add('fade-in');
+        firstMessage.style.opacity = 1;
 
         setTimeout(function() {
-          // 세 번째 문구를 숨기고 메인 콘텐츠를 표시
-          thirdMessage.classList.add('fade-out');
+          // 첫 번째 문구를 숨기고 두 번째 문구를 표시
+          firstMessage.classList.add('fade-out');
           setTimeout(() => {
-            thirdMessage.style.opacity = 0;
-            landingPage.style.display = 'none';
-            mainContent.style.display = 'block';
+            firstMessage.style.opacity = 0;
+            secondMessage.classList.add('fade-in');
+            secondMessage.style.opacity = 1;
           }, 1000);
+
+          setTimeout(function() {
+            // 두 번째 문구를 숨기고 세 번째 문구를 표시
+            secondMessage.classList.add('fade-out');
+            setTimeout(() => {
+              secondMessage.style.opacity = 0;
+              thirdMessage.classList.add('fade-in');
+              thirdMessage.style.opacity = 1;
+            }, 1000);
+
+            setTimeout(function() {
+              // 세 번째 문구를 숨기고 메인 콘텐츠를 표시
+              thirdMessage.classList.add('fade-out');
+              setTimeout(() => {
+                thirdMessage.style.opacity = 0;
+                landingPage.style.display = 'none';
+                mainContent.style.display = 'block';
+              }, 1000);
+            }, 2000);
+          }, 2000);
         }, 2000);
-      }, 2000);
-    }, 2000);
-  };
+      };
+    } else {
+      document.getElementById('main-content').style.display = 'block';
+    }
 </script>
