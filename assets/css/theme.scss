@@ -134,7 +134,7 @@ body {
 }
 @media (min-width: 576px) and (max-width: 768px) {
     body {
-      font-size:17px;
+      font-size: 0.95rem;
       transition: all 200ms linear;
       font-family: "Pretendard",sans-serif;
       line-height:1.7;
@@ -155,7 +155,7 @@ body {
 }
 @media (max-width: 576px) {
     body {
-      font-size:16px;
+      font-size: 0.9rem;
       transition: all 200ms linear;
       font-family: "Pretendard",sans-serif;
       line-height:1.7;
