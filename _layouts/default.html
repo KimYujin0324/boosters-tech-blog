@@ -20,6 +20,8 @@
 {% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
 <body class="{{ layout }}">
 
+<!-- 랜딩 페이지 포함 -->
+{% include landing.html %}
 
 <!-- Menu Navigation
 ================================================== -->
