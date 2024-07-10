@@ -84,29 +84,45 @@ background: '/img/bg-index.jpg'
 </section>
 
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
+  window.onload = function() {
     const firstMessage = document.getElementById('bsts-landing-first');
     const secondMessage = document.getElementById('bsts-landing-second');
     const thirdMessage = document.getElementById('bsts-landing-third');
     const landingPage = document.getElementById('landing-page');
     const mainContent = document.getElementById('main-content');
 
-    firstMessage.style.display = 'block';
+    // 첫 번째 문구를 표시
+    firstMessage.classList.add('fade-in');
+    firstMessage.style.opacity = 1;
 
     setTimeout(function() {
-      firstMessage.style.display = 'none';
-      secondMessage.style.display = 'block';
+      // 첫 번째 문구를 숨기고 두 번째 문구를 표시
+      firstMessage.classList.add('fade-out');
+      setTimeout(() => {
+        firstMessage.style.opacity = 0;
+        secondMessage.classList.add('fade-in');
+        secondMessage.style.opacity = 1;
+      }, 1000);
 
       setTimeout(function() {
-        secondMessage.style.display = 'none';
-        thirdMessage.style.display = 'block';
+        // 두 번째 문구를 숨기고 세 번째 문구를 표시
+        secondMessage.classList.add('fade-out');
+        setTimeout(() => {
+          secondMessage.style.opacity = 0;
+          thirdMessage.classList.add('fade-in');
+          thirdMessage.style.opacity = 1;
+        }, 1000);
 
         setTimeout(function() {
-          thirdMessage.style.display = 'none';
-          landingPage.style.display = 'none';
-          mainContent.style.display = 'block';
-        }, 1000);
-      }, 1000);
+          // 세 번째 문구를 숨기고 메인 콘텐츠를 표시
+          thirdMessage.classList.add('fade-out');
+          setTimeout(() => {
+            thirdMessage.style.opacity = 0;
+            landingPage.style.display = 'none';
+            mainContent.style.display = 'block';
+          }, 1000);
+        }, 2000);
+      }, 2000);
     }, 2000);
-  });
+  };
 </script>
