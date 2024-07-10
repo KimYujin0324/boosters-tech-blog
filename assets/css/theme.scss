@@ -195,19 +195,19 @@ h1, .h1 {
     font-weight:900;
 }
 h2, .h2 {
-  font-weight:800;
+    font-weight:800;
 }
 h3, .h3 {
-  font-weight:700;
+    font-weight:700;
 }
 h4, .h4 {
-  font-weight:700;
+    font-weight:700;
 }
 h5, .h5 {
-  font-weight:600;
+    font-weight:600;
 }
 h6, .h6 {
-  font-weight:600;
+    font-weight:600;
 }
 h4, .h4, h5, .h5 {
     line-height:1.4;
@@ -339,6 +339,12 @@ small, .small {
 .hero h1 {
     font-size:2.5em;
 }
+@media (max-width:767px) {
+	h1.posttitle {
+    font-size:2em;
+  }
+}
+
 .section-title h2 {
 	font-weight:700;
 	font-size:1.4rem;
@@ -466,8 +472,9 @@ span.post-name a,span.post-read-more a:hover {
 .mainheading h1.posttitle {
 	font-weight:600;
 	margin-bottom:1rem;
-    color: #FFF;
+  color: #FFF;
 }
+
 .link-dark {
 	color:rgba(0,0,0,.8);
 }
