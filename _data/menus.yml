@@ -7,6 +7,9 @@ topmenu:
 - title: About us
   url: "about/"
 
+- title: Company
+url: "https://boosters.kr/"
+
 # - title: Contact
 #   url: "contact/"
 
