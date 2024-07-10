@@ -135,26 +135,6 @@ Just customize your theme here.
   text-decoration: none;
 }
 
-/* .btn {
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+#landing-content {
+  text-align: center;
 }
-
-.btn:focus {
-  outline: none;
-  background-color: #0056b3;
-}
-
-.btn:active {
-  background-color: #004085;
-}
-
-.btn.focus-active {
-  background-color: #6c757d;
-  color: white;
-} */
