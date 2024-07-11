@@ -20,6 +20,9 @@ body.dark-mode .bsts-post-name {
 body.dark-mode .text-muted {
   color: #F2F2F2 !important;
 }
+body.dark-mode .hero {
+  background-color: #2C2C2E;
+}
 body.dark-mode .footer {
   /* background-color: #2C2C2E; */
   background-color: #333333;
