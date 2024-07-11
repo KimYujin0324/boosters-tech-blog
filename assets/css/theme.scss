@@ -104,7 +104,7 @@ body {
     .container-wide {
         width:65%;
         max-width:65%;
-        padding:0 25px;
+        padding:0 auto;
     }
 }
 @media (min-width: 1200px) and (max-width: 1400px) {
@@ -114,13 +114,13 @@ body {
     }
     .container-wide {
         width:70%;
-        padding:0 25px;
+        padding:0 auto;
     }
 }
 @media (min-width: 992px) and (max-width: 1200px) {
     .container {
         width:700px;
-        padding:0 25px;
+        padding:0 auto;
     }
     .container-wide {
         width:75%;
@@ -131,7 +131,7 @@ body {
 @media (min-width: 768px) and (max-width: 992px) {
     .container {
         width:700px;
-        padding:0 25px;
+        padding:0 auto;
     }
     .container-wide {
         width:95%;
@@ -151,7 +151,7 @@ body {
     }
     .container {
         width:95%;
-        padding:0 25px;
+        padding:0 auto;
     }
     .container-wide {
         width:100%;
@@ -171,7 +171,7 @@ body {
     }
     .container {
         width:100%;
-        padding:0 25px;
+        padding:0 auto;
     }
     .container-wide {
         width:100%;
