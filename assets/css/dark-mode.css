@@ -30,7 +30,7 @@ body.dark-mode .footer {
 body.dark-mode .h1, body.dark-mode .h2, body.dark-mode .h3, body.dark-mode .h4, body.dark-mode .h5, body.dark-mode .h6, body.dark-mode h1, body.dark-mode h2, body.dark-mode h3, body.dark-mode h4, body.dark-mode h5, body.dark-mode h6, body.dark-mode .navbar-light .navbar-brand, body.dark-mode .text-dark, body.dark-mode .dropdown-item {
   color: #FFF;
 }
-body.dark-mode .article-post, body.dark-mode .blockquote, body.dark-mode .post-top-meta span {
+body.dark-mode .article-post, body.dark-mode .post-top-meta span {
   color: #f2f2f2;
 }
 body.dark-mode .nav-tabs .nav-link.active, body.dark-mode .nav-tabs .nav-item.show .nav-link {
@@ -39,7 +39,7 @@ body.dark-mode .nav-tabs .nav-link.active, body.dark-mode .nav-tabs .nav-item.sh
 body.dark-mode .bsts-mainheading-dark {
   background-color: #2C2C2E;
 }
-body.dark-mode blockquote {
+body.dark-mode .blockquote {
   border-left: 4px solid #FFF;
   color: #f2f2f2;
 }
