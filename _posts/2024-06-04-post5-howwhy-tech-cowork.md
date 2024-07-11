@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "'협업'에 대한 토론의 기록"
+subtitle: "우리 '협업'하자! 로 시작된 토론의 현장입니다."
 author: dilee
 category: culture
 tags: [ Tech, 팀워크, 협업 ]
