@@ -78,7 +78,7 @@
                 </li>
                 {% for item in site.data.menus.topmenu %}
                 <li class="nav-item">
-                    <a class="nav-link px-3 {% if item.class %}{{item.class}}{% endif %}" 
+                    <a class="nav-link bsts-top-nav px-3 {% if item.class %}{{item.class}}{% endif %}" 
                        href="{% if item.external %}{{item.url}}{% else %}{{site.baseurl}}{{item.url}}{% endif %}" 
                        alt="{{item.title}}">
                         {{item.title}}

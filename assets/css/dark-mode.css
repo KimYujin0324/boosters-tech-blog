@@ -5,6 +5,9 @@ body.dark-mode {
 body.dark-mode a {
   color: #FFF;
 }
+body.dark-mode .bsts-top-nav {
+  color: #1D1D1B;
+}
 body.dark-mode .bsts-nav-link {
   color: #BDBDBD;
 }
