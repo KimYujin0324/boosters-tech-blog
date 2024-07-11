@@ -74,14 +74,21 @@
           </button>
 
           <div class="collapse navbar-collapse" id="navbarResponsive">
-            <div class="theme-switch-wrapper">
-              <label class="theme-switch" for="checkbox">
-                <input type="checkbox" id="checkbox" />
-                <div class="slider round"></div>
-              </label>
-              <em>다크 모드 사용하기!</em>
-            </div>
             <ul class="navbar-nav ml-auto font-weight-bold d-flex align-items-center">
+                <li class="nav-item theme-switch-wrapper">
+                  <div class="theme-switch-wrapper">
+                    <label class="theme-switch" for="checkbox">
+                      <input type="checkbox" id="checkbox" />
+                      <div class="slider round">
+                        <div class="icons">
+                          <span class="sun">☀️</span>
+                          <span class="moon">🌙</span>
+                        </div>
+                      </div>
+                    </label>
+                    <em>다크 모드 사용하기!</em>
+                  </div>
+                </li>
                 {% for item in site.data.menus.topmenu %}
                 <li class="nav-item">
                     <a class="nav-link px-3 {% if item.class %}{{item.class}}{% endif %}" 

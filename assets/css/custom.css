@@ -212,11 +212,12 @@ Just customize your theme here.
 }
 
 .theme-switch input {
-  display:none;
+  display: none;
 }
 
 .slider {
   background-color: #ccc;
+  border-radius: 34px;
   bottom: 0;
   cursor: pointer;
   left: 0;
@@ -224,10 +225,12 @@ Just customize your theme here.
   right: 0;
   top: 0;
   transition: .4s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .slider:before {
   background-color: white;
+  border-radius: 50%;
   bottom: 4px;
   content: "";
   height: 26px;
@@ -235,6 +238,7 @@ Just customize your theme here.
   position: absolute;
   transition: .4s;
   width: 26px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 input:checked + .slider {
@@ -245,10 +249,23 @@ input:checked + .slider:before {
   transform: translateX(26px);
 }
 
-.slider.round {
-  border-radius: 34px;
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  padding: 0 5px;
 }
 
-.slider.round:before {
-  border-radius: 50%;
+.sun {
+  font-size: 16px;
+  position: absolute;
+  left: 10px;
+}
+
+.moon {
+  font-size: 16px;
+  position: absolute;
+  right: 10px;
+  color: #f1c40f;
 }
