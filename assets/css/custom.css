@@ -209,19 +209,18 @@ Just customize your theme here.
   font-size: 24px;
   margin: 0 10px;
   transition: opacity 0.3s;
-  display: none; /* 기본적으로 아이콘을 숨깁니다 */
-}
-
-.theme-icon.sun {
-  color: #f39c12;
-}
-
-.theme-icon.moon {
-  color: #f1c40f;
 }
 
 body.light-mode .theme-icon.sun {
   display: inline; /* 라이트 모드일 때 해 아이콘을 보이게 합니다 */
+}
+
+body.light-mode .theme-icon.moon {
+  display: none; /* 라이트 모드일 때 달 아이콘을 숨깁니다 */
+}
+
+body.dark-mode .theme-icon.sun {
+  display: none; /* 다크 모드일 때 해 아이콘을 숨깁니다 */
 }
 
 body.dark-mode .theme-icon.moon {
