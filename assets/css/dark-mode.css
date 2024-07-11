@@ -54,5 +54,8 @@ body.dark-mode #disqus_thread {
 
 /* 링크와 텍스트 색상 조정 */
 body.dark-mode #disqus_thread a {
-  color: #1e90ff !important;
+  color: #FF4713 !important;
+}
+body.dark-mode #disqus_thread div {
+  color: #f2f2f2 !important;
 }
