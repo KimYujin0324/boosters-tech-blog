@@ -43,3 +43,6 @@ body.dark-mode blockquote {
   border-left: 4px solid #FFF;
   color: #f2f2f2;
 }
+body.dark-mode .prevnextlinks .thepostlink {
+  color: #f2f2f2;
+}
