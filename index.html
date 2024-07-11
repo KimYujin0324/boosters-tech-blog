@@ -84,38 +84,32 @@ background: '/img/bg-index.jpg'
 </section>
 
 <script>
-  // if (window.location.pathname == '/') {
-  //   document.addEventListener('DOMContentLoaded', function() {
-  //     const firstMessage = document.getElementById('bsts-landing-first');
-  //     const secondMessage = document.getElementById('bsts-landing-second');
-  //     const thirdMessage = document.getElementById('bsts-landing-third');
-  //     const landingPage = document.getElementById('landing-page');
-  //     const mainContent = document.getElementById('main-content');
+  if (window.location.pathname == '/') {
+    document.addEventListener('DOMContentLoaded', function() {
+      const firstMessage = document.getElementById('bsts-landing-first');
+      const secondMessage = document.getElementById('bsts-landing-second');
+      const thirdMessage = document.getElementById('bsts-landing-third');
+      const landingPage = document.getElementById('landing-page');
+      const mainContent = document.getElementById('main-content');
 
-  //     firstMessage.style.display = 'block';
+      firstMessage.style.display = 'block';
 
-  //     setTimeout(function() {
-  //       firstMessage.style.display = 'none';
-  //       secondMessage.style.display = 'block';
+      setTimeout(function() {
+        firstMessage.style.display = 'none';
+        secondMessage.style.display = 'block';
 
-  //       setTimeout(function() {
-  //         secondMessage.style.display = 'none';
-  //         thirdMessage.style.display = 'block';
+        setTimeout(function() {
+          secondMessage.style.display = 'none';
+          thirdMessage.style.display = 'block';
 
-  //         setTimeout(function() {
-  //           thirdMessage.style.display = 'none';
-  //           landingPage.style.display = 'none';
-  //           mainContent.style.display = 'block';
-  //         }, 1500);
-  //       }, 1000);
-  //     }, 1100);
-  //   });
-  // }
-  document.addEventListener("DOMContentLoaded", function() {
-    console.log('DOMContentLoaded: DOM is fully loaded and parsed.');
-});
-
-window.addEventListener("load", function() {
-    console.log('Load: All resources are fully loaded.');
-});
+          setTimeout(function() {
+            thirdMessage.style.display = 'none';
+            landingPage.style.display = 'none';
+            mainContent.style.display = 'block';
+          }, 1500);
+        }, 1000);
+      }, 1100);
+    });
+  }
+  
 </script>
