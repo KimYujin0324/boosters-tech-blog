@@ -176,6 +176,18 @@ Just customize your theme here.
   }
 }
 
+.bsts-thepostlink {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+@media (max-width: 576px) {
+  .bsts-thepostlink {
+    display: inline-block;
+    width: 100%;
+  }
+}
+
 /** 랜딩 페이지 **/
 .bsts-landing-page {
   text-align: center;
