@@ -5,24 +5,31 @@ body.dark-mode {
 body.dark-mode a {
   color: #FFF;
 }
-body.dark-mode .nav-link {
-  color: #1D1D1B;
+body.dark-mode .bsts-nav-link {
+  color: #BDBDBD;
 }
 body.dark-mode .card {
   background-color: #1D1D1B;
 }
 body.dark-mode .bsts-post-name {
-  color: FFF;
+  color: #FFF;
 }
 body.dark-mode .text-muted {
   color: #b0bec5 !important;
 }
 body.dark-mode .footer {
-  background-color: #2C2C2E;
+  /* background-color: #2C2C2E; */
+  background-color: #333333;
 }
 body.dark-mode .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6, .navbar-light .navbar-brand, .text-dark, .dropdown-item {
   color: #FFF;
 }
 body.dark-mode .article-post, .blockquote, .prevnextlinks .thepostlink, .post-top-meta span {
   color: #f2f2f2;
+}
+body.dark-mode .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+  color: #1D1D1B;
+  background-color: #dee2e600;
+  border-color: #dee2e600 #dee2e600 #dee2e600;
+  font-weight: 600;
 }
