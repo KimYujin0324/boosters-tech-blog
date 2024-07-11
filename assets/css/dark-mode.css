@@ -20,3 +20,9 @@ body.dark-mode .text-muted {
 body.dark-mode .footer {
   background-color: #2C2C2E;
 }
+body.dark-mode .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6, .navbar-light .navbar-brand, .text-dark, .dropdown-item {
+  color: #FFF;
+}
+body.dark-mode .article-post, .blockquote {
+  color: #f2f2f2;
+}
