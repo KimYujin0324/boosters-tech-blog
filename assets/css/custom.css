@@ -170,6 +170,12 @@ Just customize your theme here.
   border: 1px solid #FF4713;
 }
 
+@media (max-width: 768px) {
+  .bsts-introduction-text {
+    text-align: center;
+  }
+}
+
 /** 랜딩 페이지 **/
 .bsts-landing-page {
   text-align: center;
