@@ -1,42 +1,28 @@
-// document.addEventListener('DOMContentLoaded', (event) => {
-//   const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
-//   const currentTheme = localStorage.getItem('theme');
+/* 해와 달 아이콘 스타일 */
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
 
-//   if (currentTheme) {
-//     document.body.classList.add(currentTheme);
+.theme-icon {
+  font-size: 24px;
+  margin: 0 10px;
+  transition: opacity 0.3s;
+}
 
-//     if (currentTheme === 'dark-mode') {
-//       toggleSwitch.checked = true;
-//     }
-//   }
+.theme-icon.sun {
+  color: #f39c12;
+}
 
-//   toggleSwitch.addEventListener('change', (e) => {
-//     if (e.target.checked) {
-//       document.body.classList.add('dark-mode');
-//       localStorage.setItem('theme', 'dark-mode');
-//     } else {
-//       document.body.classList.remove('dark-mode');
-//       localStorage.setItem('theme', 'light-mode');
-//     }
-//   });
-// });
-document.addEventListener('DOMContentLoaded', () => {
-  const sunIcon = document.getElementById('sun-icon');
-  const moonIcon = document.getElementById('moon-icon');
+.theme-icon.moon {
+  color: #f1c40f;
+}
 
-  if (sunIcon && moonIcon) {
-      sunIcon.addEventListener('click', () => {
-          document.body.classList.remove('dark-mode');
-          document.body.classList.add('light-mode');
-          localStorage.setItem('theme', 'light-mode');
-      });
+body.dark-mode .theme-icon.sun {
+  opacity: 0.3;
+}
 
-      moonIcon.addEventListener('click', () => {
-          document.body.classList.remove('light-mode');
-          document.body.classList.add('dark-mode');
-          localStorage.setItem('theme', 'dark-mode');
-      });
-  } else {
-      console.error('sun-icon 또는 moon-icon을 찾을 수 없습니다.');
-  }
-});
+body:not(.dark-mode) .theme-icon.moon {
+  opacity: 0.3;
+}
