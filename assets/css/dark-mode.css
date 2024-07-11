@@ -36,3 +36,10 @@ body.dark-mode .article-post, body.dark-mode .blockquote, body.dark-mode .prevne
 body.dark-mode .nav-tabs .nav-link.active, body.dark-mode .nav-tabs .nav-item.show .nav-link {
   color: #FF4713;
 }
+body.dark-mode .bsts-mainheading-dark {
+  background-color: #2C2C2E;
+}
+body.dark-mode blockquote {
+  border-left: 4px solid #FFF;
+  color: #f2f2f2;
+}
