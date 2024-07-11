@@ -66,6 +66,11 @@ Just customize your theme here.
   background-color: #ffffff00;
   font-size: 1.25rem;
 }
+@media (max-width: 768px) {
+  .nav-tabs .nav-link {
+    font-size: 1.15rem;
+  }
+}
 .bsts-nav-tabs {
   display: flex;
   justify-content: center;
