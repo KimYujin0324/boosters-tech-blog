@@ -1,28 +1,19 @@
-/* 해와 달 아이콘 스타일 */
-.theme-switch-wrapper {
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-}
+document.addEventListener('DOMContentLoaded', (event) => {
+  const sunIcon = document.querySelector('.theme-icon.sun');
+  const moonIcon = document.querySelector('.theme-icon.moon');
+  const currentTheme = localStorage.getItem('theme');
 
-.theme-icon {
-  font-size: 24px;
-  margin: 0 10px;
-  transition: opacity 0.3s;
-}
+  if (currentTheme) {
+    document.body.classList.add(currentTheme);
+  }
 
-.theme-icon.sun {
-  color: #f39c12;
-}
+  sunIcon.addEventListener('click', () => {
+    document.body.classList.remove('dark-mode');
+    localStorage.setItem('theme', 'light-mode');
+  });
 
-.theme-icon.moon {
-  color: #f1c40f;
-}
-
-body.dark-mode .theme-icon.sun {
-  opacity: 0.3;
-}
-
-body:not(.dark-mode) .theme-icon.moon {
-  opacity: 0.3;
-}
+  moonIcon.addEventListener('click', () => {
+    document.body.classList.add('dark-mode');
+    localStorage.setItem('theme', 'dark-mode');
+  });
+});
