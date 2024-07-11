@@ -209,6 +209,7 @@ Just customize your theme here.
   font-size: 24px;
   margin: 0 10px;
   transition: opacity 0.3s;
+  display: none; /* 기본적으로 아이콘을 숨깁니다 */
 }
 
 .theme-icon.sun {
@@ -219,11 +220,10 @@ Just customize your theme here.
   color: #f1c40f;
 }
 
-body.dark-mode .theme-icon.sun {
-  opacity: 0.3;
+body.light-mode .theme-icon.sun {
+  display: inline; /* 라이트 모드일 때 해 아이콘을 보이게 합니다 */
 }
 
-body:not(.dark-mode) .theme-icon.moon {
-  opacity: 0.3;
+body.dark-mode .theme-icon.moon {
+  display: inline; /* 다크 모드일 때 달 아이콘을 보이게 합니다 */
 }
-
