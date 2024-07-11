@@ -249,23 +249,19 @@ input:checked + .slider:before {
   transform: translateX(26px);
 }
 
-.icons {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 100%;
-  padding: 0 5px;
-}
-
-.sun {
-  font-size: 16px;
+.slider:after {
+  content: '☀️';
   position: absolute;
+  font-size: 14px;
+  top: 50%;
   left: 10px;
+  transform: translateY(-50%);
+  transition: .4s;
 }
 
-.moon {
-  font-size: 16px;
-  position: absolute;
-  right: 10px;
+input:checked + .slider:after {
+  content: '🌙';
+  left: 34px;
   color: #f1c40f;
 }
+
