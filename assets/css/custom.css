@@ -198,70 +198,32 @@ Just customize your theme here.
 
 
 
-/* 토글 스위치 스타일 */
+/* 해와 달 아이콘 스타일 */
 .theme-switch-wrapper {
   display: flex;
   align-items: center;
-}
-
-.theme-switch {
-  display: inline-block;
-  height: 34px;
-  position: relative;
-  width: 60px;
-}
-
-.theme-switch input {
-  display: none;
-}
-
-.slider {
-  background-color: #ccc;
-  border-radius: 34px;
-  bottom: 0;
   cursor: pointer;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  transition: .4s;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.slider:before {
-  background-color: white;
-  border-radius: 50%;
-  bottom: 4px;
-  content: "";
-  height: 26px;
-  left: 4px;
-  position: absolute;
-  transition: .4s;
-  width: 26px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+.theme-icon {
+  font-size: 24px;
+  margin: 0 10px;
+  transition: opacity 0.3s;
 }
 
-input:checked + .slider {
-  background-color: #2196F3;
+.theme-icon.sun {
+  color: #f39c12;
 }
 
-input:checked + .slider:before {
-  transform: translateX(26px);
-}
-
-.slider:after {
-  content: '☀️';
-  position: absolute;
-  font-size: 14px;
-  top: 50%;
-  left: 10px;
-  transform: translateY(-50%);
-  transition: .4s;
-}
-
-input:checked + .slider:after {
-  content: '🌙';
-  left: 34px;
+.theme-icon.moon {
   color: #f1c40f;
+}
+
+body.dark-mode .theme-icon.sun {
+  opacity: 0.3;
+}
+
+body:not(.dark-mode) .theme-icon.moon {
+  opacity: 0.3;
 }
 
