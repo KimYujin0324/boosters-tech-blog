@@ -5,16 +5,17 @@ document.addEventListener('DOMContentLoaded', (event) => {
   const currentTheme = localStorage.getItem('theme');
 
   // _config.yml에서 가져온 데이터
-  const lightLogo = "{{ site.logo }}";
-  const darkLogo = "{{ site.logo_dark }}";
+  const lightLogo = "{{ site.baseurl }}/{{ site.logo }}";
+  const darkLogo = "{{ site.baseurl }}/{{ site.logo_dark }}";
 
   // 초기 로고 설정
-  if (currentTheme === 'dark-mode') {
-    document.body.classList.add('dark-mode');
-    logo.src = darkLogo;
-  } else {
-    document.body.classList.add('light-mode');
-    logo.src = lightLogo;
+  if (currentTheme) {
+    document.body.classList.add(currentTheme);
+    if (currentTheme === 'dark-mode') {
+      logo.src = darkLogo;
+    } else {
+      logo.src = lightLogo;
+    }
   }
 
   // 라이트 모드 버튼 클릭 이벤트
