@@ -111,4 +111,11 @@ background: '/img/bg-index.jpg'
       }, 1100);
     });
   }
+  document.addEventListener("DOMContentLoaded", function() {
+    console.log('DOMContentLoaded: DOM is fully loaded and parsed.');
+});
+
+window.addEventListener("load", function() {
+    console.log('Load: All resources are fully loaded.');
+});
 </script>
