@@ -27,13 +27,13 @@ body.dark-mode .footer {
   /* background-color: #2C2C2E; */
   background-color: #333333;
 }
-body.dark-mode .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6, .navbar-light .navbar-brand, .text-dark, .dropdown-item {
+body.dark-mode .h1, body.dark-mode .h2, body.dark-mode .h3, body.dark-mode .h4, body.dark-mode .h5, body.dark-mode .h6, body.dark-mode h1, body.dark-mode h2, body.dark-mode h3, body.dark-mode h4, body.dark-mode h5, body.dark-mode h6, body.dark-mode .navbar-light .navbar-brand, body.dark-mode .text-dark, body.dark-mode .dropdown-item {
   color: #FFF;
 }
-body.dark-mode .article-post, .blockquote, .prevnextlinks .thepostlink, .post-top-meta span {
+body.dark-mode .article-post, body.dark-mode .blockquote, body.dark-mode .prevnextlinks body.dark-mode .thepostlink, body.dark-mode .post-top-meta span {
   color: #f2f2f2;
 }
-body.dark-mode .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+body.dark-mode .nav-tabs .nav-link.active, body.dark-mode .nav-tabs .nav-item.show .nav-link {
   color: #1D1D1B;
   background-color: #dee2e600;
   border-color: #dee2e600 #dee2e600 #dee2e600;
