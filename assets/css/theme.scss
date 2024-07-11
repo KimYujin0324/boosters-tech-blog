@@ -141,6 +141,9 @@ body {
     }
 }
 @media (min-width: 576px) and (max-width: 768px) {
+    body {
+        padding-top:46px;
+    }
     .container {
         width:100%;
         max-width:100%;
@@ -153,6 +156,9 @@ body {
     }
 }
 @media (max-width: 576px) {
+    body {
+        padding-top:46px;
+    }
     .container {
         width:100%;
         max-width:100%;
