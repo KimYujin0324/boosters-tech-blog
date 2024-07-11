@@ -151,6 +151,7 @@ body {
     }
     .container {
         width:100%;
+        max-width:100%;
         padding:0 auto;
     }
     .container-wide {
@@ -160,17 +161,9 @@ body {
     }
 }
 @media (max-width: 576px) {
-    body {
-      font-size: 0.9rem;
-      transition: all 200ms linear;
-      font-family: "Pretendard",sans-serif;
-      line-height:1.7;
-      color: #333;
-      overflow-x:hidden;
-      padding-top:45px;
-    }
     .container {
         width:100%;
+        max-width:100%;
         padding:0 auto;
     }
     .container-wide {
