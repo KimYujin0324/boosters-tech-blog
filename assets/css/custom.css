@@ -22,8 +22,10 @@ Just customize your theme here.
 ::selection {  color: #fff;  background-color: #FF4713;}
 
 /** logo **/
-.bsts-logo-img {
-  width: 230px;
+@media (max-width: 576px) {
+  .bsts-logo-img {
+    width: 230px;
+  }
 }
 
 /** top menu **/
