@@ -20,9 +20,9 @@
 //     }
 //   });
 // });
-document.addEventListener('DOMContentLoaded', (event) => {
-  const sunIcon = document.querySelector('.theme-icon.sun');
-  const moonIcon = document.querySelector('.theme-icon.moon');
+document.addEventListener('DOMContentLoaded', () => {
+  const sunIcon = document.getElementById('sun-icon');
+  const moonIcon = document.getElementById('moon-icon');
   const currentTheme = localStorage.getItem('theme');
 
   if (currentTheme) {
