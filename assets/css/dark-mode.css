@@ -48,7 +48,6 @@ body.dark-mode .prevnextlinks .thepostlink {
 }
 /* 다크 모드 */
 body.dark-mode #disqus_thread {
-  background-color: #333 !important;
   color: white !important;
 }
 
