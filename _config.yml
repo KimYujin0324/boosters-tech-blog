@@ -4,7 +4,6 @@ timezone: UTC
 baseurl: "/"
 permalink: "/:title/"
 logo: 'assets/images/custom/tech_a_bk.png'
-logo_dark: 'assets/images/custom/tech_a_bk_white.jpg'
 favicon: 'assets/images/custom/favicon.ico'
 author: tech
 paginate_path: "/page:num/"
