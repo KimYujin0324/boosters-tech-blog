@@ -245,7 +245,6 @@ body:not(.dark-mode) .theme-icon.moon {
   color: #FFF;
   display: block;
   position: relative;
-  overflow: hidden;
   height: 2em; /* 줄 높이에 맞게 설정 */
 }
 .greeting {
