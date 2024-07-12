@@ -254,16 +254,16 @@ body:not(.dark-mode) .theme-icon.moon {
   position: absolute;
   height: 25vmin;
   width: 40vmin;
-  background: #282c34;
-  transform: translate(-45vmin, -24.5vmin);
+  background: #1D1D1B;
+  transform: translate(-60vmin, -24.5vmin);
 }
 .closure::before {
   content: '';
   position: absolute;
   height: 25vmin;
   width: 40vmin;
-  background: #282c34;
-  transform: translate(-40vmin, 5vmin);
+  background: #1D1D1B;
+  transform: translate(-60vmin, 5vmin);
 }
 
 .en {
