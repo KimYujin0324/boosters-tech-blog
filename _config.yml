@@ -48,7 +48,7 @@ authors:
     description: "부스터스 Tech팀에서 프론트엔드를 맡고 있습니다. 데이터 정보를 시각적으로 예쁘고 사용자 친화적으로 변환하는 일을 하고 있으며 맹구의 콧물을 좋아합니다."
   sekim:
     name: Kim Seung Eon
-    display_name: Seungeon.kim
+    display_name: 식혜
     avatar: 'assets/images/미모티콘-승언.jpg'
     email: se.kim@boosters.kr
     description: "부스터스 Tech팀에서 백엔드와 스몰토크를 담당하고 있습니다. 데이터 서빙과 정제에 관심이 많습니다."
@@ -57,7 +57,7 @@ authors:
     display_name: Taewoo.kim
     avatar: 'assets/images/미모티콘-태우.jpg'
     email: tw.kim@boosters.kr
-    description: "부스터스 Tech팀에서 백엔드를 맡고 있습니다."
+    description: "부스터스 Tech팀에서 백엔드를 맡고 있습니다. 저는 기술로 사람들이 더 가치있고 창의적인 일을 할 수 있게 돕는 것을 목표로 합니다."
 
     # web: https://www.wowthemes.net/category/jekyll-themes/
     # twitter: https://twitter.com/wowthemesnet
