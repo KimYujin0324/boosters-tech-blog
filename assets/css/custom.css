@@ -244,18 +244,30 @@ body:not(.dark-mode) .theme-icon.moon {
   animation: move 4s infinite;
 }
 .greeting {
-  display: inline;
   top: 8.6vmin;
   animation: white-out 5s infinite;
 }
-.closure {
+
+.closure::after {
+  content: '';
+  position: absolute;
+  height: 25vmin;
+  width: 40vmin;
+  background: #282c34;
+  transform: translate(-35vmin, -24.5vmin);
+}
+
+.closure::before {
   content: '';
   position: absolute;
   height: 8vmin;
   width: 14vmin;
-  background: #fff;
-  transform: translate(10vmin, -8.5vmin);
+  background: #282c34;
+  transform: translate(-35vmin, 31vmin);
 }
+
+
+
 
 
 .en {
