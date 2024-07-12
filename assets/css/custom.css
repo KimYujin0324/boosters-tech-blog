@@ -206,11 +206,12 @@ Just customize your theme here.
   cursor: pointer;
 }
 
+/* 
 .theme-icon {
   font-size: 24px;
   margin: 0 10px;
   transition: opacity 0.3s;
-}
+} */
 
 .theme-icon.sun {
   color: #f39c12;
@@ -226,4 +227,12 @@ body.dark-mode .theme-icon.sun {
 
 body:not(.dark-mode) .theme-icon.moon {
   opacity: 0.3;
+}
+
+.theme-icon {
+  cursor: pointer;
+  display: none; /* 기본적으로 숨김 */
+}
+.theme-icon.active {
+  display: inline; /* 활성화된 아이콘만 표시 */
 }
