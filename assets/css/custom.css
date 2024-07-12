@@ -249,7 +249,7 @@ body:not(.dark-mode) .theme-icon.moon {
   top: 8.6vmin;
   animation: white-out 5s infinite;
 }
-.closure::after {
+/* .closure::after {
   content: '';
   position: absolute;
   height: 25vmin;
@@ -264,7 +264,7 @@ body:not(.dark-mode) .theme-icon.moon {
   width: 40vmin;
   background: #282c34;
   transform: translate(-40vmin, 5vmin);
-}
+} */
 
 .en {
   color: #fff;
