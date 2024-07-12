@@ -238,54 +238,35 @@ body:not(.dark-mode) .theme-icon.moon {
 }
 
 
+
+
+
 .string {
-  display: inline;
-  text-align: center;
-  animation: move 4s infinite;
+  color: #FFF;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  height: 2em; /* 줄 높이에 맞게 설정 */
 }
 .greeting {
-  top: 8.6vmin;
-  animation: white-out 5s infinite;
-}
-
-.closure::after {
-  content: '';
   position: absolute;
-  height: 25vmin;
-  width: 40vmin;
-  background: #282c34;
-  transform: translate(-35vmin, -24.5vmin);
+  animation: slide-up 3s infinite;
+  display: inline-block;
 }
-
-.closure::before {
-  content: '';
-  position: absolute;
-  height: 8vmin;
-  width: 14vmin;
-  background: #282c34;
-  transform: translate(-35vmin, 31vmin);
+.greeting.es {
+  animation-delay: 1.5s;
 }
-
-
-
-
-
-.en {
-  color: #fff;
-}
-.es {
-  color: #ff4713;
-}
-
-@keyframes move {
-  25% {
-    transform: translatey(-5.8vmin);
-    opacity: 1;
+@keyframes slide-up {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
   }
   50% {
-    transform: translatey(-11vmin);
+    transform: translateY(0%);
+    opacity: 1;
   }
-  75% {
-    transform: translatey(-16.5vmin);
+  100% {
+    transform: translateY(-100%);
+    opacity: 0;
   }
 }
