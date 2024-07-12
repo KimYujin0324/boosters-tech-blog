@@ -17,7 +17,7 @@
 //     localStorage.setItem('theme', 'dark-mode');
 //   });
 // });
-document.addEventListener('DOMContentLoaded', (event) => {
+document.addEventListener('DOMContentLoaded', () => {
   const sunIcon = document.querySelector('.theme-icon.sun');
   const moonIcon = document.querySelector('.theme-icon.moon');
   const currentTheme = localStorage.getItem('theme');
