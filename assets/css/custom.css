@@ -250,10 +250,8 @@ body:not(.dark-mode) .theme-icon.moon {
 .greeting {
   position: absolute;
   animation: slide-up 3s infinite;
-  display: inline-block;
-}
-.greeting.es {
   animation-delay: 1.5s;
+  display: inline-block;
 }
 @keyframes slide-up {
   0% {
