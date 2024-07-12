@@ -255,6 +255,9 @@ body:not(.dark-mode) .theme-icon.moon {
   animation-delay: 1.5s;
   display: inline-block;
 }
+.es{
+  color: #FF4713;
+}
 @keyframes slide-up {
   0% {
     transform: translateY(100%);
