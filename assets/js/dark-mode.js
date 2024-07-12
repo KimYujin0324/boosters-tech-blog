@@ -39,16 +39,16 @@ document.addEventListener('DOMContentLoaded', (event) => {
       setActiveIcon(); // 초기 아이콘 설정
 
       sunIcon.addEventListener('click', () => {
-        document.body.classList.remove('dark-mode');
-        document.body.classList.add('light-mode');
-        localStorage.setItem('theme', 'light-mode');
+        document.body.classList.add('dark-mode');
+        document.body.classList.remove('light-mode');
+        localStorage.setItem('theme', 'dark-mode');
         setActiveIcon();
       });
 
       moonIcon.addEventListener('click', () => {
-        document.body.classList.add('dark-mode');
-        document.body.classList.remove('light-mode');
-        localStorage.setItem('theme', 'dark-mode');
+        document.body.classList.remove('dark-mode');
+        document.body.classList.add('light-mode');
+        localStorage.setItem('theme', 'light-mode');
         setActiveIcon();
       });
     });
