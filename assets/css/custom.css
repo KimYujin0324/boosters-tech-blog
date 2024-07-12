@@ -241,7 +241,7 @@ body:not(.dark-mode) .theme-icon.moon {
   display: inline-block; 
   animation: slide-up 1.2s ease-out;
 }
-@keyframes slide-p {
+@keyframes slide-up {
   from {
     transform: translateY(25px);
     opacity: 0;
