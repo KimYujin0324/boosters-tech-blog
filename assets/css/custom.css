@@ -237,23 +237,17 @@ body:not(.dark-mode) .theme-icon.moon {
   display: inline;
 }
 
-
-
-
-
-@keyframes slideUp {
+.bsts-slideup-text {
+  display: inline-block; 
+  animation: slide-up 1.2s  ease-out; 
+}
+@keyframes slide-u {
   from {
-    transform: translateY(20px);
+    transform: translateY(25px);
     opacity: 0;
   }
   to {
     transform: translateY(0);
     opacity: 1;
   }
-}
-
-.slide-up {
-  display: inline-block; /* Ensure the span is treated as inline-block to apply animation */
-  animation: slideUp 1s ease-out; /* Customize duration and easing as needed */
-  color: #FF4713; /* Text color */
 }
