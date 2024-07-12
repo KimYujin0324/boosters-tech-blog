@@ -239,13 +239,12 @@ body:not(.dark-mode) .theme-icon.moon {
 
 
 .string {
-  display: flex;
-  flex-direction: column;
+  display: inline;
   text-align: center;
   animation: move 4s infinite;
 }
 .greeting {
-  position: relative;
+  display: inline;
   top: 8.6vmin;
   animation: white-out 5s infinite;
 }
