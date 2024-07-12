@@ -87,6 +87,7 @@ background: '/img/bg-index.jpg'
 <script>
   if (window.location.pathname == '/') {
     window.addEventListener('load', function() {
+      const zeroMessage = document.getElementById('bsts-landing-zero');
       const firstMessage = document.getElementById('bsts-landing-first');
       const secondMessage = document.getElementById('bsts-landing-second');
       const thirdMessage = document.getElementById('bsts-landing-third');
@@ -95,19 +96,24 @@ background: '/img/bg-index.jpg'
       firstMessage.style.display = 'block';
 
       setTimeout(function() {
-        firstMessage.style.display = 'none';
-        secondMessage.style.display = 'block';
+        zeroMessage.style.display = 'none';
+        firstMessage.style.display = 'block';
 
         setTimeout(function() {
-          secondMessage.style.display = 'none';
-          thirdMessage.style.display = 'block';
+          firstMessage.style.display = 'none';
+          secondMessage.style.display = 'block';
 
           setTimeout(function() {
-            thirdMessage.style.display = 'none';
-            landingPage.style.display = 'none';
-          }, 1500);
-        }, 1000);
-      }, 1100);
+            secondMessage.style.display = 'none';
+            thirdMessage.style.display = 'block';
+
+            setTimeout(function() {
+              thirdMessage.style.display = 'none';
+              landingPage.style.display = 'none';
+            }, 1500);
+          }, 1000);
+        }, 1100);
+      }, 1000);
     });
   }
 </script>
