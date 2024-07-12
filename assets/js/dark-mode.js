@@ -24,11 +24,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
   const setActiveIcon = () => {
     if (document.body.classList.contains('dark-mode')) {
-      sunIcon.classList.add('active');
-      moonIcon.classList.remove('active');
-    } else {
-      sunIcon.classList.remove('active');
       moonIcon.classList.add('active');
+      sunIcon.classList.remove('active');
+    } else {
+      moonIcon.classList.remove('active');
+      sunIcon.classList.add('active');
     }
   };
 
