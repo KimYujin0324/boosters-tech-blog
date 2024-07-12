@@ -45,7 +45,7 @@ authors:
     display_name: 당당너구리
     avatar: 'assets/images/미모티콘-유진.jpg'
     email: yujin.kim@boosters.kr
-    description: "부스터스 Tech팀에서 프론트엔드를 맡고 있습니다. 데이터 정보를 시각적으로 예쁘고 사용자 친화적으로 변환하는 일을 하고 있습니다."
+    description: "부스터스 Tech팀에서 프론트엔드를 맡고 있습니다. 데이터 정보를 시각적으로 예쁘고 사용자 친화적으로 변환하는 일을 하고 있으며 맹구의 콧물을 좋아합니다."
   sekim:
     name: Kim Seung Eon
     display_name: Seungeon.kim
@@ -57,7 +57,7 @@ authors:
     display_name: Taewoo.kim
     avatar: 'assets/images/미모티콘-태우.jpg'
     email: tw.kim@boosters.kr
-    description: "부스터스 Tech팀에서 백엔드와 상식왕을 맡고 있습니다."
+    description: "부스터스 Tech팀에서 백엔드를 맡고 있습니다."
 
     # web: https://www.wowthemes.net/category/jekyll-themes/
     # twitter: https://twitter.com/wowthemesnet
