@@ -239,8 +239,7 @@ body:not(.dark-mode) .theme-icon.moon {
 
 .bsts-slideup-text {
   display: inline-block; 
-  animation: slide-up 1.25s ease-out;
-  animation-delay: 0.25s; 
+  animation: slide-up 1.2s ease-out;
 }
 @keyframes slide-u {
   from {
