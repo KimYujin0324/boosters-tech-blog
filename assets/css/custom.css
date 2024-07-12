@@ -241,33 +241,19 @@ body:not(.dark-mode) .theme-icon.moon {
 
 
 
-.string {
-  color: #FFF;
-  position: relative;
-}
-.greeting-wrapper {
-  display: inline-block;
-  position: relative;
-}
-.greeting {
-  position: absolute;
-  animation: slide-up 3s infinite;
-}
-.greeting.es {
-  animation-delay: 1.5s;
-  color: #FF4713;
-}
-@keyframes slide-up {
-  0% {
-    transform: translateY(100%);
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
     opacity: 0;
   }
-  50% {
-    transform: translateY(0%);
+  to {
+    transform: translateY(0);
     opacity: 1;
   }
-  100% {
-    transform: translateY(-100%);
-    opacity: 0;
-  }
+}
+
+.slide-up {
+  display: inline-block; /* Ensure the span is treated as inline-block to apply animation */
+  animation: slideUp 1s ease-out; /* Customize duration and easing as needed */
+  color: #FF4713; /* Text color */
 }
