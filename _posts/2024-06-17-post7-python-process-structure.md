@@ -16,6 +16,10 @@ image: assets/images/1.jpg
 
 `[구조화] python_process 구조화` 라는 약간은 부담스러운 티켓이 생성되었습니다.
 
+<p style="text-align: center;">
+  <img src="/assets/images/2024-07/python_project_renewal_asana.png" alt="파이썬프로세스 구조화 아사나 티켓">
+</p>
+
 매출 정산을 위한 크롤링 소스가 포함된 기존 파이썬 프로젝트를 구조화하는 작업을 맡게 된 것입니다. 기존 코드베이스에 추가하여 다양한 프로세스를 파이썬으로 실행하고자 하는 필요로 인해 포괄적인 프로젝트 구조를 설계해야 했습니다. 이는 단순한 코드 작성과 다르게 프로젝트의 전반적인 방향성을 결정하는 작업이기 때문에 많은 고민과 계획이 필요했습니다.
 
 
@@ -55,26 +59,10 @@ image: assets/images/1.jpg
 계층별 패키지는 프로젝트를 아키텍처적 계층에 따라 패키지화하여 분리하는 방식입니다. 이 방식은 주로 소프트웨어의 아키텍처를 분리하고 각 계층별로 책임을 명확히 할 수 있도록 도와줍니다.
 
 예시:
-└── app
-    ├── controller
-    │   ├── company_controller.py
-    │   ├── product_controller.py
-    │   └── user_controller.py
-    ├── model
-    │   ├── company.py
-    │   ├── product.py
-    │   └── user.py
-    ├── repository
-    │   ├── company_repository.py
-    │   ├── product_repository.py
-    │   └── user_repository.py
-    ├── service
-    │   ├── company_service.py
-    │   ├── product_service.py
-    │   └── user_service.py
-    └── util
-        ├── common_utils.py
-        └── logging_utils.py
+
+<p style="text-align: center;">
+  <img src="/assets/images/2024-07/package_by_layer_example.png" alt="계층별 패키지 예시">
+</p>
 
 
 - 장점:
@@ -94,24 +82,11 @@ image: assets/images/1.jpg
 
 기능별 패키지 구조는 프로젝트의 기능 또는 모듈을 기준으로 패키지를 구성하는 방식입니다. 이러한 구조는 각 기능이 독립적이고 자급자족하게 동작할 수 있도록 합니다.
 
-예시: 
-my_project/
-│
-├── user/
-│   ├── __init__.py
-│   ├── controller.py
-│   ├── service.py
-│   ├── model.py
-│   └── repository.py
-│
-├── order/
-│   ├── __init__.py
-│   ├── controller.py
-│   ├── service.py
-│   ├── model.py
-│   └── repository.py
-│
-└── main.py
+예시 :
+
+<p style="text-align: center;">
+  <img src="/assets/images/2024-07/package_by_feature_example.png" alt="기능별 패키지 예시">
+</p>
 
 - 장점:
 
@@ -157,7 +132,7 @@ my_project/
     파이썬의 강력한 기능 중 하나인 데코레이터를 적극적으로 활용하여 코드의 효율성을 높이고 중복을 줄입니다. 예를 들어, 로깅, 인증, 성능 측정 등 여러 측면에서 유용하게 활용할 수 있습니다.
 
 
-### 앞으로..!
+### 결론
 
 
 <!-- 
