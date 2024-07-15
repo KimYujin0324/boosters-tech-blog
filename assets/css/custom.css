@@ -206,11 +206,12 @@ Just customize your theme here.
   cursor: pointer;
 }
 
+/* 
 .theme-icon {
   font-size: 24px;
   margin: 0 10px;
   transition: opacity 0.3s;
-}
+} */
 
 .theme-icon.sun {
   color: #f39c12;
@@ -226,4 +227,27 @@ body.dark-mode .theme-icon.sun {
 
 body:not(.dark-mode) .theme-icon.moon {
   opacity: 0.3;
+}
+
+.theme-icon {
+  cursor: pointer;
+  display: none;
+}
+.theme-icon.active {
+  display: inline;
+}
+
+.bsts-slideup-text {
+  display: inline-block; 
+  animation: slide-up 1.2s ease-out;
+}
+@keyframes slide-up {
+  from {
+    transform: translateY(25px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
