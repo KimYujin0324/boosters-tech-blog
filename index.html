@@ -55,7 +55,7 @@ background: '/img/bg-index.jpg'
             {% if category == "all" %}
               {% for post in site.posts %}
                 <div class="post" data-tags="{{ post.tags | join: ' ' }}">
-                  <div class="col-md-12 px-3 py-45" style="border-bottom: 1px solid #BDBDBD50;">
+                  <div class="col-md-12 px-3 py-3 py-sm-45" style="border-bottom: 1px solid #BDBDBD50;">
                     {% include postbox.html %}
                   </div>
                 </div>
@@ -64,7 +64,7 @@ background: '/img/bg-index.jpg'
               {% for post in site.posts %}
                 {% if post.category == category %}
                   <div class="post" data-tags="{{ post.tags | join: ' ' }}">
-                    <div class="col-md-12 px-3 py-45" style="border-bottom: 1px solid #BDBDBD50;">
+                    <div class="col-md-12 px-3 py-3 py-sm-45" style="border-bottom: 1px solid #BDBDBD50;">
                       {% include postbox.html %}
                     </div>
                   </div>

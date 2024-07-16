@@ -8,6 +8,16 @@ Just customize your theme here.
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
 }
+.py-sm-45 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+@media (max-width: 576px) {
+  .py-sm-45 {
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+  }
+}
 .py-10 {
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -96,18 +106,9 @@ Just customize your theme here.
   width: 100%;
 }
 
-@media (max-width: 576px) {
-  .bsts-landing-text {
-    font-size: 1.5em;
-    font-weight: 800;
-  }
-  .bsts-landing-logo {
-    width: 70%;
-    height: auto;
-  }
-}
 .bsts-hero-text{
   color: #FFF;
+  word-break: keep-all;
 }
 .btn-bsts {
   background-color: #1D1D1B;
@@ -118,10 +119,26 @@ Just customize your theme here.
   display: inline-block;
   word-break: keep-all;
 }
+@media (max-width: 576px) {
+  .bsts-card-title {
+    margin-bottom: 1rem;
+    font-size: 1.35rem;
+  }
+}
 .bsts-sub-title {
   font-size: 16px;
   overflow-wrap: break-word;
   word-break: keep-all;
+}
+@media (max-width: 576px) {
+  .bsts-landing-text {
+    font-size: 1.5em;
+    font-weight: 800;
+  }
+  .bsts-landing-logo {
+    width: 70%;
+    height: auto;
+  }
 }
 .bsts-href-box {
   text-decoration: none;
@@ -135,11 +152,22 @@ Just customize your theme here.
   color: #1D1D1B;
   font-weight: 300;
 }
+@media (max-width: 576px) {
+  .bsts-post-name {
+    font-size: 1.95rem;
+  }
+}
 .bsts-post-avatar img {
   min-width: 50px;
   height: 50px;
   border-radius: 50%;
   border: 1px solid #BDBDBD50;
+}
+@media (max-width: 576px) {
+  .bsts-post-avatar img {
+    min-width: 40px;
+    height: 40px;
+  }
 }
 
 /** 태그 **/
@@ -235,6 +263,16 @@ Just customize your theme here.
   justify-content: center; 
   align-items: center; 
   z-index: 10000;
+}
+@media (max-width: 576px) {
+  .bsts-landing-text {
+    font-size: 1.5em;
+    font-weight: 800;
+  }
+  .bsts-landing-logo {
+    width: 70%;
+    height: auto;
+  }
 }
 
 /* 해와 달 아이콘 스타일 */
