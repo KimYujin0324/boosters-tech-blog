@@ -109,15 +109,20 @@ Just customize your theme here.
 }
 .bsts-card-title {
   margin-bottom: 1.15rem;
+  transition: transform 0.3s ease;
 }
 .bsts-sub-title {
   font-size: 16px;
   overflow-wrap: break-word;
 }
-.bsts-href-box {
-  transition: transform 0.3s ease;
-}
 .bsts-href-box:hover {
+  transform: scale(1.1);
+}
+.bsts-href-box {
+  text-decoration: none;
+  color: inherit;
+}
+.bsts-href-box:hover .bsts-card-title {
   transform: scale(1.1);
 }
 .bsts-post-name {
