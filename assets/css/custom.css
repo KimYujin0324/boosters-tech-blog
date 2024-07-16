@@ -110,6 +110,8 @@ Just customize your theme here.
 .bsts-card-title {
   margin-bottom: 1.15rem;
   transition: transform 0.3s ease;
+  transform-origin: center;
+  display: inline-block;
 }
 .bsts-sub-title {
   font-size: 16px;
@@ -120,7 +122,8 @@ Just customize your theme here.
   color: inherit;
 }
 .bsts-href-box:hover .bsts-card-title {
-  transform: scale(1.1);
+  transform: scale(1.02);
+  display: inline-block;
 }
 .bsts-post-name {
   color: #1D1D1B;
