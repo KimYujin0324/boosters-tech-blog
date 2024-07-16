@@ -21,6 +21,11 @@ Just customize your theme here.
 /** 드래그 **/
 ::selection {  color: #fff;  background-color: #FF4713;}
 
+/** 문장 줄바꿈 **/
+.bsts-wordbreak-keepall {
+  word-break: keep-all;
+}
+
 /** logo **/
 @media (max-width: 576px) {
   .bsts-logo-img {
@@ -111,10 +116,12 @@ Just customize your theme here.
   margin-bottom: 1.15rem;
   transform-origin: center;
   display: inline-block;
+  word-break: keep-all;
 }
 .bsts-sub-title {
   font-size: 16px;
   overflow-wrap: break-word;
+  word-break: keep-all;
 }
 .bsts-href-box {
   text-decoration: none;
@@ -166,7 +173,7 @@ Just customize your theme here.
 .bsts-tag-list a.selected:hover {
   background-color: white;
   color: #ff4713;
-  border: 1px solid BDBDBD50;
+  border: 1px solid #BDBDBD50;
   border-radius: 20px;
   padding: 5px 10px;
   text-decoration: none;
@@ -230,38 +237,24 @@ Just customize your theme here.
   z-index: 10000;
 }
 
-
-
 /* 해와 달 아이콘 스타일 */
 .theme-switch-wrapper {
   display: flex;
   align-items: center;
   cursor: pointer;
 }
-
-/* 
-.theme-icon {
-  font-size: 24px;
-  margin: 0 10px;
-  transition: opacity 0.3s;
-} */
-
 .theme-icon.sun {
   color: #f39c12;
 }
-
 .theme-icon.moon {
   color: #f1c40f;
 }
-
 body.dark-mode .theme-icon.sun {
   opacity: 0.3;
 }
-
 body:not(.dark-mode) .theme-icon.moon {
   opacity: 0.3;
 }
-
 .theme-icon {
   cursor: pointer;
   display: none;
@@ -269,7 +262,6 @@ body:not(.dark-mode) .theme-icon.moon {
 .theme-icon.active {
   display: inline;
 }
-
 .bsts-slideup-text {
   display: inline-block; 
   animation: slide-up 1.2s ease-out;
