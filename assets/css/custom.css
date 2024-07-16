@@ -40,6 +40,11 @@ Just customize your theme here.
 .nav-link {
   padding: 1rem;
 }
+@media (max-width: 576px) {
+  .nav-link {
+    padding: 0.75rem;
+  }
+}
 .nav-tabs .nav-link {
   position: relative;
   color: #1D1D1B;
