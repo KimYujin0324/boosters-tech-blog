@@ -163,6 +163,14 @@ Just customize your theme here.
   padding: 5px 10px;
   text-decoration: none;
 }
+.bsts-tag-list a.selected:hover {
+  background-color: white;
+  color: #ff4713;
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 5px 10px;
+  text-decoration: none;
+}
 .bsts-tag-list a {
   cursor: pointer;
   margin-right: 2px;
