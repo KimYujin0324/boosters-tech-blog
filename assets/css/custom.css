@@ -126,19 +126,18 @@ Just customize your theme here.
   }
 }
 .bsts-sub-title {
+  margin-bottom: 1.15rem;
   font-size: 16px;
   overflow-wrap: break-word;
   word-break: keep-all;
 }
 @media (max-width: 576px) {
-  .bsts-landing-text {
-    font-size: 1.5em;
-    font-weight: 800;
+  .bsts-sub-title {
+    margin-bottom: 1rem;
   }
-  .bsts-landing-logo {
-    width: 70%;
-    height: auto;
-  }
+}
+.bsts-post-date {
+  
 }
 .bsts-href-box {
   text-decoration: none;
