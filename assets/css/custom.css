@@ -91,6 +91,10 @@ Just customize your theme here.
     font-size: 1.35em;
     font-weight: 800;
   }
+  .bsts-landing-logo {
+    width: 80%;
+    height: auto;
+  }
 }
 .bsts-hero-text{
   color: #FFF;
