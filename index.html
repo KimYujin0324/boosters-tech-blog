@@ -85,29 +85,68 @@ background: '/img/bg-index.jpg'
 </section>
 
 <script>
-  if (window.location.pathname == '/') {
+  // if (window.location.pathname == '/') {
+  //   window.addEventListener('load', function() {
+  //     const firstMessage = document.getElementById('bsts-landing-first');
+  //     const secondMessage = document.getElementById('bsts-landing-second');
+  //     const thirdMessage = document.getElementById('bsts-landing-third');
+  //     const landingPage = document.getElementById('landing-page');
+
+  //     firstMessage.style.display = 'block';
+
+  //     setTimeout(function() {
+  //       firstMessage.style.display = 'none';
+  //       secondMessage.style.display = 'block';
+
+  //       setTimeout(function() {
+  //         secondMessage.style.display = 'none';
+  //         thirdMessage.style.display = 'block';
+
+  //         setTimeout(function() {
+  //           thirdMessage.style.display = 'none';
+  //           landingPage.style.display = 'none';
+  //         }, 1500);
+  //       }, 1500);
+  //     }, 1200);
+  //   });
+  // }
+if (window.location.pathname == '/') {
     window.addEventListener('load', function() {
-      const firstMessage = document.getElementById('bsts-landing-first');
-      const secondMessage = document.getElementById('bsts-landing-second');
-      const thirdMessage = document.getElementById('bsts-landing-third');
-      const landingPage = document.getElementById('landing-page');
+        const firstMessage = document.getElementById('bsts-landing-first');
+        const secondMessage = document.getElementById('bsts-landing-second');
+        const thirdMessage = document.getElementById('bsts-landing-third');
+        const landingPage = document.getElementById('landing-page');
 
-      firstMessage.style.display = 'block';
-
-      setTimeout(function() {
-        firstMessage.style.display = 'none';
-        secondMessage.style.display = 'block';
-
-        setTimeout(function() {
-          secondMessage.style.display = 'none';
-          thirdMessage.style.display = 'block';
-
-          setTimeout(function() {
+        let skipLanding = false;
+        function skip() {
+            skipLanding = true;
+            firstMessage.style.display = 'none';
+            secondMessage.style.display = 'none';
             thirdMessage.style.display = 'none';
             landingPage.style.display = 'none';
-          }, 1500);
-        }, 1500);
-      }, 1200);
+        }
+
+        landingPage.addEventListener('click', skip);
+
+        firstMessage.style.display = 'block';
+
+        setTimeout(function() {
+            if (skipLanding) return;
+            firstMessage.style.display = 'none';
+            secondMessage.style.display = 'block';
+
+            setTimeout(function() {
+                if (skipLanding) return;
+                secondMessage.style.display = 'none';
+                thirdMessage.style.display = 'block';
+
+                setTimeout(function() {
+                    if (skipLanding) return;
+                    thirdMessage.style.display = 'none';
+                    landingPage.style.display = 'none';
+                }, 1500);
+            }, 1500);
+        }, 1200);
     });
   }
 </script>
