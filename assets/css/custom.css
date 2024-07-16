@@ -8,16 +8,6 @@ Just customize your theme here.
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
 }
-.py-sm-45 {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
-}
-@media (max-width: 576px) {
-  .py-sm-45 {
-    padding-top: 0rem;
-    padding-bottom: 0rem;
-  }
-}
 .py-10 {
   padding-top: 5rem;
   padding-bottom: 5rem;
