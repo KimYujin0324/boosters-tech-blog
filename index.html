@@ -37,7 +37,7 @@ background: '/img/bg-index.jpg'
     </div>
     
     <!-- 태그 리스트 -->
-    <div class="mt-4">
+    <!-- <div class="mt-4">
       <div class="bsts-tag-container px-1 px-md-3">
         {% for tag in site.tags %}
           <div class="bsts-tag-list">
@@ -45,7 +45,17 @@ background: '/img/bg-index.jpg'
           </div>
         {% endfor %}
       </div>
+    </div> -->
+    <div class="mt-4">
+      <div class="bsts-tag-container px-1 px-md-3 collapse" id="collapseTags">
+        {% for tag in site.tags %}
+          <div class="bsts-tag-list">
+            <a href="#" class="tag" data-tag="{{ tag[0] | slugify_en }}">{{ tag[0] }}</a>
+          </div>
+        {% endfor %}
+      </div>
     </div>
+    
     
     <div class="tab-content" id="tabContent">
       {% assign categories = "all,tech,culture" | split: "," %}
@@ -124,4 +134,30 @@ background: '/img/bg-index.jpg'
           }, 1200);
       });
   }
+  $(document).ready(function() {
+  var maxTagsToShow = 6; // 최대 보여질 태그 수 설정
+  var $tagsContainer = $('#collapseTags');
+  var $tags = $tagsContainer.find('.bsts-tag-list');
+  
+  if ($tags.length > maxTagsToShow) {
+    $tags.slice(maxTagsToShow).hide(); // 설정된 임계치 이후의 태그 숨김
+
+    $tagsContainer.append('<a href="#" class="btn btn-link mt-2" id="toggleTagsBtn" data-toggle="collapse" data-target="#collapseTags">더 보기</a>');
+
+    $('#toggleTagsBtn').on('click', function(e) {
+      e.preventDefault();
+      var $btn = $(this);
+      var showText = '더 보기';
+      var hideText = '접기';
+
+      if ($btn.text() === showText) {
+        $tags.show();
+        $btn.text(hideText);
+      } else {
+        $tags.slice(maxTagsToShow).hide();
+        $btn.text(showText);
+      }
+    });
+  }
+});
 </script>
