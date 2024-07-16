@@ -93,7 +93,7 @@ Just customize your theme here.
 
 @media (max-width: 576px) {
   .bsts-landing-text {
-    font-size: 1.4em;
+    font-size: 1.5em;
     font-weight: 800;
   }
   .bsts-landing-logo {
@@ -114,9 +114,6 @@ Just customize your theme here.
 .bsts-sub-title {
   font-size: 16px;
   overflow-wrap: break-word;
-}
-.bsts-href-box:hover {
-  transform: scale(1.1);
 }
 .bsts-href-box {
   text-decoration: none;
