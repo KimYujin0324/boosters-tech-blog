@@ -126,7 +126,6 @@ Just customize your theme here.
   }
 }
 .bsts-sub-title {
-  margin-bottom: 1.15rem;
   font-size: 16px;
   overflow-wrap: break-word;
   word-break: keep-all;
@@ -137,7 +136,7 @@ Just customize your theme here.
   }
 }
 .bsts-post-date {
-  
+  font-size: 0.85rem;
 }
 .bsts-href-box {
   text-decoration: none;
