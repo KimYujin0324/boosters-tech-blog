@@ -183,7 +183,12 @@ Just customize your theme here.
   gap: 10px;
 }
 .bsts-tag-list {
-  font-size: 0.95rem;
+  font-size: 1rem;
+}
+@media (max-width: 576px) {
+  .bsts-tag-list {
+    font-size: 0.95rem;
+  }
 }
 .bsts-tag-list a {
   text-decoration: none;
