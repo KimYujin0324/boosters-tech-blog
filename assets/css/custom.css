@@ -99,6 +99,12 @@ Just customize your theme here.
   font-size: 16px;
   overflow-wrap: break-word;
 }
+.bsts-href-box {
+  transition: transform 0.3s ease;
+}
+.bsts-href-box:hover {
+  transform: scale(1.1);
+}
 .bsts-post-name {
   color: #1D1D1B;
   font-weight: 300;
