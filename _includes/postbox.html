@@ -1,6 +1,8 @@
 <!-- begin post -->
 {% assign author = site.authors[post.author] %}
 <div class="card">
+
+  <a href="{{ post.url | absolute_url }}"></a>
     <div class="card-block row">
         <div class="col-12 col-sm-8 col-md-9">
             <div class="tags-container">
@@ -8,7 +10,7 @@
                     <span class="bsts-tag">#{{ tag }}</span>
                 {% endfor %}
             </div>
-            <h4 class="bsts-card-title serif-font"><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h4>
+            <h4 class="bsts-card-title serif-font">{{ post.title }}</h4>
             <p class="card-text text-muted bsts-sub-title">{{ post.subtitle }}</p>
         </div>
         <div class="col-12 col-sm-4 col-md-3 metafooter" style="display: flex; justify-content: flex-end; align-items: center;">
@@ -25,5 +27,7 @@
             <div class="clearfix"></div>
         </div>
     </div>
+
+  </a>
 </div>
 <!-- end post -->
