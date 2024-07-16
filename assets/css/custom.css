@@ -109,7 +109,6 @@ Just customize your theme here.
 }
 .bsts-card-title {
   margin-bottom: 1.15rem;
-  transition: transform 0.3s ease;
   transform-origin: center;
   display: inline-block;
 }
