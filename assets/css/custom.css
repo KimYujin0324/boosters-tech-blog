@@ -183,7 +183,7 @@ Just customize your theme here.
   padding: 5px 10px;
   text-decoration: none;
 }
-.button:hover:not(.active) {
+.button:hover:not(.selected) {
   background-color: #FF4713;
   color: white;
   border: 1px solid #ff4713;
