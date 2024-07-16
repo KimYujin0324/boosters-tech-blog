@@ -46,6 +46,15 @@ body.dark-mode blockquote {
 body.dark-mode .prevnextlinks .thepostlink {
   color: #f2f2f2;
 }
+#disqus_thread {
+  color: #BDBDBD !important;
+}
+#disqus_thread a {
+  color: #BDBDBD !important;
+}
+#disqus_thread div {
+  color: #BDBDBD !important;
+}
 body.dark-mode #disqus_thread {
   color: white !important;
 }
