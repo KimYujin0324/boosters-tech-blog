@@ -11,8 +11,8 @@
             <a href="{{ post.url | absolute_url }}" class="bsts-href-box">
                 <h4 class="bsts-card-title serif-font">{{ post.title }}</h4>
                 <p class="card-text text-muted bsts-sub-title">{{ post.subtitle }}</p>
-                <p class="card-text text-muted bsts-post-date">{{ post.date | date: "%Y-%m-%d" }}</p>
             </a>
+            <p class="card-text text-muted bsts-post-date">{{ post.date | date: "%Y-%m-%d" }}</p>
         </div>
         <div class="col-12 col-sm-4 col-md-3 metafooter pt-2 pt-sm-0" style="display: flex; justify-content: flex-end; align-items: center;">
             <span class="post-name bsts-post-name pt-2">
