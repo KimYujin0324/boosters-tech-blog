@@ -9,7 +9,7 @@
                 {% endfor %}
             </div>
             <a href="{{ post.url | absolute_url }}" class="bsts-href-box">
-                <h4 class="bsts-card-title serif-font">{{ post.title }}</h4>
+                <h3 class="bsts-card-title serif-font">{{ post.title }}</h3>
                 <p class="card-text text-muted bsts-sub-title">{{ post.subtitle }}</p>
             </a>
             <p class="card-text text-muted bsts-post-date">{{ post.date | date: "%Y년 %m월 %d일" }}</p>
