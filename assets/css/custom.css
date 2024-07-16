@@ -199,12 +199,7 @@ Just customize your theme here.
   text-decoration: none;
 }
 .bsts-tag-list a.selected:hover {
-  background-color: white;
-  color: #ff4713;
-  border: 1px solid #BDBDBD50;
-  border-radius: 20px;
-  padding: 5px 10px;
-  text-decoration: none;
+  color: white;
 }
 .bsts-tag-list a {
   cursor: pointer;
