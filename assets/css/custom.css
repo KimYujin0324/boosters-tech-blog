@@ -126,18 +126,18 @@ Just customize your theme here.
   }
 }
 .bsts-sub-title {
-  margin-bottom: 1rem;
   font-size: 16px;
   overflow-wrap: break-word;
   word-break: keep-all;
 }
-@media (max-width: 576px) {
-  .bsts-sub-title {
-    margin-bottom: 1rem;
-  }
-}
 .bsts-post-date {
+  margin-top: 1rem;
   font-size: 0.85rem;
+}
+@media (max-width: 576px) {
+  .bsts-post-date {
+    margin-top: 1rem;
+  }
 }
 .bsts-href-box {
   text-decoration: none;
