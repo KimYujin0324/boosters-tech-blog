@@ -47,20 +47,20 @@ body.dark-mode .prevnextlinks .thepostlink {
   color: #f2f2f2;
 }
 #disqus_thread {
-  color: #2a2e2e !important;
+  color: #FF4713 !important;
 }
 #disqus_thread a {
   color: #FF4713 !important;
 }
 #disqus_thread div {
-  color: #2a2e2e !important;
+  color: #FF4713 !important;
 }
 body.dark-mode #disqus_thread {
-  color: white !important;
+  color: #FF4713 !important;
 }
 body.dark-mode #disqus_thread a {
   color: #FF4713 !important;
 }
 body.dark-mode #disqus_thread div {
-  color: #f2f2f2 !important;
+  color: #FF4713 !important;
 }
