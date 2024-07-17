@@ -2,10 +2,11 @@
 Don't want to use sass and simply modify the stylesheet in the old css fashion?
 Just customize your theme here.
 ================================================== */
-html {
-  touch-action: manipulation; /* 터치 동작 제한: 확대/축소 방지 */
-  overflow: hidden; /* 스크롤 비활성화 */
-}
+
+/* html {
+  touch-action: manipulation;
+  overflow: hidden;
+} */
 
 /** padding **/
 .py-45 {
