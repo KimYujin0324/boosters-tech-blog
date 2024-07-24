@@ -74,8 +74,13 @@ $blue:    #3d61fd !default;
 
 /* add additional CSS rules below */
 html {
-    scroll-behavior: smooth;
-  }
+    // scroll-behavior: smooth;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    touch-action: pan-y;
+}
 
 body {
     background:#fff;

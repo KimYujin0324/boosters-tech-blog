@@ -2,16 +2,6 @@
 Don't want to use sass and simply modify the stylesheet in the old css fashion?
 Just customize your theme here.
 ================================================== */
-html {
-  overflow-x: hidden; /* x축 스크롤을 숨깁니다 */
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  touch-action: pan-y; /* y축 스크롤만 허용합니다 */
-}
-* {
-  box-sizing: border-box;
-}
 
 /** padding **/
 .py-45 {
