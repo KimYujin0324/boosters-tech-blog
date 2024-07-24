@@ -300,6 +300,8 @@ small, .small {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-size: cover; /* 컨테이너에 맞게 배경 이미지 크기 조정 */
+    background-position: center; /* 이미지를 중앙에 위치 */
 }
 
 @media only screen and (max-width: 1024px) {
