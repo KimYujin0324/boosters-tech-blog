@@ -292,6 +292,9 @@ small, .small {
     // background: #1D1D1B;
     background-image: url("https://tech.boosters-labs.com/assets/images/custom/배너(1).jpg");
     height: 338px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media only screen and (max-width: 1024px) {
