@@ -3,7 +3,7 @@ layout: post
 title:  "보다 현대적인 UI/UX를 적용하기"
 author: yjkim
 category: tech
-tags: [ Front-end, UI/UX, 디자인, 경험 ]
+tags: [ Front-end, UI/UX, 디자인, 사용자경험, 경험고리 ]
 image: assets/images/3.jpg
 ---
 
