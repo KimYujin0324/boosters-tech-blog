@@ -74,14 +74,20 @@ $blue:    #3d61fd !default;
 
 /* add additional CSS rules below */
 html {
-    scroll-behavior: smooth;
-  }
+    // scroll-behavior: smooth;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    touch-action: pan-y;
+}
 
 body {
     background:#fff;
     font-size:18px;
     transition: all 200ms linear;
     font-family: "Pretendard",sans-serif;
+    font-display: block;
     line-height:1.7;
     color: #333;
     overflow-x:hidden;
@@ -196,7 +202,14 @@ h6, .h6 {
 h4, .h4, h5, .h5 {
     line-height:1.4;
 }
-
+.lead {
+    font-size: 1.5rem !important;
+}
+@media (max-width: 576px) {
+  .lead {
+    font-size: 1.25rem !important;
+  }
+}
 .font-weight-bold {
     font-weight:700 !important;
 }
@@ -284,8 +297,14 @@ small, .small {
 /* Pages
 ================================================== */
 .hero {
-    background: #1D1D1B;
-    padding: 5rem 3rem 4rem;
+    // background: #1D1D1B;
+    background-image: url("https://tech.boosters-labs.com/assets/images/custom/배너(1).jpg");
+    height: 338px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover; /* 컨테이너에 맞게 배경 이미지 크기 조정 */
+    background-position: center; /* 이미지를 중앙에 위치 */
 }
 
 @media only screen and (max-width: 1024px) {
