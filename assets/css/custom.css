@@ -10,8 +10,8 @@ Just customize your theme here.
 }
 @media (max-width: 576px) {
   .py-45 {
-    padding-top: 1.75rem;
-    padding-bottom: 1.75rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
   }
 }
 .py-10 {
