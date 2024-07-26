@@ -39,7 +39,7 @@ image: assets/images/3.jpg
 ### 열심히 만든 블로그, 잘 보이게 하자!
 마지막으로 meta 태그 설정과 SEO를 설정 하였습니다. 
 <p style="text-align: center;">
-  <img src="/assets/images/2024-07/create-tech-blog(3).jpg" alt="meta 태그 설정">
+  <img src="/assets/images/2024-07/create-tech-blog(3).png" alt="meta 태그 설정">
 </p>
 
 
