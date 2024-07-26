@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "자동화 전문가 팀의 블로그 시작기"
-subtitle: "부스터스 테크 블로그가 생기다 !!! 마냥 설레는 첫 시작부터 우리는 어떤 팀일까? 까지 담은, 이 블로그의 탄생 과정을 소개합니다."
+subtitle: "부스터스 테크 블로그가 생겼어요! 이 블로그의 탄생 과정을 소개합니다."
 author: yjkim
 category: culture
 tags: [ Tech, 테크블로그, 경험, 회고 ]
