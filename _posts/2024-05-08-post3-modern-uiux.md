@@ -13,19 +13,19 @@ image: assets/images/3.jpg
 
 ### '부스타'가 새 단장할 시간이 왔다.
 <p style="text-align: center;">
-  <img src="/assets/images/2024-07/post3-modern-uiux(1).jpg" alt="대시보드 이미지" style="width: 15vw;">
+  <img src="/assets/images/2024-07/post3-modern-uiux(1).jpg" alt="대시보드 이미지" style="width: 20vw;">
 </p>
 '부스타'의 시작은 대시보드 입니다. 대시보드는 한 화면에서 다양한 정보를 중앙 집중적으로 관리하고 찾을 수 있도록 하는 사용자 인터페이스 기능을 말하는데요, 특정 목표 또는 비즈니스 프로세스와 관련된 주요 성과 지표를 한눈에 볼 수 있는 그래픽 사용자 인터페이스 유형이라고 할 수 있습니다. 다양한 정보를 담고 있는 만큼 사용자도 다양한데, 이 사용자들은 모두 자신이 필요한 데이터를 쉽게 찾아볼 수 있어야 합니다. 대시보드의 구성 단계를 이론적으로 살펴보자면, 아래와 같아요.
 <br>
 <p style="text-align: center;">
-  <img src="/assets/images/2024-07/post3-modern-uiux(2).png" alt="대시보드의 구성 단계" style="width: 15vw;">
+  <img src="/assets/images/2024-07/post3-modern-uiux(2).png" alt="대시보드의 구성 단계" style="width: 20vw;">
 </p>
 초점을 어디에 두냐에 따라 대시보드의 모양은 바뀌어야 합니다. 
 그렇다면 좋은 대시보드란 무엇일까요? 좋은 대시보드를 위한 디자인적 규칙으로 많이들 전주의적 속성을 말합니다. 
 전주의적 속성이란, 어떤 것을 보자마자 뇌에서 바로 알아차릴 수 있도록 강조하기 위한 시각화 속성입니다. 전주의적 속성을 활용한다면, 우리의 뇌는 무려 250밀리 초 내에 차트나 장면에 대한 해석이 가능합니다. (1밀리 세컨드는 1초의 1000분의 1이므로 매우 빠르다고 볼 수 있습니다.) 
 <br>
 <p style="text-align: center;">
-  <img src="/assets/images/2024-07/post3-modern-uiux(3).png" alt="대시보드의 구성 단계" style="width: 15vw;">
+  <img src="/assets/images/2024-07/post3-modern-uiux(3).png" alt="대시보드의 구성 단계" style="width: 20vw;">
 </p>
 전주의적 속성의 가장 큰 핵심은 적절한 활용입니다. 위에 항목들 이외에도 시각적인 대비를 잘 활용해야 <b>볼만한</b> 대시보드가 됩니다. 
 대시보드를 위한 요소들만 해도 이렇게 많은데, '부스타'는 대시보드에 그치지 않고 점차 확장해나가고 있습니다. 매칭이나 샘플 출고 같은 업무 프로세스도, 협업을 위한 업무 게시판도, 커뮤니티적 성격을 담고 있는 요소들도 있습니다. 많은 기능을 담고 있고 앞으로 더 많은 기능이 담겨질 '부스타'만의 디자인이 필요한 시점이 왔다고 생각했습니다. 
@@ -37,21 +37,21 @@ image: assets/images/3.jpg
 <br>
 <b>뉴모피즘 (Neumorphism)</b>
 <p style="text-align: center;">
-  <img src="/assets/images/2024-07/post3-modern-uiux(4).png" alt="뉴모피즘" style="width: 15vw;">
+  <img src="/assets/images/2024-07/post3-modern-uiux(4).png" alt="뉴모피즘" style="width: 20vw;">
 </p>
 뉴모피즘은 최근 디자인 커뮤니티에서 주목받고 있는 트렌드로, 스큐어모피즘과 플랫 디자인의 중간 지점을 찾아내고자 하는 시도로 시작되었습니다. 뉴모피즘은 주로 그림자와 음영을 사용하여 UI 요소를 부드럽고 매끈하게 표현합니다. 버튼이나 카드가 마치 물리적으로 돌출된 듯한 느낌을 주며, 배경과 UI 요소 간의 대비가 낮아 접근성이 낮다는 평가를 받고 있으며, 시각적으로 명확한 구분이 필요합니다. 따라서 흰색 배경을 사용하는 것이 일반적이지만, 배경 색상에 대한 제약이 있어 다양한 색상을 활용한 디자인이 필요할 수 있습니다.
 
 <br>
 <b>플랫 디자인 (Flat Design)</b>
 <p style="text-align: center;">
-  <img src="/assets/images/2024-07/post3-modern-uiux(5).png" alt="플랫 디자인" style="width: 15vw;">
+  <img src="/assets/images/2024-07/post3-modern-uiux(5).png" alt="플랫 디자인" style="width: 20vw;">
 </p>
 플랫 디자인은 직관적이고 간결한 UI를 제공하기 위해 복잡한 그래픽 효과를 배제한 디자인 스타일입니다. 복잡한 텍스처와 그림자를 사용하지 않고, 단순한 색상과 기하학적 형태를 사용하여 깔끔한 디자인을 제공합니다. 그리드 기반 레이아웃을 사용하여 정보의 시각적 계층을 명확히 하고, 사용자에게 쉽게 접근할 수 있도록 합니다. 하지만 과도한 단순화로 인해 사용자 인터페이스의 개성과 표현력이 제한될 수 있습니다. 애플의 초기 디자인이 이 플랫 디자인이었습니다.
 
 <br>
 <b>머티리얼 디자인 (Material Design)</b>
 <p style="text-align: center;">
-  <img src="/assets/images/2024-07/post3-modern-uiux(6).png" alt="머티리얼 디자인" style="width: 15vw;">
+  <img src="/assets/images/2024-07/post3-modern-uiux(6).png" alt="머티리얼 디자인" style="width: 20vw;">
 </p>
 머티리얼 디자인은 구글에서 발표한 디자인 언어로, 플랫 디자인의 단점을 보완하고 입체감을 추가한 디자인입니다. 빛과 그림자를 활용하여 UI 요소에 깊이와 공간감을 부여하여 입체감을 줍니다. 입체감이 있기 때문에 버튼이나 카드가 실제 물체처럼 느껴지도록 설계됩니다. 또, 다양한 플랫폼에서 유연하게 사용자 경험을 제공하며, 직관적인 인터페이스를 제공합니다. 애니메이션과 시각적 피드백을 적극적으로 사용하여 사용자의 인터랙션에 대한 반응도 즉각적으로 제공할 수 있습니다.
 
