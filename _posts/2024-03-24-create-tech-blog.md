@@ -4,7 +4,7 @@ title:  "자동화 전문가 팀의 블로그 시작기"
 subtitle: "부스터스 테크 블로그가 생기다 !!! 마냥 설레는 첫 시작부터 우리는 어떤 팀일까? 까지 담은, 이 블로그의 탄생 과정을 소개합니다."
 author: yjkim
 category: culture
-tags: [ Tech, 테크블로그, 경험, UI/UX, 회고 ]
+tags: [ Tech, 테크블로그, 경험, 회고 ]
 image: assets/images/3.jpg
 ---
 
@@ -29,16 +29,33 @@ image: assets/images/3.jpg
 ### 레이아웃과 디자인은 어떻게 잡지?
 사내 시스템의 UI/UX와 프론트는 제가 담당하고 있어서 테크블로그의 처음도 제가 맡게 되었습니다. 웹 디자이너가 아닌지라 초기에 아이디어들을 시각적으로 구체화하는 것이 쉽지 않았던 것 같습니다. 저희 팀의 색깔과 팀워크를 블로그에 잘 녹이고 싶은데 어떻게 녹이면 좋을지를 잘 모르겠어서 우선 팀 회의를 열었습니다. 서로의 개발 방향성에 대해 얘기하고, 각자의 전문성과 관심 분야를 고려하여 어떤 주제가 가장 좋을지 논의했습니다. 
 <p style="text-align: center;">
-  <img src="/assets/images/2024-07/create-tech-blog(2).png" alt="테크블로그 아이디어 회의">
+  <img src="/assets/images/2024-07/create-tech-blog(2).jpg" alt="테크블로그 아이디어 회의">
 </p>
 저희 팀은 정해지지 않은 틀에서 아이디에이션 회의를 종종 하곤 하는데요, 이번에도 같은 방식으로 회의를 진행했습니다. 덕분에 팀의 추구미가 `밀라노에 위치한 실리콘밸리의 동아리실에 있는 든든한 풀스택 무림고수`라는 약간은 엉뚱한 결과가 도출되었습니다 ㅎㅎ. 뜬구름 잡는 소리일지는 모르겠지만, 신기하게도 이런 식으로 회의를 진행하다 보면 그 과정에서 많은 아이디어들이 오가게 되어 이것들을 합쳐서 블로그의 전체적인 느낌과 구성 요소들을 만드는 데 큰 도움이 됩니다. `실리콘밸리(in 밀라노)의 무림 고수`답게 깔끔하게 레이아웃을 잘 정렬하면서 저희 회사의 색인 검정색과 오렌지색을 메인 컬러로 사용하였습니다. 웰컴 페이지도 넣어 저희의 정체성을 좀 더 나타내 보려고 했습니다.
 
 
-### 아이디어 구체화하기: 블로그 주제 선정과 콘텐츠 기획 과정.
+### 열심히 만든 블로그, 잘 보이게 하자!
+마지막으로 meta 태그 설정과 SEO를 설정 하였습니다. 
+<pre><code>
+<link rel="canonical" href="https://tech.boosters-labs.com/" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://tech.boosters-labs.com/" />
+<meta property="og:title" content="Bootsers Tech" />
+<meta property="og:image" content="https://tech.boosters-labs.com/assets/images/custom/og_img.jpg" />
+<meta property="og:description" content="부스터스의 전무후무한 테크팀의 블로그 입니다." />
+<meta name="keywords" content="부스터스,테크팀,부스터스테크" />
+<meta property="og:site_name" content="부스터스 테크 블로그" />
+<meta property="og:locale" content="ko_KR" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://tech.boosters-labs.com/" />
+<meta property="twitter:title" content="부스터스 테크 블로그" />
+<meta property="twitter:description" content="부스터스의 전무후무한 테크팀의 블로그 입니다." />
+<meta name="twitter:image" content="https://tech.boosters-labs.com/assets/images/custom/og_img.jpg" />
+</code></pre>
 
 
-### 성장 과정: 점차 블로그가 형태를 갖추어 가는 과정.
 
-
-### 마무리하며: 첫 글을 마치며 느낀 점과 앞으로의 다짐.
+### 글을 마무리하며
 
