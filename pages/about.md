@@ -18,7 +18,6 @@ image: assets/images/custom/about-us-position.jpg
 
 * 자유를 기반한 책임감으로 업무를 수행하며 **Tech 팀만의 개발문화**를 만들어 나갑니다.
 
-&nbsp;
 <br>
 
 ## 직무 소개
