@@ -13,7 +13,7 @@ image: assets/images/3.jpg
 
 ### '부스타'가 새 단장할 시간이 왔다.
 <p style="text-align: center;">
-  <img src="/assets/images/2024-07/post3-modern-uiux(1).jpg" alt="대시보드 이미지" style="width: 20vw;">
+  <img src="/assets/images/2024-07/post3-modern-uiux(1).jpg" alt="대시보드 이미지" style="width: 30vw;">
 </p>
 '부스타'의 시작은 대시보드 입니다. 대시보드는 한 화면에서 다양한 정보를 중앙 집중적으로 관리하고 찾을 수 있도록 하는 사용자 인터페이스 기능을 말하는데요, 특정 목표 또는 비즈니스 프로세스와 관련된 주요 성과 지표를 한눈에 볼 수 있는 그래픽 사용자 인터페이스 유형이라고 할 수 있습니다. 다양한 정보를 담고 있는 만큼 사용자도 다양한데, 이 사용자들은 모두 자신이 필요한 데이터를 쉽게 찾아볼 수 있어야 합니다. 대시보드의 구성 단계를 이론적으로 살펴보자면, 아래와 같아요.
 <br>
@@ -44,14 +44,14 @@ image: assets/images/3.jpg
 <br>
 <b>플랫 디자인 (Flat Design)</b>
 <p style="text-align: center;">
-  <img src="/assets/images/2024-07/post3-modern-uiux(5).png" alt="플랫 디자인" style="width: 20vw;">
+  <img src="/assets/images/2024-07/post3-modern-uiux(5).png" alt="플랫 디자인" style="width: 15vw;">
 </p>
 플랫 디자인은 직관적이고 간결한 UI를 제공하기 위해 복잡한 그래픽 효과를 배제한 디자인 스타일입니다. 복잡한 텍스처와 그림자를 사용하지 않고, 단순한 색상과 기하학적 형태를 사용하여 깔끔한 디자인을 제공합니다. 그리드 기반 레이아웃을 사용하여 정보의 시각적 계층을 명확히 하고, 사용자에게 쉽게 접근할 수 있도록 합니다. 하지만 과도한 단순화로 인해 사용자 인터페이스의 개성과 표현력이 제한될 수 있습니다. 애플의 초기 디자인이 이 플랫 디자인이었습니다.
 
 <br>
 <b>머티리얼 디자인 (Material Design)</b>
 <p style="text-align: center;">
-  <img src="/assets/images/2024-07/post3-modern-uiux(6).png" alt="머티리얼 디자인" style="width: 20vw;">
+  <img src="/assets/images/2024-07/post3-modern-uiux(6).png" alt="머티리얼 디자인" style="width: 25vw;">
 </p>
 머티리얼 디자인은 구글에서 발표한 디자인 언어로, 플랫 디자인의 단점을 보완하고 입체감을 추가한 디자인입니다. 빛과 그림자를 활용하여 UI 요소에 깊이와 공간감을 부여하여 입체감을 줍니다. 입체감이 있기 때문에 버튼이나 카드가 실제 물체처럼 느껴지도록 설계됩니다. 또, 다양한 플랫폼에서 유연하게 사용자 경험을 제공하며, 직관적인 인터페이스를 제공합니다. 애니메이션과 시각적 피드백을 적극적으로 사용하여 사용자의 인터랙션에 대한 반응도 즉각적으로 제공할 수 있습니다.
 
