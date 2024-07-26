@@ -59,7 +59,7 @@ image: assets/images/1.jpg
 예시:
 
 <p style="text-align: center;">
-  <img src="/assets/images/2024-07/package_by_layer_example.png" alt="계층별 패키지 예시">
+  <img src="/assets/images/2024-07/post7-python-process-structure(2).png" alt="계층별 패키지 예시">
 </p>
 
 
@@ -83,7 +83,7 @@ image: assets/images/1.jpg
 예시 :
 
 <p style="text-align: center;">
-  <img src="/assets/images/2024-07/package_by_feature_example.png" alt="기능별 패키지 예시">
+  <img src="/assets/images/2024-07/post7-python-process-structure(3).png" alt="기능별 패키지 예시">
 </p>
 
 - 장점:
