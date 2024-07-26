@@ -5,7 +5,6 @@ permalink: "/about/"
 image: assets/images/custom/about-us-position.jpg
 ---
 
-&nbsp;
 ## 조직 소개
 
 * 부스터스에서 운영하는 수개의 브랜드의 다양한 **데이터를 수집 및 정제**합니다.
@@ -18,7 +17,6 @@ image: assets/images/custom/about-us-position.jpg
 
 * 자유를 기반한 책임감으로 업무를 수행하며 **Tech 팀만의 개발문화**를 만들어 나갑니다.
 
-<br>
 
 ## 직무 소개
 #### 시스템 엔지니어
