@@ -61,7 +61,6 @@ image: assets/images/5.jpg
 
 
 - 개발하고자 하는 **목표(GOAL)가 명확**해야한다.
-
     - TECH 팀의 거시적 관점에서의 목표(GOAL)는?
         - 부스타를 좋은 시스템으로 개발한다.
         - 사내 데이터 관리를 완벽하게 한다.
@@ -79,11 +78,11 @@ image: assets/images/5.jpg
 ### Case Study
 이런저런 정의와 규칙을 내리면서 상황을 예로 들어 이야기를 나눠보는 자리도 가져보았습니다. 케이스를 2개로 나누어 보았지만, 크게 보면 서로 다른 동료의 속도 차이에 대한 이해가 기본이었던 것 같습니다.
 
-&nbsp;&nbsp;
+&nbsp;
 <p style="text-align: center;">
   <img src="/assets/images/2024-07/case_study.PNG" alt="협업에 대한 case study">
 </p>
-&nbsp;&nbsp;
+&nbsp;
 
 
 
