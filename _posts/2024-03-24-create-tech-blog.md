@@ -50,6 +50,8 @@ image: assets/images/3.jpg
 
 블로그 게시물을 작성할 때, 주요 키워드를 자연스럽게 포함하면서 헤더 태그(H1, H2, H3)를 사용하여 콘텐츠의 구조를 명확히 하고, 이미지를 alt 속성을 사용하여 검색 엔진이 이미지를 이해하도록 도와주면 더 좋습니다.
 
+<br>
+
 이제 구글에게 잘 걸리게 해달라고 간절히 바라면 됩니다.
 <p style="text-align: center;">
   <img src="/assets/images/2024-07/create-tech-blog(5).png" alt="구글아.. 잘부탁해..">
