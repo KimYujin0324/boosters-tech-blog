@@ -37,11 +37,23 @@ image: assets/images/3.jpg
 
 
 ### 열심히 만든 블로그, 잘 보이게 하자!
-마지막으로 meta 태그 설정과 SEO를 설정 하였습니다. 
+검색 엔진 크롤러가 블로그의 중요한 페이지를 효과적으로 크롤링할 수 있도록 robots.txt 파일을 설정했습니다.
 <p style="text-align: center;">
   <img src="/assets/images/2024-07/create-tech-blog(3).png" alt="meta 태그 설정">
 </p>
+<br>
+그리고 사이트맵 (sitemap.xml) 을 생성하여 구글 서치 콘솔과 네이버 서치 어드바이저에 제출합니다. 이를 통해 검색 엔진이 블로그의 구조를 이해하고, 새로운 콘텐츠를 빠르게 인덱싱할 수 있도록 해줍니다.
+마지막으로 meta 태그 설정과 SEO를 설정 하였습니다. 
+<p style="text-align: center;">
+  <img src="/assets/images/2024-07/create-tech-blog(4).png" alt="meta 태그 설정">
+</p>
 
+블로그 게시물을 작성할 때, 주요 키워드를 자연스럽게 포함하면서 헤더 태그(H1, H2, H3)를 사용하여 콘텐츠의 구조를 명확히 하고, 이미지를 alt 속성을 사용하여 검색 엔진이 이미지를 이해하도록 도와주면 더 좋습니다.
+
+이제 구글에게 잘 걸리게 해달라고 간절히 바라면 됩니다.
+<p style="text-align: center;">
+  <img src="/assets/images/2024-07/create-tech-blog(5).png" alt="구글아.. 잘부탁해..">
+</p>
 
 
 ### 글을 마무리하며
