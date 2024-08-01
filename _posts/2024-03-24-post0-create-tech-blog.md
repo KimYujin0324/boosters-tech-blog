@@ -37,7 +37,7 @@ image: assets/images/3.jpg
 
 
 ## 열심히 만든 블로그, 잘 보이게 하자!
-이 블로그를 더 많은 사람에게 알리고, 효과적으로 운영하려면 SEO 설정을 잘 해주어야 합니다. SEO(Search Engine Optimization), 즉 검색 엔진 최적화는 블로그의 가시성을 높이는 데 매우 중요한 역할을 합니다.
+이 블로그를 더 많은 사람에게 알리고, 효과적으로 운영하기 위해서는 SEO 설정을 잘 해주어야 합니다. SEO(Search Engine Optimization), 즉 검색 엔진 최적화는 블로그의 가시성을 높이는 데 매우 중요한 역할을 합니다.
 우선, 검색 엔진 크롤러가 블로그의 중요한 페이지를 효과적으로 크롤링할 수 있도록 robots.txt 파일을 설정했습니다.
 <p style="text-align: center;">
   <img src="/assets/images/2024-07/create-tech-blog(3).png" alt="meta 태그 설정">
