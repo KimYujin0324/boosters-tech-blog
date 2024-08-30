@@ -276,8 +276,7 @@ Just customize your theme here.
 } */
 
 .bsts-badge-new {
-    position: relative; /* ::before의 위치를 기준으로 설정 */
-    display: inline-block; /* 인라인 블록으로 표시 */
+    position: absolute;
     top: -5px;
     background-color: #FF4713;
     color: white;
@@ -288,34 +287,32 @@ Just customize your theme here.
     font-weight: 600;
     overflow: hidden;
 }
-
-.bsts-badge-new::before {
+.bsts-badge-new:before {
     content: '';
     position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 200%; /* 뱃지보다 큰 너비를 설정 */
-    height: 200%; /* 뱃지보다 큰 높이를 설정 */
-    background: radial-gradient(circle, rgba(255,255,255,0.5) 0%, rgba(255,255,255,0) 80%);
-    transform: translate(-50%, -50%) rotate(15deg);
-    opacity: 0.7;
+    left: -20%;
+    top: -10%;
+    width: 0;
+    height: 100%;
+    transform: rotate(15deg) scale(1, 2);
     box-shadow: 0 0 30px 15px rgba(255,255,255,0.7);
-    animation: button-glow 3000ms ease-in-out infinite;
-    z-index: -1; /* 뱃지 뒤에 위치 */
+    animation: button-glow 3000ms ease-in-out infinite
 }
 
-/* 애니메이션 정의 */
 @keyframes button-glow {
     0% {
-        box-shadow: 0 0 15px rgba(255,255,255,0.7);
+        left: -20%
     }
+
     50% {
-        box-shadow: 0 0 30px rgba(255,255,255,0.7);
+        left: 120%
     }
+
     100% {
-        box-shadow: 0 0 15px rgba(255,255,255,0.7);
+        left: 120%
     }
 }
+
 
 
 
