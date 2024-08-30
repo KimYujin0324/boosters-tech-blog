@@ -271,7 +271,7 @@ Just customize your theme here.
     width: 0;
     height: 100%;
     transform: rotate(15deg) scale(1, 2);
-    box-shadow: 0 0 10px 5px rgba(255,255,255,0.5);
+    box-shadow: 0 0 10px 5px rgba(255,255,255,0.75);
     animation: button-glow 2000ms ease-in-out infinite
 }
 @keyframes button-glow {
