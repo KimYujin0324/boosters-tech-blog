@@ -251,7 +251,7 @@ Just customize your theme here.
   word-break: keep-all;
 }
 
-.bsts-badge-new {
+/* .bsts-badge-new {
     position: absolute;
     top: -5px;
     background-color: #FF4713;
@@ -261,6 +261,7 @@ Just customize your theme here.
     border-radius: 15px;
     margin-left: 5px;
     font-weight: 600;
+    overflow: hidden;
 }
 .bsts-badge-new:before {
     content: '';
@@ -272,7 +273,50 @@ Just customize your theme here.
     transform: rotate(15deg) scale(1, 2);
     box-shadow: 0 0 30px 15px rgba(255,255,255,0.7);
     animation: button-glow 3000ms ease-in-out infinite
+} */
+
+.bsts-badge-new {
+    position: relative; /* position을 relative로 설정하여 ::before의 위치를 기준으로 함 */
+    display: inline-block; /* 뱃지가 인라인 요소로 보여지도록 설정 */
+    top: -5px;
+    background-color: #FF4713;
+    color: white;
+    font-size: 0.4em;
+    padding: 3px 6px;
+    border-radius: 15px;
+    margin-left: 5px;
+    font-weight: 600;
+    overflow: hidden;
 }
+
+.bsts-badge-new::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200%; /* 뱃지보다 큰 너비를 설정하여 빛 효과가 뱃지 밖으로 확장되게 함 */
+    height: 200%; /* 뱃지보다 큰 높이를 설정하여 빛 효과가 뱃지 밖으로 확장되게 함 */
+    background: radial-gradient(circle, rgba(255,255,255,0.5) 0%, rgba(255,255,255,0) 80%);
+    transform: translate(-50%, -50%) rotate(15deg);
+    opacity: 0.7; /* 빛 효과의 투명도 조절 */
+    box-shadow: 0 0 30px 15px rgba(255,255,255,0.7);
+    animation: button-glow 3000ms ease-in-out infinite;
+    z-index: -1; /* 빛 효과가 뱃지 뒤에 위치하도록 설정 */
+}
+
+/* 애니메이션을 위한 예제 */
+@keyframes button-glow {
+    0% {
+        box-shadow: 0 0 15px rgba(255,255,255,0.7);
+    }
+    50% {
+        box-shadow: 0 0 30px rgba(255,255,255,0.7);
+    }
+    100% {
+        box-shadow: 0 0 15px rgba(255,255,255,0.7);
+    }
+}
+
 
 /** 랜딩 페이지 **/
 .bsts-landing-page {
