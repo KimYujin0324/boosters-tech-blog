@@ -276,8 +276,8 @@ Just customize your theme here.
 } */
 
 .bsts-badge-new {
-    position: relative; /* position을 relative로 설정하여 ::before의 위치를 기준으로 함 */
-    display: inline-block; /* 뱃지가 인라인 요소로 보여지도록 설정 */
+    position: relative; /* ::before의 위치를 기준으로 설정 */
+    display: inline-block; /* 인라인 블록으로 표시 */
     top: -5px;
     background-color: #FF4713;
     color: white;
@@ -294,17 +294,17 @@ Just customize your theme here.
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 200%; /* 뱃지보다 큰 너비를 설정하여 빛 효과가 뱃지 밖으로 확장되게 함 */
-    height: 200%; /* 뱃지보다 큰 높이를 설정하여 빛 효과가 뱃지 밖으로 확장되게 함 */
+    width: 200%; /* 뱃지보다 큰 너비를 설정 */
+    height: 200%; /* 뱃지보다 큰 높이를 설정 */
     background: radial-gradient(circle, rgba(255,255,255,0.5) 0%, rgba(255,255,255,0) 80%);
     transform: translate(-50%, -50%) rotate(15deg);
-    opacity: 0.7; /* 빛 효과의 투명도 조절 */
+    opacity: 0.7;
     box-shadow: 0 0 30px 15px rgba(255,255,255,0.7);
     animation: button-glow 3000ms ease-in-out infinite;
-    z-index: -1; /* 빛 효과가 뱃지 뒤에 위치하도록 설정 */
+    z-index: -1; /* 뱃지 뒤에 위치 */
 }
 
-/* 애니메이션을 위한 예제 */
+/* 애니메이션 정의 */
 @keyframes button-glow {
     0% {
         box-shadow: 0 0 15px rgba(255,255,255,0.7);
@@ -316,6 +316,7 @@ Just customize your theme here.
         box-shadow: 0 0 15px rgba(255,255,255,0.7);
     }
 }
+
 
 
 /** 랜딩 페이지 **/
