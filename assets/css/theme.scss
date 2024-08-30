@@ -872,3 +872,12 @@ span.navigation:before {
     transition: all.3s;
     opacity:.8;
 }
+
+.badge-new {
+    background-color: #ff0000; /* 빨간색 배경 */
+    color: white; /* 흰색 텍스트 */
+    font-size: 0.8em; /* 텍스트 크기 */
+    padding: 2px 6px; /* 패딩 */
+    border-radius: 4px; /* 둥근 모서리 */
+    margin-left: 10px; /* 글 제목과 간격 */
+  }
