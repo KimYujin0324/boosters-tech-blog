@@ -251,30 +251,6 @@ Just customize your theme here.
   word-break: keep-all;
 }
 
-/* .bsts-badge-new {
-    position: absolute;
-    top: -5px;
-    background-color: #FF4713;
-    color: white;
-    font-size: 0.4em;
-    padding: 3px 6px;
-    border-radius: 15px;
-    margin-left: 5px;
-    font-weight: 600;
-    overflow: hidden;
-}
-.bsts-badge-new:before {
-    content: '';
-    position: absolute;
-    left: -20%;
-    top: -10%;
-    width: 0;
-    height: 100%;
-    transform: rotate(15deg) scale(1, 2);
-    box-shadow: 0 0 30px 15px rgba(255,255,255,0.7);
-    animation: button-glow 3000ms ease-in-out infinite
-} */
-
 .bsts-badge-new {
     position: absolute;
     top: -5px;
@@ -290,15 +266,14 @@ Just customize your theme here.
 .bsts-badge-new:before {
     content: '';
     position: absolute;
-    left: -20%;
-    top: -10%;
+    left: 20%;
+    top: 10%;
     width: 0;
     height: 100%;
     transform: rotate(15deg) scale(1, 2);
-    box-shadow: 0 0 30px 15px rgba(255,255,255,0.7);
-    animation: button-glow 3000ms ease-in-out infinite
+    box-shadow: 0 0 10px 5px rgba(255,255,255,0.5);
+    animation: button-glow 2000ms ease-in-out infinite
 }
-
 @keyframes button-glow {
     0% {
         left: -20%
@@ -312,9 +287,6 @@ Just customize your theme here.
         left: 120%
     }
 }
-
-
-
 
 /** 랜딩 페이지 **/
 .bsts-landing-page {
