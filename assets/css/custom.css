@@ -252,6 +252,8 @@ Just customize your theme here.
 }
 
 .bsts-badge-new {
+    position: absolute;
+    top: 0;
     background-color: #FF4713;
     color: white;
     font-size: 0.4em;
