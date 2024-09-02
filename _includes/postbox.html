@@ -9,8 +9,6 @@
 {% assign reading_time = word_count | divided_by: 200 %}
 
 {% assign image_count = post.image_count | default: 0 %}
-{% assign additional_time = image_count | times: 2 %}
-{% assign additional_time_minutes = additional_time_seconds | divided_by: 60 %}
 {% assign total_reading_time = reading_time | plus: additional_time %}
 
 <div class="card">
@@ -32,7 +30,7 @@
             </a>
             <p class="card-text text-muted bsts-post-date">
                 {{ post.date | date: "%Y년 %m월 %d일" }}
-                <span class="reading-time">• <i class="bi bi-clock-history"></i>{{ total_reading_time }}분 소요</span>
+                <!-- <span class="reading-time">• <i class="bi bi-clock-history"></i>{{ total_reading_time }}분 소요</span> -->
             </p>
         </div>
         <div class="col-12 col-sm-4 col-md-3 metafooter pt-2 pt-sm-0" style="display: flex; justify-content: flex-end; align-items: center;">
