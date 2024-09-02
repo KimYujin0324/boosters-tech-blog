@@ -5,6 +5,9 @@
 {% assign post_date = post.date | date: "%s" %}
 {% assign days_diff = (current_date | minus: post_date) | divided_by: 86400 %} <!-- 86400초 = 1일 -->
 
+{% assign word_count = post.content | number_of_words %}
+{% assign reading_time = word_count | divided_by: 200 %}
+
 <div class="card">
     <div class="card-block row">
         <div class="col-12 col-sm-8 col-md-9">
@@ -22,7 +25,10 @@
                 </h3>
                 <p class="card-text text-muted bsts-sub-title">{{ post.subtitle }}</p>
             </a>
-            <p class="card-text text-muted bsts-post-date">{{ post.date | date: "%Y년 %m월 %d일" }}</p>
+            <p class="card-text text-muted bsts-post-date">
+                {{ post.date | date: "%Y년 %m월 %d일" }}
+                <span class="reading-time">• 약 {{ reading_time }}분 소요</span>
+            </p>
         </div>
         <div class="col-12 col-sm-4 col-md-3 metafooter pt-2 pt-sm-0" style="display: flex; justify-content: flex-end; align-items: center;">
             <span class="post-name bsts-post-name pt-2">
