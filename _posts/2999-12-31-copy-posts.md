@@ -6,6 +6,7 @@ author: dilee # 작성자 이름
 category: culture # tech, culture 중 택 1 
 tags: [ 태그1, 태그2, 태그3, 태그4 ] # 원하시는 태그들을 2~6개 넣어주세요. (띄어쓰기 X)
 image: assets/images/1.jpg # 고정으로 넣어주세요.
+image_count: 3 # 글 예상 소요시간 계산을 위해 해당 포스트에 사용된 사진의 개수를 적어주세요.
 ---
 
 <!-- 

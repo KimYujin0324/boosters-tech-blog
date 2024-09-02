@@ -6,6 +6,7 @@ author: twkim
 category: tech
 tags: [ Python, Process, Structure ]
 image: assets/images/1.jpg
+image_count: 3
 ---
 
 ## 해당 포스트는..

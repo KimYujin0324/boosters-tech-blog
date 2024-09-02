@@ -6,6 +6,7 @@ author: yjkim
 category: culture
 tags: [ Tech, 테크블로그, 경험, 회고 ]
 image: assets/images/3.jpg
+image_count: 5
 ---
 
 ## 해당 포스트는..

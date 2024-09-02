@@ -6,6 +6,7 @@ author: yjkim
 category: tech
 tags: [ Front-end, UI/UX, 디자인, 사용자경험 ]
 image: assets/images/3.jpg
+image_count: 7
 ---
 
 ## 해당 포스트는..

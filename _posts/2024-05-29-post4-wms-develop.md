@@ -6,6 +6,7 @@ author: sekim
 category: tech
 tags: [ 주문, 출고, WMS, 데이터 ]
 image: assets/images/4.jpg
+image_count: 2
 ---
 
 ## 해당 포스트는..

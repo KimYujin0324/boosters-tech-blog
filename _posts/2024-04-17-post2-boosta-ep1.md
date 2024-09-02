@@ -6,6 +6,7 @@ author: dilee
 category: tech
 tags: [ 부스타, 시스템, 자동화, 데이터 ]
 image: assets/images/2.jpg
+image_count: 2
 ---
 
 ## 해당 포스트는..

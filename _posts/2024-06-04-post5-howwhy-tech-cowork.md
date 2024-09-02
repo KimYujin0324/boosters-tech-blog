@@ -6,6 +6,7 @@ author: dilee
 category: culture
 tags: [ Tech, 팀워크, 협업 ]
 image: assets/images/5.jpg
+image_count: 1
 ---
 
 ## 해당 포스트는..

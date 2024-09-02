@@ -6,6 +6,7 @@ author: dilee
 category: culture
 tags: [ Tech, TeamBuilding, 채용, 성장 ]
 image: assets/images/1.jpg
+image_count: 1
 ---
 
 ## 해당 포스트는..
