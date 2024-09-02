@@ -9,6 +9,8 @@
 {% assign reading_time = word_count | divided_by: 200 %}
 
 {% assign image_count = post.image_count | default: 0 %}
+{% assign additional_time = image_count | times: 1 %}
+{% assign additional_time_minutes = additional_time_seconds | divided_by: 60 %}
 {% assign total_reading_time = reading_time | plus: additional_time %}
 
 <div class="card">
