@@ -69,9 +69,29 @@ Ubuntu로 변경하고 PHP도 8이상 버전으로 업그레이드 하고 다른
 </p>
 
 
-## Ubuntu 서버 개설
-지난 과정으로 설치과정에 나오는 무수한 에러에 대한 내성도 생겼고 설치에 대한 자신감도 생겼으니 Ubuntu 서버는 레퍼런스도 많고 아무런 문제 없이 잘 될 것이라 생각하고 호기롭게 Ubuntu 이미지를 Ec2로 올렸습니다. 먼저 문제가 되었던 node.js 18 이상 버전이 잘 설치되는지를 테스트하였습니다.
+## Ubuntu 서버 세팅
+지난 과정으로 설치과정에 나오는 무수한 에러에 대한 내성도 생겼고 설치에 대한 자신감도 생겼으니 Ubuntu 서버는 레퍼런스도 많고 아무런 문제 없이 잘 될 것이라 생각하고 호기롭게 Ubuntu 이미지를 EC2로 올렸습니다. 먼저 문제가 되었던 node.js 18 이상 버전이 잘 설치되는지를 테스트하였습니다.
 
 nvm 을 설치하고 nvm install --lts 하니 기존 서버와는 다르게 속시원하게 아무런 에러를 내지 않고 무려 v20 버전이 설치되었습니다. "역시 ubuntu는 문제없네"라고 생각하며 APM을 설치해보기 시작했습니다.
 
-정말 오랜만에 Centos7서버를 세팅했던 오래된 docx 문서를 열고 구글링과 제5의 멤버 GPT 와 함꼐 Apache / Mysql / PHP8 순서대로 설치하기 시작했습니다. 
+정말 오랜만에 Centos7서버를 세팅했던 오래된 docx 문서를 열고 구글링과 제5의 멤버 GPT 와 함꼐 Apache / Mysql / PHP8 순서대로 설치하기 시작했습니다. /home/source 디렉토리를 만들어 wget으로 관련 소스파일을 다운받아 configure / make && make install 과정으로 설치하였습니다. Apache와 Mysql은 시간은 오래걸렸지만 메뉴얼을 따라가니 문제없이 설치되었습니다. 그러나 PHP8 버전을 설치하려니 기존 추가모듈이 기본모듈이 되기도 하고 기본모듈이 빠지기도 하는 등의 configure 차이가 있어 여러번의 시도 끝에 PHP8 버전을 설치하였습니다.
+
+단순 설치만으로 3일 정도를 소요한것 같습니다. APM / node 모두 정상 설치되어 기쁘 소스 테스트를 진행했습니다.
+그런데 두가지 이슈가 발생했습니다.
+첫 번째는 PHP-PDO의 SSL Connect 에러였습니다.
+```
+PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2026] SSL connection error: error:00000001:lib(0)::reason(1)
+```
+사용하는 DB는 SSL 을 사용하지 않는데 해당 오류가 나와 당황했습니다. 해당이슈는 ssl-mode=disabled 를 주어 해결하였고 ERP DB인 Mssql Connect는 TrustServerCertificate=true 옵션을 주어 해결하였습니다.
+두 번째는 Curl SSL Error 였습니다.
+특정 서버에 대한 요청에 다음 에러가 발생하였고 관련 레퍼런스를 찾는데 꽤나 애먹었습니다.
+```
+error:0A000152:SSL routines::unsafe legacy renegotiation disabled
+* Closing connection 0
+```
+문제의 원인은 openSSL 이었습니다. Ubuntu에 설치된 기본 openSSL 은 3.0.3 버전이고 해당 버전은 SSL 안전하지 보안 레거시 재협상을 기본적으로 제공하지 않는 것이었습니다. openssl.conf 파일에 UnsafeLegacyRenegotiation 옵션을 주어 해결하였습니다.
+
+오랜기간동안 다양한 에러를 해결해나가고 좌절하기도 하며 서버 이관을 하는 동안 굉장히 많은 우울감이 찾아왔지만, 팀원들이 알려준 우웅법으로 우울감을 조금이나마 덜었습니다. ☆٩(｡•ω<｡)و
+<p style="text-align: center;">
+  <img src="/boosters-tech-blog/assets/images/2024-09/post8-change-regacy-refactoring(6).png" alt="우웅하다">
+</p>
