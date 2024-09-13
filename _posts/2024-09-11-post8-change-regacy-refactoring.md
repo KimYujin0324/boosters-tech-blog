@@ -25,18 +25,21 @@ composer.json에 버전 명시만 잘해주니 문제없이 진행되었습니�
 
 사용중인 PHP 버전은 7.2 버전이었습니다. 7.2버전을 설치할 때는 소스컴파일로 설치를 하였기때문에 7.4버전도 경험에 의한 방법으로 소스컴파일 설치를 진행하였습니다.
 ```
-1. configure: error: Package requirements (gdlib >= 2.1.0) were not met:
-2. configure: error: Package requirements (sqlite3 > 3.7.4) were not met:
-3. configure: error: Package requirements (icu-uc >= 50.1 icu-io icu-i18n) were not met:
-4. configure: error: Package requirements (oniguruma) were not met:
-5. configure: error: GD build test failed. Please check the config.log for details.
+error 1. configure: error: Package requirements (gdlib >= 2.1.0) were not met:
+error 2. configure: error: Package requirements (sqlite3 > 3.7.4) were not met:
+error 3. configure: error: Package requirements (icu-uc >= 50.1 icu-io icu-i18n) were not met:
+error 4. configure: error: Package requirements (oniguruma) were not met:
+error 5. configure: error: GD build test failed. Please check the config.log for details.
 ```
 Configure 과정에서 다양한 에러를 만났지만 하나하나 의존성 패키지를 업그레이드 해가며 설치진행하였습니다. 다행이 의존성 문제를 해결하니 7.4버전이 정상 설치되었습니다. PHP 하나 업그레이드 하는데 2~3일 걸리다보니 벌써 마음이 지치긴했지만 성공했다는 기쁨에 팀원들에게 같이 설치과정을 다시 해보자며 회의실에서 이러쿵 저러쿵 무용담을 늘어뜨리기도 했습니다. openssl 이 업그레이드 되어있는 특정 서버에서는 configure 에러가 또 다시 등장하여 애먹긴 하였지만 모든 사용 서버에 PHP7.4 버전업을 성공시켰습니다.
 
 다음은 다시 Laravel을 6버전에서 8버전으로 업그레이드를 시도하였습니다. 다행이 PHP 버전에 따라 Laravel도 8 버전으로 문제없이 업그레이드 되었습니다. 물론 PHP 문법 변경에 따른 소스 수정은 진행하여야 했지만 무사히 프레임워크의 업그레이드를 성공하였습니다. 노션에 주요 변경사항을 기록하여 팀원들과 공유하였습니다.
 
 <p style="text-align: center;">
-  <img src="/assets/images/2024-09/post8-change-regacy-refactoring(1).png" alt="Laravel Version UP 노션">
+  <img src="/boosters-tech-blog/assets/images/2024-09/post8-change-regacy-refactoring(1).png" alt="Laravel Version UP 노션 (1)">
+</p>
+<p style="text-align: center;">
+  <img src="/boosters-tech-blog/assets/images/2024-09/post8-change-regacy-refactoring(2).png" alt="Laravel Version UP 노션 (2)">
 </p>
 
 
@@ -44,9 +47,10 @@ Configure 과정에서 다양한 에러를 만났지만 하나하나 의존성 �
 
 
 
-시스템이 커짐에 따라 기존 사용하는 언어와 프레임워크 및 라이브러리를 바꾸는 것은 굉장히 까다로울 수 있는 일입니다. 단지 까다롭다는 이유만으로 잘되고 있는 시스템을 굳이 버전업할 필요있을까 라는 안일한 생각의 시간들이 큰 기술부채를 만든다는 것을 체감하면서 현재 사용하는 레거시 시스템을 업그레이드 하려고 했습니다.
 
-먼저 사용하고 있는 웹프레임워크인 Laravel Version 업입니다. 부끄럽게도 기존 사용하는 버전은 2019년 8월에 종료된 5.6 버전이었습니다. 버전이 오래됨에 따라 composer로 설치해야하는 패키지도 지원하지 않는 패키지들도 많았습니다. 그에 따른 불편함이 생기면서 최우선으로 업그레이드 해야 했습니다. 목표는 Laravel
+
+
+
 
 
 
