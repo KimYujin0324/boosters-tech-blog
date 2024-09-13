@@ -35,10 +35,10 @@ configure 과정에서 다양한 에러를 만났지만 하나하나 의존성 �
 
 다음은 다시 Laravel을 6버전에서 8버전으로 업그레이드를 시도하였습니다. 다행이 PHP 버전에 따라 Laravel도 8 버전으로 문제없이 업그레이드 되었습니다. 물론 PHP 문법 변경에 따른 소스 수정은 진행하여야 했지만 무사히 프레임워크의 업그레이드를 성공하였습니다. 노션에 주요 변경사항을 기록하여 팀원들과 공유하였습니다.
 
-<p style="text-align: center;">
+<p style="text-align: center; float:left; width:50%">
   <img src="/boosters-tech-blog/assets/images/2024-09/post8-change-regacy-refactoring(1).png" alt="Laravel Version UP 노션 (1)">
 </p>
-<p style="text-align: center;">
+<p style="text-align: center; float:left; width:50%">
   <img src="/boosters-tech-blog/assets/images/2024-09/post8-change-regacy-refactoring(2).png" alt="Laravel Version UP 노션 (2)">
 </p>
 
