@@ -67,3 +67,9 @@ Ubuntu로 변경하고 PHP도 8이상 버전으로 업그레이드 하고 다른
 <p style="text-align: center;">
   <img src="/assets/images/2024-09/post8-change-regacy-refactoring(5).png" alt="Ubuntu 버전정보">
 </p>
+
+
+## Ubuntu 서버 개설
+지난 과정으로 설치과정에 나오는 무수한 에러에 대한 내성도 생겼고 설치에 대한 자신감도 생겼으니 Ubuntu 서버는 레퍼런스도 많고 아무런 문제 없이 잘 될 것이라 생각하고 호기롭게 Ubuntu 이미지를 Ec2로 올렸습니다. 먼저 문제가 되었던 node.js 18 이상 버전이 잘 설치되는지를 테스트하였습니다.
+
+nvm 을 설치하고 nvm install --lts 하니 기존 서버와는 다르게 속시원하게 아무런 에러를 내지 않고 무려 v20 버전이 설치되었습니다. "역시 ubuntu는 문제없네"라고 생각하며 APM을 설치해보기 시작했습니다. 
