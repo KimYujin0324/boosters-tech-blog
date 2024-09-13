@@ -76,18 +76,20 @@ nvm 을 설치하고 nvm install --lts 하니 기존 서버와는 다르게 속�
 
 정말 오랜만에 Centos7서버를 세팅했던 오래된 docx 문서를 열고 구글링과 제5의 멤버 GPT 와 함꼐 Apache / Mysql / PHP8 순서대로 설치하기 시작했습니다. /home/source 디렉토리를 만들어 wget으로 관련 소스파일을 다운받아 configure / make && make install 과정으로 설치하였습니다. Apache와 Mysql은 시간은 오래걸렸지만 메뉴얼을 따라가니 문제없이 설치되었습니다. 그러나 PHP8 버전을 설치하려니 기존 추가모듈이 기본모듈이 되기도 하고 기본모듈이 빠지기도 하는 등의 configure 차이가 있어 여러번의 시도 끝에 PHP8 버전을 설치하였습니다.
 
-단순 설치만으로 3일 정도를 소요한것 같습니다. APM / node 모두 정상 설치되어 기쁘 소스 테스트를 진행했습니다.
-그런데 두가지 이슈가 발생했습니다.
+단순 설치만으로 3일 정도를 소요한것 같습니다. APM / node 모두 정상 설치되어 기쁘게 소스 테스트를 진행했습니다.
+
+그런데 소스 테스트 중 두가지 이슈가 발생했습니다.
+
 첫 번째는 PHP-PDO의 SSL Connect 에러였습니다.
 ```
 PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2026] SSL connection error: error:00000001:lib(0)::reason(1)
 ```
 사용하는 DB는 SSL 을 사용하지 않는데 해당 오류가 나와 당황했습니다. 해당이슈는 ssl-mode=disabled 를 주어 해결하였고 ERP DB인 Mssql Connect는 TrustServerCertificate=true 옵션을 주어 해결하였습니다.
+
 두 번째는 Curl SSL Error 였습니다.
 특정 서버에 대한 요청에 다음 에러가 발생하였고 관련 레퍼런스를 찾는데 꽤나 애먹었습니다.
 ```
 error:0A000152:SSL routines::unsafe legacy renegotiation disabled
-* Closing connection 0
 ```
 문제의 원인은 openSSL 이었습니다. Ubuntu에 설치된 기본 openSSL 은 3.0.3 버전이고 해당 버전은 SSL 안전하지 보안 레거시 재협상을 기본적으로 제공하지 않는 것이었습니다. openssl.conf 파일에 UnsafeLegacyRenegotiation 옵션을 주어 해결하였습니다.
 
