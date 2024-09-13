@@ -6,7 +6,7 @@ author: dilee # 작성자 이름
 category: tech # tech, culture 중 택 1
 tags: [ ubuntu, Centos, VersionUp, Regacy, Refactoring ] # 원하시는 태그들을 2~6개 넣어주세요. (띄어쓰기 X)
 image: assets/images/1.jpg # 고정으로 넣어주세요.
-image_count: 3 # 글 예상 소요시간 계산을 위해 해당 포스트에 사용된 사진의 개수를 적어주세요.
+image_count: 5 # 글 예상 소요시간 계산을 위해 해당 포스트에 사용된 사진의 개수를 적어주세요.
 ---
 
 <!--
@@ -46,6 +46,7 @@ configure 과정에서 다양한 에러를 만났지만 하나하나 의존성 �
 ## Vue3를 사용하고 싶어요.
 
 Laravel과 PHP 버전업의 성공으로 레거시 시스템 업그레이드 프로젝트에 자신감이 생겼습니다. 자신감이 생기고 자아도취를 하며 오래전부터 Vue3를 사용하고 싶어하는 유진님께 "Vue3도 업그레이드 해드릴게요~" 라고 선전포고를 하였습니다. 이참에 Vue3로 업그레이드 해서 Vue3와 호환되는 다양한 라이브러리들을 사용해보면 더 좋겠다는 생각도 예전부터 하고 있엇던 터라 Vue.js 업그레이드를 시작하였습니다.
+
 자신감이 문제였을까요. 계속 알수 없는 에러를 내뿜으며 Vue2는 그리 쉽게 Vue3로 업그레이드 되지 않았습니다. 원인을 찾는데만 며칠 걸렸던 것 같습니다. 이유는 node.js 버전때문이었습니다. node.js 도 16버전을 사용하고 있었는데 vue3를 정상 설치하려면 18버전 이상의 버전이 필요했습니다. node.js는 nvm(node version management)으로 버전관리를 하고 있었기에 쉽게 버전업이 될거라고 생각했습니다. 그러나 Centos7는 뭔가 업그레이드 하면 곤란해보이는 에러를 내뿜었습니다.
 
 <p style="text-align: center;">
@@ -62,3 +63,7 @@ OS 를 변경하기 전에 기존에 사용하는 Centos7에 대해 조금 더 �
 </p>
 
 Ubuntu로 변경하고 PHP도 8이상 버전으로 업그레이드 하고 다른 Regacy 기술들도 모두 버전업하여 당분간 몇년간은 기술 스택에 대해 문제없게끔 해야겠다는 생각도 하였습니다. Ubuntu 버전은 지원종료일이 최대한 멀리있는 22.04 또는 24.04 버전으로 결정하였습니다. 다시 Ubuntu 서버에 Apache / Mysql / PHP / Node.js / Python 등을 완벽 설치하는 것을 목표가 되었습니다.
+
+<p style="text-align: center;">
+  <img src="/assets/images/2024-09/post8-change-regacy-refactoring(5).PNG" alt="Ubuntu 버전정보">
+</p>
