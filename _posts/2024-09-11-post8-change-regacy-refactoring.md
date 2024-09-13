@@ -97,3 +97,15 @@ error:0A000152:SSL routines::unsafe legacy renegotiation disabled
 <p style="text-align: center;">
   <img src="/boosters-tech-blog/assets/images/2024-09/post8-change-regacy-refactoring(6).png" alt="우웅하다">
 </p>
+
+
+## Vue 업그레이드에 성공하다.
+소스에서 가장 중요한 기능인 PDO 와 Curl 테스트가 성공하니 나머지 소스는 오류가 나더라도 맞춰서 수정하면 될것 같았습니다. 이후 서버 이전의 트리거였던 Vue3를 설치해보기로 하였습니다. 새로운 기술을 써보기 위해 먼길을 돌아왔지만 무언가 하나를 해결하면 하나가 안되는 경험을 수차례 하여서 Vue3도 쉽지 않을 것이라 예상하며 마음을 비우고 시작하였습니다.
+
+그런데 그동안의 노력을 보상해주는 것인지 Vue3는 Node.js 20 버전과 함께 부드럽게 업그레이드 되었습니다. vue3 업그레이드와 laravel-mix 업그레이드도 진행하였고 업그레이드에 따라 문법들을 하나하나 수정하였습니다.
+
+하나하나 수정을하며 npm run dev를 실행하였는데 드디어 정상 컴파일되었습니다. 이 맛에 개발자하는 것 같습니다. 오랜만에 Comport Zone이 아닌 Learning Zone에 있던 개발 건을 해결한 기분이었습니다. mix 과정도 ui가 예뻐졌습니다.
+
+<p style="text-align: center;">
+  <img src="/boosters-tech-blog/assets/images/2024-09/post8-change-regacy-refactoring(7).png" alt="예쁜 Mix">
+</p>
