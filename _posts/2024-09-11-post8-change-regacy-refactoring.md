@@ -59,11 +59,11 @@ Laravel과 PHP 버전업의 성공으로 레거시 시스템 업그레이드 프
 OS 를 변경하기 전에 기존에 사용하는 Centos7에 대해 조금 더 조사하던 중 놀라운 사실을 알게되었습니다. 바로 Centos7이 서비스 종료가 되었다는 것입니다. 불과 이 프로젝트를 시작한 1달 전에 종료되었습니다. 운명인것 같다는 생각도 들면서 더더욱 CentOS7 를 Ubuntu로 바꿔야겠다는 생각에 확신이 들었습니다.
 
 <p style="text-align: center;">
-  <img src="/assets/images/2024-09/post8-change-regacy-refactoring(4).PNG" alt="centos7 지원종료">
+  <img src="/assets/images/2024-09/post8-change-regacy-refactoring(4).png" alt="centos7 지원종료">
 </p>
 
 Ubuntu로 변경하고 PHP도 8이상 버전으로 업그레이드 하고 다른 Regacy 기술들도 모두 버전업하여 당분간 몇년간은 기술 스택에 대해 문제없게끔 해야겠다는 생각도 하였습니다. Ubuntu 버전은 지원종료일이 최대한 멀리있는 22.04 또는 24.04 버전으로 결정하였습니다. 다시 Ubuntu 서버에 Apache / Mysql / PHP / Node.js / Python 등을 완벽 설치하는 것을 목표가 되었습니다.
 
 <p style="text-align: center;">
-  <img src="/assets/images/2024-09/post8-change-regacy-refactoring(5).PNG" alt="Ubuntu 버전정보">
+  <img src="/assets/images/2024-09/post8-change-regacy-refactoring(5).png" alt="Ubuntu 버전정보">
 </p>
