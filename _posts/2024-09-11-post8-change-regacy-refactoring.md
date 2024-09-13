@@ -4,7 +4,7 @@ title:  "오래된 삐걱거리는 Legacy 시스템 업그레이드 과정" # �
 subtitle: "오래된 레거시 코드를 수정하는 것은 어렵습니다. 오래된 레거시 시스템을 바꾸는 것은 더 어렵습니다. 사용하고 있는 오래된 시스템을 더 오래되고 고장나기 전에 최신의 시스템으로 업그레이드 한 경험을 기술하였습니다." # 소제목으로 글 목록에서 타이틀 아래에 표기됩니다.
 author: dilee # 작성자 이름
 category: tech # tech, culture 중 택 1
-tags: [ ubuntu, Centos, VersionUp, Regacy, Refactoring ] # 원하시는 태그들을 2~6개 넣어주세요. (띄어쓰기 X)
+tags: [ Ubuntu, Centos, VersionUp, Regacy, Refactoring ] # 원하시는 태그들을 2~6개 넣어주세요. (띄어쓰기 X)
 image: assets/images/1.jpg # 고정으로 넣어주세요.
 image_count: 7 # 글 예상 소요시간 계산을 위해 해당 포스트에 사용된 사진의 개수를 적어주세요.
 ---
