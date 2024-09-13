@@ -106,8 +106,13 @@ error:0A000152:SSL routines::unsafe legacy renegotiation disabled
 
 그런데 그동안의 노력을 보상해주는 것인지 Vue3는 Node.js 20 버전과 함께 부드럽게 업그레이드 되었습니다. vue3 업그레이드와 laravel-mix 업그레이드도 진행하였고 업그레이드에 따라 문법들을 하나하나 수정하였습니다.
 
-하나하나 수정을하며 npm run dev를 실행하였는데 드디어 정상 컴파일되었습니다. 이 맛에 개발자하는 것 같습니다. 오랜만에 Comport Zone이 아닌 Learning Zone에 있던 개발 건을 해결한 기분이었습니다. mix 과정도 ui가 예뻐졌습니다.
+하나하나 수정을하며 npm run dev를 실행하였는데 드디어 정상 컴파일되었습니다. 이 맛에 개발자하는 것 같습니다. 오랜만에 Comport Zone이 아닌 Learning Zone에 있던 개발 건을 해결한 기분이었습니다. mix 과정도 UI가 예뻐졌습니다.
 
 <p style="text-align: center;">
   <img src="/boosters-tech-blog/assets/images/2024-09/post8-change-regacy-refactoring(7).png" alt="예쁜 Mix">
 </p>
+
+
+## 마무리....
+현재는 거의 모든 소스 테스트를 마치고 기존 운영서버를 하나씩 옮겨가고 있으며 Jenkins 서버도 변경하여 기존 CentOS서버를 서서히 떠나고있습니다. 오래된 집에서 새집으로 이사가는 느낌이 들지만 오랫동안 사용했던 익숙함에 대해서도 아쉬움이 남는 작업이었습니다. 그러나 이번 계기로 확실히 배운것 중에 하나는 `당장에 편함을 선택하여 기술부채를 늘리지 말자`입니다. 한동안 익숙한 시스템에서 Comport 하게 지냈던 자신을 반성하였습니다.
+마지막으로 오랜기간 숙성되었던 레거시 시스템 이관으로 앞으로는 더 좋은 기술들을 사용해보며 스킬업할수 있는 계기가 되었으면 좋겠습니다.
