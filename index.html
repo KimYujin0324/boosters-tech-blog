@@ -35,7 +35,7 @@ background: '/img/bg-index.jpg'
         </li>
       </ul>
     </div>
-    
+
     <!-- 태그 리스트 -->
     <div class="mt-4 bsts-tags-box">
       <div class="bsts-tag-container py-0 py-sm-2 px-1 px-md-3">
@@ -46,7 +46,7 @@ background: '/img/bg-index.jpg'
         {% endfor %}
       </div>
     </div>
-    
+
     <div class="tab-content" id="tabContent">
       {% assign categories = "all,tech,culture" | split: "," %}
       {% for category in categories %}
@@ -85,7 +85,7 @@ background: '/img/bg-index.jpg'
 </section>
 
 <script>
-  if (window.location.pathname == '/') {
+  if (window.location.pathname == '/' || window.location.pathname == '/boosters-tech-blog/') {
      window.addEventListener('load', function() {
           const firstMessage = document.getElementById('bsts-landing-first');
           const secondMessage = document.getElementById('bsts-landing-second');

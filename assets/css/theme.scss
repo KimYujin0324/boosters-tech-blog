@@ -512,11 +512,23 @@ span.post-name a,span.post-read-more a:hover {
 code,kbd,pre,samp {
   font-family: "Pretendard",sans-serif;
 }
+pre code {
+  font-size: 87.5%;
+  color: #FF4713;
+  // word-break: break-word
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  background-color: #e6f7ff;
+  display: inline-block;
+  width: 100%;
+}
+
 code {
   font-size: 87.5%;
   color: #FF4713;
   word-break: break-word
 }
+
 
 blockquote {
 	border-left:4px solid #1D1D1B;
