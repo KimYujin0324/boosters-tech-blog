@@ -36,10 +36,10 @@ configure 과정에서 다양한 에러를 만났지만 하나하나 의존성 �
 다음은 다시 Laravel을 6버전에서 8버전으로 업그레이드를 시도하였습니다. 다행이 PHP 버전에 따라 Laravel도 8 버전으로 문제없이 업그레이드 되었습니다. 물론 PHP 문법 변경에 따른 소스 수정은 진행하여야 했지만 무사히 프레임워크의 업그레이드를 성공하였습니다. 노션에 주요 변경사항을 기록하여 팀원들과 공유하였습니다.
 
 <p style="text-align: center; float:left; width:50%">
-  <img src="/boosters-tech-blog/assets/images/2024-09/post8-change-regacy-refactoring(1).png" alt="Laravel Version UP 노션 (1)">
+  <img src="/assets/images/2024-09/post8-change-regacy-refactoring(1).png" alt="Laravel Version UP 노션 (1)">
 </p>
 <p style="text-align: center; float:left; width:50%">
-  <img src="/boosters-tech-blog/assets/images/2024-09/post8-change-regacy-refactoring(2).png" alt="Laravel Version UP 노션 (2)">
+  <img src="/assets/images/2024-09/post8-change-regacy-refactoring(2).png" alt="Laravel Version UP 노션 (2)">
 </p>
 
 
@@ -50,7 +50,7 @@ Laravel과 PHP 버전업의 성공으로 레거시 시스템 업그레이드 프
 자신감이 문제였을까요. 계속 알수 없는 에러를 내뿜으며 Vue2는 그리 쉽게 Vue3로 업그레이드 되지 않았습니다. 원인을 찾는데만 며칠 걸렸던 것 같습니다. 이유는 node.js 버전때문이었습니다. node.js 도 16버전을 사용하고 있었는데 vue3를 정상 설치하려면 18버전 이상의 버전이 필요했습니다. node.js는 nvm(node version management)으로 버전관리를 하고 있었기에 쉽게 버전업이 될거라고 생각했습니다. 그러나 Centos7는 뭔가 업그레이드 하면 곤란해보이는 에러를 내뿜었습니다.
 
 <p style="text-align: center;">
-  <img src="/boosters-tech-blog/assets/images/2024-09/post8-change-regacy-refactoring(3).png" alt="Node Version up GLIBC Error">
+  <img src="/assets/images/2024-09/post8-change-regacy-refactoring(3).png" alt="Node Version up GLIBC Error">
 </p>
 
 내용은 Node가 지원할 수 있는 것보다 낮은 버전의 GLIBC가 운영 체제에 설치되어 있다는 것이었습니다. 여기서 이것을 업그레이드 할 것이냐, OS를 바꿔야 할것이냐에 큰 기로에 섰습니다. "Vue3를 사용하려고 OS를 바꿔야해?" 라는 약한 생각도 들었지만 앞으로 이런상황을 계속 회피할 순 없다는 생각에 OS를 바꿔보는 걸로 결정하였습니다.
@@ -60,13 +60,13 @@ Laravel과 PHP 버전업의 성공으로 레거시 시스템 업그레이드 프
 OS 를 변경하기 전에 기존에 사용하는 Centos7에 대해 조금 더 조사하던 중 놀라운 사실을 알게되었습니다. 바로 Centos7이 서비스 종료가 되었다는 것입니다. 불과 이 프로젝트를 시작한 1달 전에 종료되었습니다. 운명인것 같다는 생각도 들면서 더더욱 CentOS7 를 Ubuntu로 바꿔야겠다는 생각에 확신이 들었습니다.
 
 <p style="text-align: center;">
-  <img src="/boosters-tech-blog/assets/images/2024-09/post8-change-regacy-refactoring(4).png" alt="centos7 지원종료">
+  <img src="/assets/images/2024-09/post8-change-regacy-refactoring(4).png" alt="centos7 지원종료">
 </p>
 
 Ubuntu로 변경하고 PHP도 8이상 버전으로 업그레이드 하고 다른 Regacy 기술들도 모두 버전업하여 당분간 몇년간은 기술 스택에 대해 문제없게끔 해야겠다는 생각을 하였습니다. Ubuntu 버전은 지원종료일이 최대한 멀리있는 22.04 또는 24.04 버전으로 결정하였습니다. 다시 Ubuntu 서버에 Apache / Mysql / PHP / Node.js / Python 등을 완벽 설치하는 것을 목표가 되었습니다.
 
 <p style="text-align: center;">
-  <img src="/boosters-tech-blog/assets/images/2024-09/post8-change-regacy-refactoring(5).png" alt="Ubuntu 버전정보">
+  <img src="/assets/images/2024-09/post8-change-regacy-refactoring(5).png" alt="Ubuntu 버전정보">
 </p>
 
 
@@ -98,7 +98,7 @@ error:0A000152:SSL routines::unsafe legacy renegotiation disabled
 
 오랜기간동안 다양한 에러를 해결해나가고 좌절하기도 하며 서버 이관을 하는 동안 굉장히 많은 우울감이 찾아왔지만, 팀원들이 알려준 우웅법으로 우울감을 조금이나마 덜었습니다. ☆٩(｡•ω<｡)و
 <p style="text-align: center;">
-  <img src="/boosters-tech-blog/assets/images/2024-09/post8-change-regacy-refactoring(6).png" alt="우웅하다">
+  <img src="/assets/images/2024-09/post8-change-regacy-refactoring(6).png" alt="우웅하다">
 </p>
 
 
@@ -110,7 +110,7 @@ error:0A000152:SSL routines::unsafe legacy renegotiation disabled
 하나하나 수정을하며 npm run dev를 실행하였는데 드디어 정상 컴파일되었습니다. 이 맛에 개발자하는 것 같습니다. 오랜만에 Comport Zone이 아닌 Learning Zone에 있던 개발 건을 해결한 기분이었습니다. mix 과정도 UI가 예뻐졌습니다.
 
 <p style="text-align: center;">
-  <img src="/boosters-tech-blog/assets/images/2024-09/post8-change-regacy-refactoring(7).png" alt="예쁜 Mix">
+  <img src="/assets/images/2024-09/post8-change-regacy-refactoring(7).png" alt="예쁜 Mix">
 </p>
 
 
