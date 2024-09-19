@@ -515,7 +515,12 @@ code,kbd,pre,samp {
 code {
   font-size: 87.5%;
   color: #FF4713;
-  word-break: break-word
+  // word-break: break-word
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  background-color: #e6f7ff;
+  display: inline-block;
+  width: 100%;
 }
 
 blockquote {
