@@ -1,11 +1,17 @@
 # Top Menu
 topmenu:
 
-- title: Home
-  url: ""
+# - title: Home
+# external: false
+#   url: ""
 
 - title: About us
-  url: "about/"
+  external: false
+  url: "/about/"
+
+- title: Company
+  external: true
+  url: "https://boosters.kr/"
 
 # - title: Contact
 #   url: "contact/"

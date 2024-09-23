@@ -1,0 +1,7 @@
+{% for post in posts %}
+  {% unless post.featured == true %}
+  <div class="col-md-12 px-3 py-45" style="border-bottom: 1px solid #BDBDBD50;">
+    {% include postbox.html %}
+  </div>
+  {% endunless %}
+{% endfor %}

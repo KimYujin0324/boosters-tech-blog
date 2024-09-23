@@ -4,53 +4,124 @@ layout: default
 background: '/img/bg-index.jpg'
 ---
 
-<!-- Home Intro
-================================================== -->
+
+
+<!-- Home Intro -->
 {% if page.url == "/" %}
-<div class="rounded mb-5 hero">
-  <div class="row align-items-center justify-content-between">
-    <div class="col-md-6 col-sm-12">
-      <h1 class="font-weight-bold mb-4 serif-font">Boosters Tech Team</h1>
-      <p class="lead mb-4">커머스를 자동화하는 전무후무한 시스템을 개발하는 <br><span style='color:#FF4713; font-weight:bold;'>부스터스 테크팀</span>의 이야기를 전달합니다</p>
-      <a href="{{site.baseurl}}/about" class="btn btn-bsts text-white px-5 btn-lg">About us</a>
-    </div>
-    <div class="col-md-6 text-right pl-0 pl-lg-4">
-      <img class="intro" height="500" src="{{site.baseurl}}/assets/images/intro.svg">
+<div class="mt-1 mb-2 mb-sm-3 hero">
+  <div class="text-center">
+    <div class="col-sm-12 py-5 py-md-0">
+      <!-- <h2 class="bsts-hero-text font-weight-bold pb-5 serif-font">Boosters Tech</h2> -->
+      <img src="assets/images/TECH_A_WHITE.png" alt="BOOSTERS TECH" class="pb-4">
+      <p class="bsts-hero-text lead m-0">커머스를 자동화하는 전무후무한 시스템을 개발하는 <br><span style='color:#FFF; font-weight:bold;'>부스터스 테크팀</span>의 이야기를 전달합니다.</p>
     </div>
   </div>
 </div>
 {% endif %}
 
-<!-- Featured
-================================================== -->
-<section class="row">
-  {% for post in site.posts %}
-      {% if post.featured == true %}
-          <div class="col-md-4 mb-5">
-          {% include postbox.html %}
-          </div>
-      {% endif %}
-  {% endfor %}
-</section>
-
-<!-- Posts List with Sidebar (except featured)
-================================================== -->
-<section class="row">
-  <div class="col-sm-12">
-    <div class="row">
-      {% for post in site.posts %}
-      {% unless post.featured == true %}
-      <div class="col-md-6 mb-5">
-        {% include postbox.html %}
-      </div>
-      {% endunless %}
-      {% endfor %}
+<!-- Posts List with Tabs -->
+<section class="container container-wide">
+  <div class="col-12 py-3">
+    <div>
+      <ul class="nav nav-tabs bsts-nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item bsts-nav-item" role="presentation">
+          <button class="nav-link bsts-nav-link active bsts-cursor-pointer" id="all-tab" data-bs-toggle="tab" data-bs-target="#all" type="button" role="tab" aria-controls="all" aria-selected="true">All</button>
+        </li>
+        <li class="nav-item bsts-nav-item" role="presentation">
+          <button class="nav-link bsts-nav-link bsts-cursor-pointer" id="tech-tab" data-bs-toggle="tab" data-bs-target="#tech" type="button" role="tab" aria-controls="tech" aria-selected="false">Tech</button>
+        </li>
+        <li class="nav-item bsts-nav-item" role="presentation">
+          <button class="nav-link bsts-nav-link bsts-cursor-pointer" id="culture-tab" data-bs-toggle="tab" data-bs-target="#culture" type="button" role="tab" aria-controls="culture" aria-selected="false">Culture</button>
+        </li>
+      </ul>
     </div>
-    <!-- Pagination -->
-    <div class="bottompagination">
-      <span class="navigation" role="navigation">
-          {% include pagination.html %}
-      </span>
+
+    <!-- 태그 리스트 -->
+    <div class="mt-4 bsts-tags-box">
+      <div class="bsts-tag-container py-0 py-sm-2 px-1 px-md-3">
+        {% for tag in site.tags %}
+          <div class="bsts-tag-list">
+            <a href="#" class="tag" data-tag="{{ tag[0] | slugify_en }}">{{ tag[0] }}</a>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="tab-content" id="tabContent">
+      {% assign categories = "all,tech,culture" | split: "," %}
+      {% for category in categories %}
+        <div class="tab-pane fade {% if forloop.first %}show active{% endif %}" id="{{ category }}" role="tabpanel" aria-labelledby="{{ category }}-tab">
+          <div class="post-list">
+            {% if category == "all" %}
+              {% for post in site.posts %}
+                <div class="post" data-tags="{{ post.tags | join: ' ' }}">
+                  <div class="col-md-12 px-3 py-45" style="border-bottom: 1px solid #BDBDBD50;">
+                    {% include postbox.html %}
+                  </div>
+                </div>
+              {% endfor %}
+            {% else %}
+              {% for post in site.posts %}
+                {% if post.category == category %}
+                  <div class="post" data-tags="{{ post.tags | join: ' ' }}">
+                    <div class="col-md-12 px-3 py-45" style="border-bottom: 1px solid #BDBDBD50;">
+                      {% include postbox.html %}
+                    </div>
+                  </div>
+                {% endif %}
+              {% endfor %}
+            {% endif %}
+          </div>
+          <!-- Pagination -->
+          <div class="bottompagination">
+            <span class="navigation" role="navigation">
+              {% include pagination.html %}
+            </span>
+          </div>
+        </div>
+      {% endfor %}
     </div>
   </div>
 </section>
+
+<script>
+  if (window.location.pathname == '/' || window.location.pathname == '/boosters-tech-blog/') {
+     window.addEventListener('load', function() {
+          const firstMessage = document.getElementById('bsts-landing-first');
+          const secondMessage = document.getElementById('bsts-landing-second');
+          const thirdMessage = document.getElementById('bsts-landing-third');
+          const landingPage = document.getElementById('landing-page');
+
+          let skipLanding = false;
+          function skip() {
+              skipLanding = true;
+              firstMessage.style.display = 'none';
+              secondMessage.style.display = 'none';
+              thirdMessage.style.display = 'none';
+              landingPage.style.display = 'none';
+          }
+
+          landingPage.addEventListener('click', skip);
+
+          firstMessage.style.display = 'block';
+
+          setTimeout(function() {
+              if (skipLanding) return;
+              firstMessage.style.display = 'none';
+              secondMessage.style.display = 'block';
+
+              setTimeout(function() {
+                  if (skipLanding) return;
+                  secondMessage.style.display = 'none';
+                  thirdMessage.style.display = 'block';
+
+                  setTimeout(function() {
+                      if (skipLanding) return;
+                      thirdMessage.style.display = 'none';
+                      landingPage.style.display = 'none';
+                  }, 1500);
+              }, 1500);
+          }, 1200);
+      });
+  }
+</script>

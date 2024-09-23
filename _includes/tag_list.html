@@ -1,0 +1,7 @@
+<div class="bsts-tag-container">
+  {% for tag in site.tags %}
+    <div class="bsts-tag-list">
+      <a href="#" class="tag" data-tag="{{ tag[0] | slugify }}">{{ tag[0] }}</a>
+    </div>
+  {% endfor %}
+</div>

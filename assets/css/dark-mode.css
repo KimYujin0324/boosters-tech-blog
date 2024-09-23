@@ -1,0 +1,66 @@
+body.dark-mode {
+  background-color: #1D1D1B;
+  color: #FFF;
+}
+body.dark-mode a {
+  color: #FFF;
+}
+body.dark-mode .bsts-top-nav {
+  color: #1D1D1B;
+}
+body.dark-mode .bsts-nav-link {
+  color: #BDBDBD;
+}
+body.dark-mode .card {
+  background-color: #1D1D1B;
+}
+body.dark-mode .bsts-post-name {
+  color: #FFF;
+}
+body.dark-mode .text-muted {
+  color: #F2F2F2 !important;
+}
+body.dark-mode .hero {
+  background-color: #2C2C2E;
+}
+body.dark-mode .footer {
+  /* background-color: #2C2C2E; */
+  background-color: #333333;
+}
+body.dark-mode .h1, body.dark-mode .h2, body.dark-mode .h3, body.dark-mode .h4, body.dark-mode .h5, body.dark-mode .h6, body.dark-mode h1, body.dark-mode h2, body.dark-mode h3, body.dark-mode h4, body.dark-mode h5, body.dark-mode h6, body.dark-mode .navbar-light .navbar-brand, body.dark-mode .text-dark, body.dark-mode .dropdown-item {
+  color: #FFF;
+}
+body.dark-mode .article-post, body.dark-mode .post-top-meta span {
+  color: #f2f2f2;
+}
+body.dark-mode .nav-tabs .nav-link.active, body.dark-mode .nav-tabs .nav-item.show .nav-link {
+  color: #FF4713;
+}
+body.dark-mode .bsts-mainheading-dark {
+  background-color: #2C2C2E;
+}
+body.dark-mode blockquote {
+  border-left: 4px solid #FFF;
+  color: #f2f2f2;
+}
+body.dark-mode .prevnextlinks .thepostlink {
+  color: #f2f2f2;
+}
+#disqus_thread {
+  color: #FF4713 !important;
+}
+#disqus_thread a {
+  color: #FF4713 !important;
+}
+#disqus_thread div {
+  color: #FF4713 !important;
+}
+body.dark-mode #disqus_thread {
+  color: #FF4713 !important;
+}
+body.dark-mode #disqus_thread a {
+  color: #FF4713 !important;
+}
+body.dark-mode #disqus_thread div {
+  color: #FF4713 !important;
+}

@@ -1,0 +1,10 @@
+User-agent: *
+Allow:/
+
+User-agent: Googlebot
+Allow:/
+
+User-agent: Naverbot
+Allow:/
+
+Sitemap: https://tech.boosters-labs.com/sitemap.xml

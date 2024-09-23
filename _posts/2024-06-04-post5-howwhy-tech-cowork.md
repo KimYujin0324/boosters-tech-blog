@@ -1,16 +1,105 @@
 ---
 layout: post
-title:  "Tech는 어떻게/왜 협업을 해야하는가"
-author: tech
-categories: [ Tech, 팀워크, 협업 ]
+title:  "'협업' 에 대한 토론의 기록"
+subtitle: "'우리 협업하자!' 로 시작된 토론의 현장입니다. 정답이 없는 주제인만큼 우리가 생각하는 '협업'의 정의를 읽어보실 수 있습니다!"
+author: dilee
+category: culture
+tags: [ Tech, 팀워크, 협업 ]
 image: assets/images/5.jpg
+image_count: 1
 ---
-The first mass-produced book to deviate from a rectilinear format, at least in the United States, is thought to be this 1863 edition of Red Riding Hood, cut into the shape of the protagonist herself with the troublesome wolf curled at her feet. Produced by the Boston-based publisher Louis Prang, this is the first in their “Doll Series”, a set of five “die-cut” books, known also as shape books — the other titles being Robinson Crusoe, Goody Two-Shoes (also written by Red Riding Hood author Lydia Very), Cinderella, and King Winter.
 
-An 1868 Prang catalogue would later claim that such “books in the shape of a regular paper Doll… originated with us”.
+## 해당 포스트는..
+> Tech팀은 소중한 팀원들이 늘기 시작하면서 **'협업'에 대한 고민**을 시작하였습니다. 다른 동료들이 합류했을 때 업무의 속도 및 퀄리티를 '함께' 높이기 위해 협업하는 문화가 필요하다는 생각하였습니다. 팀 내에서 정의하는 **협업**이 무언인가에 대한 토론 내용을 기록합니다.
 
-> It would seem the claim could also extend to die cut books in general, as we can’t find anything sooner, but do let us know in the comments if you have further light to shed on this! Such books are, of course, still popular in children’s publishing today, though the die cutting is not now limited to mere outlines, as evidenced in a beautiful 2014 version of the same Little Red Riding Hood story.
+## 협업을 해야하는 이유
 
-The die cut has also been employed in the non-juvenile sphere as well, a recent example being Jonathan Safran Foer’s ambitious Tree of Codes.
+협업을 해야 하는 이유는 크게 4가지로 정의해 보았습니다.
 
-As for this particular rendition of Charles Perrault’s classic tale, the text and design is by Lydia Very (1823-1901), sister of Transcendentalist poet Jones Very. The gruesome ending of the original — which sees Little Red Riding Hood being gobbled up as well as her grandmother — is avoided here, the gore giving way to the less bloody aims of the morality tale, and the lesson that one should not disobey one’s mother.
+1. **함께 일하는 것에서 팀 소속감 증대**
+
+    혼자 일하는 것이 아니라 '함께' 일한다는 것을 알고 서로 믿고 의지해야 합니다.
+
+2. **업무의 효율 증가,** 1+1= (3) 이상의 결과물을 만들기
+
+    소위 말하는 '케미'가 발생하게 되면 혼자서는 할 수 없는 일을 쉽게 처리할 수 있게 되고 한 명 이상의 일을 할 수 있게 됩니다.
+
+3. **‘누군가’ 의 부재에 대응**
+
+    '누군가'가 휴가라면? 장기로 자리를 비워야 하는 상황이 오면? 그 업무를 누구나 대체할 수 있어야 합니다.
+
+4. **충원에도 자연스러운 업무 분위기**
+
+    기존 구성원들의 협업 문화가 잘 정착되어 있다면, 충원되는 인원들도 어렵지 않게 업무에 녹아들 수 있을 것입니다.
+
+
+협업을 해야 하는 이유를 4가지로 나누어 정의해 보았지만, 모든 것이 '팀으로서의 믿음과 신뢰'를 바탕으로 한다는 생각이 들었습니다. 이러한 마인드셋이 없다면 백 날 정의한다 해도 올바른 협업이 이루어지지 않을 것이며, 오히려 '협업'이라는 이름을 악용하는 사례가 늘어날 것 같았습니다.
+
+## 올바른 협업을 위한 기본 규칙
+
+그리하여 우리는 협업을 하기전 필요로하는 규칙을 정의해보았습니다.
+
+1. **요청하기 전 충분히 고민하고 정확하게 요청하기**
+
+    충분히 고민을 하고 정확하게 요청해야 '협업 시너지'가 생깁니다.
+
+2. **pseudo code나 그림으로 설명하기**
+
+    발발생한 문제점을 이해할 수 있는 가장 간단한 방법으로 소통합니다.
+
+3. **함께 고민하고, 이해하지 못했으면 솔직하게 이야기하기**
+
+    문제점을 함께 고민해 주고, 이해하지 못했으면 솔직하게 이야기하며 '같이' 문제를 해결해야 합니다.
+
+4. **혼자 너무 매몰되지 않기**
+
+    혼자 해결하는 시간과 SOS를 요청하는 적절한 시점을 잘 찾아야 합니다.
+
+
+## 협업을 잘하려면
+
+규칙을 정하다 보니 우리가 무엇을 하는지 정확히 모두가 이해하고 있다면 올바른 협업이 가능할 것이라는 생각이 많이 들었습니다. 협업을 잘하려면 무엇보다 공감과 이해를 바탕으로 이타적인 생각을 가져야 한다고 생각하여 다음과 같이 정리해 보았습니다.
+
+
+- 개발하고자 하는 **목표(GOAL)가 명확**해야한다.
+    - TECH 팀의 거시적 관점에서의 목표(GOAL)는?
+        - 부스타를 좋은 시스템으로 개발한다.
+        - 사내 데이터 관리를 완벽하게 한다.
+
+    - TECH 팀의 미시적 관점에서의 목표(GOAL)는?
+        - 개발 전문가가 된다. (가능한 범위에서 못하는 게 없는 개발자가 된다.)
+        - 데이터를 시각화하는 데 능수능란해진다.
+        - 데이터를 적재하고 가공하는 데 능수능란해진다.
+
+- 해당 목표를 **모두가 공감하고 이해**해야한다.
+- 적절히 **분담하여 업무**를 진행한다.
+- 서로에 **업무에 대해 관심**을 가진다.
+- 함께 하는 팀원의 **속도에 맞추며** 함께 프로젝트를 완수한다.
+
+## Case Study
+이런저런 정의와 규칙을 내리면서 상황을 예로 들어 이야기를 나눠보는 자리도 가져보았습니다. 케이스를 2개로 나누어 보았지만, 크게 보면 서로 다른 동료의 속도 차이에 대한 이해가 기본이었던 것 같습니다.
+
+<br>
+<p style="text-align: center;">
+  <img src="/assets/images/2024-07/case_study.PNG" alt="협업에 대한 case study">
+</p>
+<br>
+
+
+## Tech팀이 생각하는 '협업'이란?
+다시 돌아와서 우리가 생각하는 **협업의 이유는 업무의 효율 증대 및 ‘누군가’의 부재를 방지하는 것**입니다.
+다양한 분야에 관심을 가지고 **스스로의 영역을 계속 넓혀야** 원활한 협업이 가능할 것으로 생각됩니다.
+또 협업을 함에 있어 스스로를 계속 점검하고 **겸손한 자세로 서로를 믿고 의지**해야 합니다.
+
+<!-- 그래서 우리가 생각하는 협업을 잘하는 방법은……
+너무 어렵지만…… `모든 방면을 잘해서 타인의 업무를 자신 있게 수행할 수 있어야 한다...` 입니다.
+
+<br><br>
+
+#<br>그냥 다잘하면 된다...ㅎ -->
+
+**유진**: 협업은 그냥 다 같이 열심히 하면 되는 거 아닌가? 라고 생각했었는데, 부스터스의 HR 도사님 용환님의 클래스를 듣고 협업은 심리적 안정감을 기반으로 이루어져야 시너지를 내며 공동 목표에 도달할 수 있구나를 깨달았습니다. 팀원들이 서로를 신뢰하고 존중함으로써 개인의 역량을 더 발휘할 수 있게 되고, 서로의 결과물에 대한 피드백도 원활하게 이루어질 수 있습니다. 협업은 단순히 작업의 분담이 아니라 회사와 개인 모두에게 발전이 되는 과정이라고 생각합니다. 저희 팀은 이것을 바탕으로 자주 대화하고, 회고하며 어느 조직보다도 이 **협업**을 잘하고 있다고 자부합니다.
+
+**승언**: 협업은 누구나 자신의 의견을 자유롭게 말할 수 있는 문화나 분위기라고 생각합니다. '같이'의 의미를 내포하고 있는 협업에서는 구성원 간의 **소통**이 무엇보다 중요한데, 이는 심리적 안정감이 갖추어진 편안한 분위기 속에서 나올 수 있기 때문입니다. 현재 저희 팀은 해야 하는 과업이 아직 많지만, 서로의 업무 진행 상황을 확인하고 응원해주며 잘 해내고 있다고 생각합니다. 누구나 자유롭게 의견을 내고 함께 만들어나가는 문화 속에서 다양한 경험을 쌓으며 개발자로서의 커리어를 시작, 이어나가고 싶으신 분들은 어서 오세요!
+
+**태우**: 협업을 잘 하려면 다양한 변수들을 통제하여 목표로 하는 것을 빠르고 정확하게 달성해야 합니다. 그러기 위해서 저는 다음과 같은 것들이 필요하다고 생각합니다. 첫째, 각자의 생각과 의견을 정기적으로 공유하고, 문제가 발생할 때 즉시 해결책을 찾기 위해 솔직하고 열린 **소통**을 유지해야합니다. 그리고, 각 **역할과 책임**을 명확히 하여, 프로젝트 진행을 위해 필요한 조치를 시간 내에 책임지고 실행하는 것이 필요합니다. 마지막으로 "따로 또 같이". 어디서 들었는지는 모르겠지만 제가 좋아하는 말입니다. 우리는 각자가 각자의 인생을 따로 살고 있는 개인들이기 때문에 개인의 배경과 상황을 이해하고 **존중**하는 것이 중요합니다. 같은 목표를 향해 노력할 때, 개인의 사정을 고려하면서도 효율적으로 일할 수 있다고 생각합니다.

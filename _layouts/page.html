@@ -3,19 +3,22 @@ layout: default
 ---
 <!-- Post Featured Image -->
 {% if page.image %}
-<div class="text-center mx-auto mb-5">
-  <img class="featured-image text-center mx-auto rounded" src="{{ site.baseurl }}/{{ page.image }}" alt="{{ page.title }}">
+<div class="mt-1 mb-2 mb-sm-3">
+  <img src="https://tech.boosters-labs.com/assets/images/custom/about-techteam.jpg" style="width: 100%;" alt="TECHTEAM" class="pb-4">
+</div>
+<div class="text-center mx-auto my-4">
+  <img class="featured-image text-center mx-auto" src="{{ site.baseurl }}/{{ page.image }}" alt="{{ page.title }}">
 </div>
 {% endif %}
 <!-- End Featured Image -->
 
 <div class="col-lg-10 mx-auto">
 
-  <div class="mainheading">
+  <!-- <div class="mainheading">
     <h1 class="posttitle">{{ page.title }}</h1>
-  </div>
+  </div> -->
 
-  <div class="article-post serif-font">
+  <div class="article-post container container-wide serif-font">
     {{content}}
   </div>
 
