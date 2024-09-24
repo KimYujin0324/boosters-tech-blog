@@ -14,6 +14,7 @@ lang: ko_kr
 feed_items: 10
 feed_update_period: daily
 feed_update_frequency: 1
+future: true
 collections:
   posts:
     output: true
